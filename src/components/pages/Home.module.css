@@ -1,0 +1,162 @@
+:root {
+
+    /* 🔵 Cores Primárias */
+    --color-primary: #2563EB;
+    --color-primary-dark: #1D4ED8;
+    --color-primary-light: #3B82F6;
+
+    /* ⚫ Texto */
+    --color-text-primary: #111827;
+    --color-text-secondary: #1F2937;
+    --color-text-muted: #6B7280;
+
+    /* ⚪ Fundos */
+    --color-background: #F9FAFB;
+    --color-surface: #FFFFFF;
+
+    /* Bordas e Cinzas */
+    --color-border: #E5E7EB;
+    --color-border-strong: #D1D5DB;
+    --color-gray-light: #9CA3AF;
+
+    /* 🟢 Badge Sucesso / Mercado Angolano */
+    --color-success-bg: #E6F4EA;
+    --color-success: #16A34A;
+
+    /* 🔴 Indicador / Alerta */
+    --color-danger: #DC2626;
+
+    /* Sombras */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.12);
+
+    /* Border Radius */
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 16px;
+
+    /* Transições */
+    --transition-fast: 0.2s ease-in-out;
+    --transition-normal: 0.3s ease-in-out;
+}
+
+
+
+.divhome {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.divhome h4 {
+    border: 0.1px solid var(--color-text-primary);
+    margin: 20px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.divtexto p {
+    text-align: center;
+}
+
+.divhome h1,
+h2 {
+    font-size: 2.8em;
+    font-weight: bold;
+}
+
+.divhome h2 {
+    padding-bottom: 25px;
+    color: var(--color-primary-light);
+}
+
+.divcard {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    gap: 30px;
+}
+
+.card {
+    max-width: 400px;
+    padding-top: 30px;
+    border: 1px solid var(--color-text-secondary);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(2, 2, 1, 0.5);
+}
+
+.card h3 {
+    padding-bottom: 10px;
+}
+
+.card p {
+    line-height: 20px;
+}
+
+.divdados {
+    background-color: var(--color-primary-light);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    padding: 50px;
+    gap: 30px;
+    margin: 0 auto;
+
+}
+
+.dados {
+
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+.dados h4 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: var(--color-background);
+    text-align: center;
+}
+
+.dados p {
+    color: var(--color-background);
+    text-align: center;
+    padding-top: 5px;
+}
+
+.divporque {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    gap: 30px;
+    background-color: red;
+
+}
+
+.cardporque {
+    background-color: #16A34A;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 20%;
+}
+
+.cardporque h4,
+p {
+    text-align: center;
+    padding-bottom: 20px;
+}
+

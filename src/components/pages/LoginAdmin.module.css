@@ -1,0 +1,100 @@
+
+
+
+:root {
+
+  /* 🔵 Cores Primárias */
+  --color-primary: #2563EB;
+  --color-primary-dark: #1D4ED8;
+  --color-primary-light: #3B82F6;
+
+  /* ⚫ Texto */
+  --color-text-primary: #111827;
+  --color-text-secondary: #1F2937;
+  --color-text-muted: #6B7280;
+
+  /* ⚪ Fundos */
+  --color-background: #F9FAFB;
+  --color-surface: #FFFFFF;
+
+  /* Bordas e Cinzas */
+  --color-border: #E5E7EB;
+  --color-border-strong: #D1D5DB;
+  --color-gray-light: #9CA3AF;
+
+  /* 🟢 Badge Sucesso / Mercado Angolano */
+  --color-success-bg: #E6F4EA;
+  --color-success: #16A34A;
+
+  /* 🔴 Indicador / Alerta */
+  --color-danger: #DC2626;
+
+  /* Sombras */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.12);
+
+  /* Border Radius */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+
+  /* Transições */
+  --transition-fast: 0.2s ease-in-out;
+  --transition-normal: 0.3s ease-in-out;
+}
+
+.admin{
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+
+}
+
+.CardAdmin{
+    background-color: yellow;
+    width: 30%;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(2, 2, 1, 0.5);
+    padding: 20px;
+
+}
+
+.CardAdmin h3{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.CardAdmin span{
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+
+.forget{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 12px;
+    font-size: 12px;
+}
+
+.check{
+    padding-right: 10px;
+    background-color: tomato;
+}
+
+.Usario{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.Or{
+    padding-bottom: 20px;
+}

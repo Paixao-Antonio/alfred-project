@@ -1,0 +1,15 @@
+
+
+
+.divLabel{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.divInput{
+   padding: 12px;
+   border: 1px solid black;
+   width: 100%;
+   border-radius: 10px;
+}
