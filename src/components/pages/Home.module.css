@@ -42,13 +42,11 @@
 }
 
 
-
 .divhome {
-
     display: flex;
     flex-direction: column;
-    align-items: center;
-
+    align-items: center; 
+    padding-top: 100px;
 }
 
 .divhome h4 {
@@ -78,7 +76,7 @@ h2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
     padding-top: 30px;
     padding-bottom: 50px;
@@ -96,16 +94,18 @@ h2 {
 
 .card h3 {
     padding-bottom: 10px;
+    text-align: center;
 }
 
 .card p {
     line-height: 20px;
 }
 
+
 .divdados {
+
+    display: flex;
     background-color: var(--color-primary-light);
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     padding: 50px;
     gap: 30px;
@@ -133,25 +133,32 @@ h2 {
     padding-top: 5px;
 }
 
+.pqtext{
+    background-color: var(--color-border);
+}
+
 .divporque {
 
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    max-width: 1000px;
+    display: flex;
+    padding: 40px 40px 20px 40px;
     margin: 0 auto;
-    padding-top: 30px;
-    padding-bottom: 50px;
-    gap: 30px;
-    background-color: red;
-
 }
 
 .cardporque {
-    background-color: #16A34A;
     margin: 0 auto;
-    padding: 20px;
-    border-radius: 20%;
+}
+
+.icon {
+
+    display: flex;
+    margin: 0 auto;
+    width: 60px;
+    color: var(--color-primary-dark);
+    padding-bottom: 10px;
+    background-color: var(--color-background);
+    padding-top: 10px;
+    height: 60px;
+    border-radius: 50%;
 }
 
 .cardporque h4,
@@ -160,3 +167,114 @@ p {
     padding-bottom: 20px;
 }
 
+.cardporque p {
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+
+
+
+.divStart{
+    
+    padding-top: 20px;
+    display: flex;
+    margin: 0 auto;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.icone{
+    display: block;
+}
+
+
+
+
+
+
+
+@media (max-width:768px) {
+
+    .divcard {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        max-width: 800px;
+        margin: 0 auto;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        gap: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .divdados {
+
+        display: flex;
+        background-color: var(--color-primary-light);
+        justify-content: center;
+        padding: 50px;
+        gap: 15px;
+        margin: 0 auto;
+
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .divcard {
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .card {
+        margin: 0 auto;
+        max-width: 300px;
+        padding-top: 30px;
+        border: 1px solid var(--color-text-secondary);
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(2, 2, 1, 0.5);
+    }
+
+    .card h3 {
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    .card p {
+        line-height: 15px;
+    }
+
+    .divdados {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background-color: var(--color-primary-light);
+        justify-content: center;
+        padding: 50px;
+        gap: 10px;
+        margin: 0 auto;
+
+    }
+
+    .divporque {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 1100px;
+        margin: 0 auto;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        gap: 30px;
+
+    }
+}

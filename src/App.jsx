@@ -5,23 +5,34 @@ import LoginAdmin from "./components/pages/LoginAdmin"
 import LoginUsuario from "./components/pages/LoginUsuario"
 import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer'
+import Pesquisar from './components/pages/Pesquisar'
 
 function App() {
+
   return (
 
-    <>
+    <div>
 
-      <Navbar />
-      
       <Routes>
-        <Route path="/" element={<Home />} />
+
+        <Route path="/" element={
+          <>
+
+            <Navbar />
+            <Home />
+            <Footer />
+
+          </>
+        }
+        />
+
         <Route path="/login-usuario" element={<LoginUsuario />} />
         <Route path="/login-admin" element={<LoginAdmin />} />
+        <Route path="/pesquisar" element={<Pesquisar />} />
+
       </Routes>
 
-      <Footer />
-
-    </>
+    </div>
 
   )
 }

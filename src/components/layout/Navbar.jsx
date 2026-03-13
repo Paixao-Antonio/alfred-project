@@ -4,15 +4,17 @@ import styles from "./Navbar.module.css"
 
 import logo2 from "../../img/logo2.png"
 
-import React from 'react'
-
 const Navbar = () => {
+
     return (
 
         <div className={styles.divnav}>
 
-
             <nav className={styles.navbar}>
+
+                <button className={styles.hamburger}>
+                    ☰
+                </button>
 
                 <Link to="/"> <img src={logo2} alt="alfre-project" /></Link>
 

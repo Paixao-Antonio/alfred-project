@@ -7,7 +7,7 @@ const Botao = ({ name }) => {
     return (
 
         <>
-            <button className={styles.botao}>{name}</button>
+            <button className={styles.botao}>{name} </button>
         </>
     )
 }

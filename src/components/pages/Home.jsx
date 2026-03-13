@@ -1,10 +1,16 @@
 
 import Botao from '../formulario/Botao'
 import Titulo from './Titulo'
-import React from 'react'
 
 import CountUp from "react-countup"
 import { useInView } from "react-intersection-observer"
+
+import { MdOutlineSecurity } from "react-icons/md";
+import { FaGlobe } from "react-icons/fa6";
+import { MdMobileFriendly } from "react-icons/md";
+import { GrDocumentPerformance } from "react-icons/gr";
+import { IoIosArrowRoundForward } from "react-icons/io";
+
 
 import styles from "./Home.module.css"
 
@@ -101,31 +107,51 @@ const Home = () => {
 
       </div>
 
-      <Titulo name="Porque nos escolher?" />
+      <div className={styles.pqtext}>
 
-      <div className={styles.divporque}>
+        <Titulo name="Porque nos escolher?" />
 
-        <div className={styles.cardporque}>
-          <h4>Icone</h4>
-          <p>Seguro e Confiavél</p>
-        </div>
+        <div className={styles.divporque}>
 
-        <div className={styles.cardporque}>
-          <h4>Icone</h4>
-          <p>Seguro e Confiavél</p>
-        </div>
+          <div className={styles.cardporque}>
+            <MdOutlineSecurity className={styles.icon} />
+            <p>Seguro e Confiavél</p>
+          </div>
 
-        <div className={styles.cardporque}>
-          <h4>Icone</h4>
-          <p>Seguro e Confiavél</p>
-        </div>
+          <div className={styles.cardporque}>
+            <FaGlobe className={styles.icon} />
+            <p>Acesso de Qualquer Lugar</p>
+          </div>
 
-        <div className={styles.cardporque}>
-          <h4>Icone</h4>
-          <p>Seguro e Confiavél</p>
+          <div className={styles.cardporque}>
+            <MdMobileFriendly className={styles.icon} />
+            <p>Interface Intuitiva</p>
+          </div>
+
+          <div className={styles.cardporque}>
+            <GrDocumentPerformance className={styles.icon} />
+            <p>Aumente a Produtividade</p>
+          </div>
+
         </div>
 
       </div>
+
+      <div>
+
+        <Titulo name="Pronto para começar?" />
+        <p>Junte-se a centenas de empresas angolanas que já confiam no GestãoPro para gerenciar seus projetos.</p>
+
+        <div className={styles.divStart}>
+
+          <Botao name='Acessar como Admin' />
+          <Botao name='Acessar como Usuário' />
+
+        </div>
+
+      </div>
+
+
 
     </div>
 
