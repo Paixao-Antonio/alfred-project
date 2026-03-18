@@ -9,7 +9,7 @@ import { MdOutlineSecurity } from "react-icons/md";
 import { FaGlobe } from "react-icons/fa6";
 import { MdMobileFriendly } from "react-icons/md";
 import { GrDocumentPerformance } from "react-icons/gr";
-import { IoIosArrowRoundForward } from "react-icons/io";
+import { FaCircle } from "react-icons/fa";
 
 
 import styles from "./Home.module.css"
@@ -25,7 +25,17 @@ const Home = () => {
     <div>
 
       <div className={styles.divhome}>
-        <h4>Feito para o mercado angolano</h4>
+
+        <div className={styles.divIcone}>
+
+          <FaCircle className={styles.IconeHomeRe} />
+          <FaCircle className={styles.IconeHomeBa} />
+          <FaCircle className={styles.IconeHomeYe} />
+
+          <h4>Feito para o mercado angolano</h4>
+
+        </div>
+
         <h1>Gestão de Projectos</h1>
         <h2>Moderna & Eficiente</h2>
         <p>Plataforma completa para gerenciar projectos, tarefas e equipas com metodologias ágeis e padrões PMBOK</p>
@@ -140,7 +150,7 @@ const Home = () => {
       <div>
 
         <Titulo name="Pronto para começar?" />
-        <p>Junte-se a centenas de empresas angolanas que já confiam no GestãoPro para gerenciar seus projetos.</p>
+        <p>Junte-se a centenas de empresas angolanas que já confiam no Alfred-Project para gerenciar seus projetos.</p>
 
         <div className={styles.divStart}>
 

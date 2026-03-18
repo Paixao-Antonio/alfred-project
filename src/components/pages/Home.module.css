@@ -45,24 +45,56 @@
 .divhome {
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
     padding-top: 100px;
 }
 
+.divIcone {
+    background-color: var(--color-background);
+    border: 1px solid var(--color-text-primary);
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    padding: 4px;
+
+}
+
+.IconeHomeRe {
+
+    padding-bottom: 2px;
+    color: red;
+}
+
+.IconeHomeBa {
+
+    padding-bottom: 2px;
+    color: black;
+    margin: 2px;
+}
+
+.IconeHomeYe {
+
+    padding-bottom: 2px;
+    color: yellow
+}
+
 .divhome h4 {
-    border: 0.1px solid var(--color-text-primary);
-    margin: 20px;
-    padding: 5px;
+    padding: 5px 5px 5px 5px;
     border-radius: 10px;
+    font-size: 0.8em;
 }
 
 .divtexto p {
     text-align: center;
 }
 
+.divhome h1 {
+    padding-top: 20px;
+}
+
 .divhome h1,
 h2 {
-    font-size: 2.8em;
+    font-size: 4em;
     font-weight: bold;
 }
 
@@ -133,7 +165,7 @@ h2 {
     padding-top: 5px;
 }
 
-.pqtext{
+.pqtext {
     background-color: var(--color-border);
 }
 
@@ -175,9 +207,10 @@ p {
 
 
 
-.divStart{
-    
+.divStart {
+
     padding-top: 20px;
+    padding-bottom: 100px;
     display: flex;
     margin: 0 auto;
     gap: 10px;
@@ -185,7 +218,7 @@ p {
     align-items: center;
 }
 
-.icone{
+.icone {
     display: block;
 }
 
