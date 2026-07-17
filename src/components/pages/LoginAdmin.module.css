@@ -48,6 +48,9 @@
     align-items: center;
     background-color: var(--color-primary-light);
     padding-bottom: 30px;
+    width: 100vw;
+    height: 50vw;
+    margin: 0 auto;
 
 }
 

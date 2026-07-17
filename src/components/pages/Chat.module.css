@@ -1,0 +1,380 @@
+
+:root {
+    /* 🔵 Cores Primárias */
+    --color-primary: #2563EB;
+    --color-primary-dark: #1D4ED8;
+    --color-primary-light: #3B82F6;
+
+    /* ⚫ Texto */
+    --color-text-primary: #111827;
+    --color-text-secondary: #1F2937;
+    --color-text-muted: #181a50;
+
+    /* ⚪ Fundos */
+    --color-background: #F9FAFB;
+    --color-surface: #FFFFFF;
+
+    /* Bordas e Cinzas */
+    --color-border: #E5E7EB;
+    --color-border-strong: #D1D5DB;
+    --color-gray-light: #9CA3AF;
+
+    /* 🟢 Badge Sucesso / Mercado Angolano */
+    --color-success-bg: #E6F4EA;
+    --color-success: #16A34A;
+
+    /* 🔴 Indicador / Alerta */
+    --color-danger: #DC2626;
+
+    /* Sombras */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.12);
+
+    /* Border Radius */
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 16px;
+
+    /* Transições */
+    --transition-fast: 0.2s ease-in-out;
+    --transition-normal: 0.3s ease-in-out;
+}
+
+
+
+
+
+
+.cardChat {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    gap: 20px;
+}
+
+.cardChatLeft {
+    border-radius: 5px;
+    width: 300px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    border: 2px solid var(--color-border);
+    padding: 20px 20px 10px 20px;
+}
+
+.cardChatLeftOne {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.cardChatLeftOne h4{
+    font-size: 14px;
+}
+
+.cardChatLeftOne span {
+    background-color: var(--color-background);
+    font-size: 12px;
+    font-weight: bold;
+    padding: 3px;
+    border-radius: 10px;
+    border: 1px solid var(--color-border);
+}
+
+.cardChatLeftTwo {
+    padding-bottom: 10px;
+}
+
+.cardChatLeftTwo input {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid var(--color-border);
+    padding-left: 10px;
+}
+
+.cardChatLeftThree {
+    padding: 5px;
+    margin-top: 10px;
+    border-left: 3px solid var(--color-primary-light);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+}
+
+.cardChatLeftThreeText {
+    font-size: 12px;
+}
+
+.cardChatLeftThree span {
+    font-size: 8px;
+    font-weight: bold;
+    color: var(--color-text-primary);
+}
+
+.cardChatSeparador {
+    padding-top: 10px;
+    border-bottom: 1px solid var(--color-border);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.cardChatRigth {
+    background-color: var(--color-background);
+    border: 1px solid var(--color-border);
+    border-radius: 5px;
+    width: 840px;
+}
+
+.cardChatRigthOne {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 1px solid var(--color-border);
+    background-color: var(--color-background);
+}
+
+.cardChatRigthTwo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cardChatRigthIcone {
+    font-weight: bold;
+    background-color: var(--color-primary-light);
+    padding: 8px 13px;
+    border-radius: 50px;
+    color: var(--color-background);
+}
+
+.cardChatRigthIconeText h3 {
+    padding-bottom: 5px;
+    font-size: 16px;
+}
+
+.cardChatRigthIconeText span{
+    font-size: 11px;
+    background-color: var(--color-success);
+    color: var(--color-success-bg);
+    padding: 3px 6px;
+    border-radius: 10px;
+    border: 1px solid var(--color-border);
+}
+
+.cardChatRigthIconeTwo {
+    display: flex;
+    gap: 20px;
+}
+
+
+
+
+
+
+.chatContainer {
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+}
+
+/* Linha da mensagem */
+.message {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+
+}
+
+/* Mensagem enviada */
+.sent {
+    justify-content: flex-end;
+
+}
+
+/* Avatar */
+.avatar {
+    width: 28px;
+    height: 28px;
+    min-width: 28px;
+    border-radius: 50%;
+    background: var(--color-primary-light);
+    color: var(--color-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* Cores dos avatares */
+.blue {
+    background: var(--color-text-muted);
+
+
+}
+
+.purple {
+    background: var(--color-primary-light);
+}
+
+/* Conteúdo */
+.messageContent {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Nome */
+.name {
+    font-size: 13px;
+    color: var(--color-text-primary);
+    margin-bottom: 5px;
+}
+
+/* Balão */
+.bubble {
+    padding: 8px 15px;
+    border-radius: 16px;
+    max-width: 500px;
+    font-size: 14px;
+    line-height: 1.5;
+    border-bottom: 0.5px solid var(--color-primary-light);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+
+}
+
+/* Balão enviado */
+.sentBubble {
+    background: var(--color-primary-light);
+    color: var(--color-background);
+    border-top-left-radius: 4px;
+}
+
+/* Balão recebido */
+.receivedBubble {
+    background: #f5f5f5;
+    color: var(--color-text-secondary);
+    border-top-left-radius: 4px;
+}
+
+/* Hora */
+.time {
+    margin-top: 6px;
+    font-size: 12px;
+    color: var(--color-gray-light);
+
+
+}
+
+.right {
+    text-align: right;
+}
+
+
+
+.chatSend {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 80px;
+}
+
+.chatSeparador {
+    border-bottom: 1px solid var(--color-border);
+    margin-bottom: 20px;
+}
+
+.chatSendOne {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 10px;
+    width: 100%;
+}
+
+.chatSendOne>div:nth-child(2) {
+    flex: 1;
+}
+
+.chatSendOne input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--color-gray-light);
+    box-shadow: 0 10px 18px rgba(240, 240, 240, 0.08);
+    outline: none;
+}
+
+.chatSendOne input:hover{
+    border: 1px solid var(--color-primary-light);
+    transition: 1.5s;
+}
+
+.chatSendIcon {
+    display: flex;
+    gap: 10px;
+    font-size: 25px;
+}
+
+.chatSendIconTwo {
+    background-color: var(--color-primary-light);
+    color: var(--color-background);
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.chatSendNote {
+    padding: 10px 0px 0px 20px;
+    font-size: 12px;
+    color: var(--color-gray-light);
+}
+
+
+
+
+.cardChatRodape {
+    background-color: var(--color-primary-light);
+    color: var(--color-background);
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+    border: 1px solid var(--color-border-strong);
+}
+
+
+.cardChatRodapeOne {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+    font-size: 14px;
+}
+
+.cardChatRodapeText {
+    text-align: left;
+    font-size: 12px;
+    padding-left: 20px;
+    color: var(--color-surface);
+}

@@ -1,3 +1,5 @@
+
+
 :root {
 
     /* 🔵 Cores Primárias */
@@ -42,63 +44,65 @@
 }
 
 
-.geral {
-    width: 100%;
-    display: block;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 0px;
-    border-bottom: 2px solid var(--color-border);
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    background-color: #F9FAFB;
+
+.CardSubOne {
+    max-width: 1050px;
+    padding: 15px 0px;
+    margin: 0 auto;
+
+}
+
+.CardSubOne h5 {
+    color: black;
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: 18px;
     
 }
 
-.settings {
+.CardSpanNumber {
+    color: rgb(187, 11, 11);
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.CardSpanText{
+    padding-left: 20px;
+    font-size: 13px;
+}
+
+
+.Abc {
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
-    align-items: center;
-    
 }
 
-.Search {
-    font-size: 30px;
-    margin-left: -55px;
-}
-
-.Search:hover {
-    cursor: pointer;
-    font-weight: bold;
-    font-variant: var(--color-border-strong);
-}
-
-
-.oneOption {
-    display: flex;
-    width: 400px;
-    gap: 20px;
-    align-items: center;
-}
-
-.oneOption input {
-    width: 500px;
-    padding: 10px;
+.CardSubTwo {
+    width: fit-content;
+    padding: 20px 20px 20px 0px;
     border-radius: 10px;
-    border: 1px solid var(--color-border-strong);
-    background-color: var(--color-background);
-    padding-left: 20px;
+    background-color: rgb(250, 250, 250);
+    border: 1px solid rgb(185, 185, 185);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
 }
 
-
-.twoOption {
+.CardSubThree {
     display: flex;
-    gap: 20px;
-    font-size: 20px;
+    align-items: center;
+    gap: 100px;
+    padding: 10px 0px;
+    width: fit-content;
 }
 
-.twoOption h5 {
-    color: var(--color-text-primary);
+.CardSubIcon {
+    display: flex;
+    margin: 0 auto;
+    width: 40px;
+    color: white;
+    padding-bottom: 10px;
+    background-color: rgb(172, 19, 159);
+    padding-top: 10px;
+    height: 40px;
+    border-radius: 50%;
 }

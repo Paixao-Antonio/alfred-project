@@ -1,0 +1,298 @@
+:root {
+
+    /* 🔵 Cores Primárias */
+    --color-primary: #2563EB;
+    --color-primary-dark: #1D4ED8;
+    --color-primary-light: #3B82F6;
+
+    /* ⚫ Texto */
+    --color-text-primary: #111827;
+    --color-text-secondary: #1F2937;
+    --color-text-muted: #181a50;
+
+    /* ⚪ Fundos */
+    --color-background: #F9FAFB;
+    --color-surface: #FFFFFF;
+
+    /* Bordas e Cinzas */
+    --color-border: #E5E7EB;
+    --color-border-strong: #D1D5DB;
+    --color-gray-light: #9CA3AF;
+
+    /* 🟢 Badge Sucesso / Mercado Angolano */
+    --color-success-bg: #E6F4EA;
+    --color-success: #16A34A;
+
+    /* 🔴 Indicador / Alerta */
+    --color-danger: #DC2626;
+
+    /* Sombras */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.12);
+
+    /* Border Radius */
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 16px;
+
+    /* Transições */
+    --transition-fast: 0.2s ease-in-out;
+    --transition-normal: 0.3s ease-in-out;
+}
+
+
+
+
+.DivPermission {
+    max-width: 1050px;
+    margin: 0 auto;
+    border: 1px solid var(--color-border-strong);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    padding-bottom: 40px;
+}
+
+.DivPermissionTop {
+    padding: 20px;
+    border-bottom: 1px solid var(--color-border-strong);
+    background: var(--color-text-muted);
+    border-radius: 5px 5px 0px 0px;
+}
+
+.DivPermissionTop h2 {
+    font-size: 20px;
+    padding-bottom: 5px;
+    color: var(--color-background);
+}
+
+.DivPermissionTop p {
+    text-align: left;
+    font-size: 14px;
+    color: var(--color-border);
+    padding-bottom: 0;
+}
+
+.DivPermissionHeader {
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 2fr 100px 100px;
+    background-color: var(--color-background);
+    font-weight: bold;
+    padding: 0px 10px 0px 20px;
+    border-bottom: 1px solid var(--color-border-strong);
+    align-items: center;
+    font-size: 14px;
+}
+
+.DivPermissionRole {
+    display: flex;
+    padding-top: 8px;
+    padding-bottom: 5px;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+}
+
+.DivPermissionRoleOne {
+    color: var(--color-danger);
+}
+
+.DivPermissionRoleTwo {
+    color: var(--color-primary);
+}
+
+.DivPermissionRow {
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 2fr 100px 100px;
+    padding: 10px;
+    align-items: center;
+    border-bottom: 1px solid var(--color-border);
+    font-size: 14px;
+}
+
+.DivPermissionRow:hover {
+    background-color: var(--color-border);
+    transition: 1.5s;
+}
+
+.DivPermissionModule {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    padding-left: 10px;
+}
+
+.FolderIcon {
+    color: var(--color-primary-dark);
+    font-size: 20px;
+
+}
+
+.DivPermissionAcao {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+}
+
+.Blue {
+    color: var(--color-danger)
+}
+
+.Green {
+    color: green;
+}
+
+.Red {
+    color: Red;
+}
+
+.DivPermissionDescricao {
+    font-size: 13px;
+}
+
+.DivPermissionSwitch {
+    width: 55px;
+    height: 28px;
+    background-color: rgb(218, 217, 211);
+    border-radius: 20px;
+    position: relative;
+    margin: auto;
+}
+
+.DivPermissionCircle {
+    width: 22px;
+    height: 22px;
+    background-color: rgb(87, 56, 226);
+    border-radius: 50%;
+    position: absolute;
+
+    top: 3px;
+    left: 0px;
+    border: 1px solid red
+}
+
+.DivPermissionCircleMove {
+    left: 30px;
+}
+
+.active {
+    background-color: rgb(31, 31, 4);
+}
+
+
+.DivUsuario {
+    display: flex;
+    align-items: center;
+    max-width: 1050px;
+    margin: 0 auto;
+    border: 1px solid var(--color-border-strong);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    margin-top: 20px;
+    background-color: var(--color-surface);
+}
+
+.CardUsuario {
+    background-color: var(--color-surface);
+    width: 366px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--color-border-strong);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+.DivUsuarioOne {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 10px;
+
+}
+
+.DivUsuarioIcone {
+    padding: 7px 10px;
+    background-color: var(--color-primary-light);
+    border-radius: 50px;
+    font-weight: 600;
+    color: white;
+}
+
+.DivUsuarioOne h3 {
+    font-size: 13px;
+}
+
+.DivUsuarioOne span {
+    font-size: 11px;
+    color: var(--color-gray-light);
+}
+
+.DivFuncion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    font-size: 13px;
+    color: var(--color-text-secondary);
+}
+
+.DivFuncionIcone {
+    padding: 5px;
+    background-color: var(--color-danger);
+    color: white;
+    border-radius: 5px;
+}
+
+.DivFuncionNumber {
+    font-weight: 600;
+    color: black;
+    padding-right: 5px;
+}
+
+.DivFuncionSeparador {
+    border-bottom: 1px solid var(--color-border);
+    padding-top: 10px;
+}
+
+
+.DivFuncionAcesso {
+    padding-top: 8px;
+    font-size: 12px;
+}
+
+.DivAviso {
+    max-width: 1050px;
+    margin: 0 auto;
+    border: 1px solid var(--color-border);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 20px 20px;
+    background-color: var(--color-danger);
+    color: var(--color-success-bg);
+}
+
+.DivAvisoOne {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.DivAvisoOne h2 {
+    font-size: 16px;
+}
+
+.DivAviso p {
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+.DivAvisoList ul {
+    padding-left: 40px;
+    font-size: 14px;
+    line-height: 20px;
+}

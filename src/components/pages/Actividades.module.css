@@ -1,0 +1,249 @@
+:root {
+
+    /* 🔵 Cores Primárias */
+    --color-primary: #2563EB;
+    --color-primary-dark: #1D4ED8;
+    --color-primary-light: #3B82F6;
+
+    /* ⚫ Texto */
+    --color-text-primary: #111827;
+    --color-text-secondary: #1F2937;
+    --color-text-muted: #181a50;
+
+    /* ⚪ Fundos */
+    --color-background: #F9FAFB;
+    --color-surface: #FFFFFF;
+
+    /* Bordas e Cinzas */
+    --color-border: #E5E7EB;
+    --color-border-strong: #D1D5DB;
+    --color-gray-light: #9CA3AF;
+
+    /* 🟢 Badge Sucesso / Mercado Angolano */
+    --color-success-bg: #E6F4EA;
+    --color-success: #16A34A;
+
+    /* 🔴 Indicador / Alerta */
+    --color-danger: #DC2626;
+
+    /* Sombras */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.12);
+
+    /* Border Radius */
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 16px;
+
+    /* Transições */
+    --transition-fast: 0.2s ease-in-out;
+    --transition-normal: 0.3s ease-in-out;
+}
+
+
+.DivActividades {
+    max-width: 1050px;
+    margin: 0 auto;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+    margin-top: 20px;
+    background-color: var(--color-background);
+    border: 1px solid rgb(179, 179, 179);
+}
+
+.DivActividadesHeader {
+    background-color: var(--color-text-muted);
+    color: var(--color-background);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px 5px 0px 0px;
+    padding: 30px 0px 10px 20px;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.DivActividadesIcon {
+    background-color: var(--color-danger);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.DivActividadesHeader h2 {
+    font-size: 16px;
+    padding-bottom: 3px;
+}
+
+.DivActividadesText {
+    font-size: 12px;
+    color: var(--color-gray-light);
+}
+
+.DivActividadesInput {
+    padding: 30px 20px 0px 20px;
+}
+
+.DivActividadesInput textarea {
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    padding: 10px 10px 50px 10px;
+    border: 1px solid var(--color-border);
+}
+
+.DivActividadesAdd {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px 10px 20px;
+}
+
+.DivActividadesAdd p {
+    font-size: 13px;
+    color: var(--color-text-secondary);
+}
+
+.DivActividadesAdd button {
+    color: var(--color-background);
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid var(--color-border);
+    background: var(--color-primary-light);
+    cursor: pointer;
+}
+
+.DivPesquisarActividades {
+    max-width: 1050px;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 20px 15px 20px;
+    background-color: var(--color-background);
+    border: 1px solid var(--color-border);
+}
+
+.DivPesquisarActividadesOne {
+    display: flex;
+    gap: 10px;
+}
+
+.DivPesquisarActividadesOne input {
+    width: 600%;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid var(--color-border);
+    padding-left: 10px;
+}
+
+.DivPesquisarActividadesOne select {
+    padding: 8px;
+}
+
+
+
+.DivActividadesCrono {
+    max-width: 1050px;
+    margin: 0 auto;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 20px 15px 20px;
+    background-color: var(--color-background);
+    border: 1px solid var(--color-border);
+}
+
+.DivActividadesCrono h3,
+p {
+    text-align: left;
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+
+
+
+
+.DivActividadesCronoOne {
+    background-color: var(--color-background);
+    border-radius: 5px;
+    display: flex;
+    gap: 20px;
+    padding: 10px 20px 10px 20px;
+    border-left: 3px solid var(--color-primary-light);
+}
+
+
+.DivActividadesCronoTwo {
+
+    display: flex;
+    font-size: 14px;
+    gap: 10px;
+    align-items: center;
+}
+
+.DivActividadesCronoTwo span {
+    background-color: var(--color-background);
+    padding: 4px 8px;
+    border-radius: 50px;
+    border: 2px solid var(--color-border);
+}
+
+.DivActividadesCronoThree {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    gap: 10px;
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+
+.DivActividadesCronoThreeOne {
+    background-color: var(--color-background);
+    padding: 3px 7px 3px 7px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+.DivActividadesCronoText {
+    width: 960px;
+    padding: 10px 10px 10px 10px;
+    background-color: var(--color-background);
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    border: 1px solid var(--color-border-strong);
+}
+
+
+.DivActividadesChanger {
+    display: flex;
+    gap: 10px;
+    max-width: 1050px;
+    margin: 0 auto;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 20px 20px 30px 20px;
+    color: var(--color-background);
+    background-color: var(--color-danger);
+    border: 1px solid var(--color-border-strong);
+}
+
+.DivActividadesChanger span{
+    color: var(--color-text-primary);
+    font-size: 13px;
+}
+
+
+.DivActividadesChangerTwo {
+    font-size: 14px;
+    line-height: 1.5;
+}

@@ -1,0 +1,279 @@
+:root {
+
+    /* 🔵 Cores Primárias */
+    --color-primary: #2563EB;
+    --color-primary-dark: #1D4ED8;
+    --color-primary-light: #3B82F6;
+
+    /* ⚫ Texto */
+    --color-text-primary: #111827;
+    --color-text-secondary: #1F2937;
+    --color-text-muted: #181a50;
+
+    /* ⚪ Fundos */
+    --color-background: #F9FAFB;
+    --color-surface: #FFFFFF;
+
+    /* Bordas e Cinzas */
+    --color-border: #E5E7EB;
+    --color-border-strong: #D1D5DB;
+    --color-gray-light: #9CA3AF;
+
+    /* 🟢 Badge Sucesso / Mercado Angolano */
+    --color-success-bg: #E6F4EA;
+    --color-success: #16A34A;
+
+    /* 🔴 Indicador / Alerta */
+    --color-danger: #DC2626;
+
+    /* Sombras */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.12);
+
+    /* Border Radius */
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 16px;
+
+    /* Transições */
+    --transition-fast: 0.2s ease-in-out;
+    --transition-normal: 0.3s ease-in-out;
+}
+
+
+
+
+.CardSeparador {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.CardEscopoTwo {
+    max-width: 1050px;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 1px solid rgb(179, 179, 179);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+.CardEscopoTwo input:hover {
+    border: 1px solid var(--color-primary-light);
+    transition: 2s;
+}
+
+.CardEscopoOne {
+    background-color: var(--color-text-muted);
+    border: 1px solid rgb(179, 179, 179);
+    border-radius: 10px 10px 0px 0px;
+    max-width: 1100px;
+    padding: 30px 0px 25px 20px;
+    color: var(--color-background);
+}
+
+.CardEscopoThree {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.CardEscopoThree button {
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    background-color: white;
+    border: 1px solid rgb(179, 179, 179);
+    margin: 20px
+}
+
+.CardPara {
+    padding: 0;
+    text-align: left;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+.CardABC {
+    padding: 20px;
+}
+
+.CardConteiner {
+    background-color: rgb(248, 248, 248);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgb(179, 179, 179);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+
+.CardConteinerFirst {
+    padding: 20px 30px 20px 20px;
+
+}
+
+.ConteinerLabel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.ConteinerInputName {
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+
+.ConteinerGestor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+
+.ConteinerInput {
+    padding-bottom: 25px;
+    padding-top: 10px;
+}
+
+.ConteinerInput input:hover {
+    border: 1px solid var(--color-primary-light);
+    transition: 2s;
+}
+
+.ConteinerInput input,
+select {
+
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid rgb(179, 179, 179);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    background-color: rgb(241, 241, 241);
+    outline: none;
+}
+
+.ConteinerInputName input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid rgb(179, 179, 179);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    background-color: rgb(241, 241, 241);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    outline: none;
+}
+
+
+.ConteinerObject {
+    padding: 20px 30px 20px 20px;
+    gap: 10px;
+}
+
+.ConteinerObjectName {
+    padding-top: 10px;
+}
+
+.ConteinerObjectName input {
+
+    width: 100%;
+    padding: 10px 0px 100px 10px;
+    border-radius: 4px;
+    border: 1px solid rgb(179, 179, 179);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    background-color: rgb(241, 241, 241);
+    outline: none;
+}
+
+.ConteinerObjectName input:hover {
+    border: 1px solid var(--color-primary-light);
+    transition: 2s;
+}
+
+.ConteinerObjectSpan {
+    padding-top: 10px;
+    color: rgb(117, 117, 117);
+    font-size: 12px;
+    padding-bottom: 25px;
+}
+
+.ConteinerInputDescricao {
+    padding-top: 10px;
+}
+
+.ConteinerInputDescricao input {
+    width: 100%;
+    padding: 10px 0px 100px 10px;
+    border-radius: 4px;
+    border: 1px solid rgb(179, 179, 179);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    background-color: rgb(241, 241, 241);
+    outline: none;
+}
+
+.ConteinerInputDescricao input:hover {
+    border: 1px solid var(--color-primary-light);
+    transition: 2s;
+}
+
+
+.InputExclusao {
+    border-radius: 5px;
+    color: var(--color-background);
+}
+
+.InputExclusao div {
+    width: 100%;
+    background-color: var(--color-danger);
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid var(--color-text-muted);
+}
+
+.InputExclusaoTwo input {
+    border: 1px solid rgb(179, 179, 179);
+
+}
+
+.InputExclusaoTwo {
+    padding-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.InputOne {
+    width: 5%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.InputTwo {
+    width: 95%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.CardSalvar {
+    display: flex;
+    justify-content: right;
+    gap: 15px;
+    max-width: 1100px;
+    padding: 15px 15px 15px 14px;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.CardSalvar button {
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid rgb(179, 179, 179);
+    background-color: white;
+}

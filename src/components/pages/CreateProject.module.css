@@ -1,0 +1,172 @@
+:root {
+
+    /* 🔵 Cores Primárias */
+    --color-primary: #2563EB;
+    --color-primary-dark: #1D4ED8;
+    --color-primary-light: #3B82F6;
+
+    /* ⚫ Texto */
+    --color-text-primary: #111827;
+    --color-text-secondary: #1F2937;
+    --color-text-muted: #181a50;
+
+    /* ⚪ Fundos */
+    --color-background: #F9FAFB;
+    --color-surface: #FFFFFF;
+
+    /* Bordas e Cinzas */
+    --color-border: #E5E7EB;
+    --color-border-strong: #D1D5DB;
+    --color-gray-light: #9CA3AF;
+
+    /* 🟢 Badge Sucesso / Mercado Angolano */
+    --color-success-bg: #E6F4EA;
+    --color-success: #16A34A;
+
+    /* 🔴 Indicador / Alerta */
+    --color-danger: #DC2626;
+
+    /* Sombras */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.12);
+
+    /* Border Radius */
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 16px;
+
+    /* Transições */
+    --transition-fast: 0.2s ease-in-out;
+    --transition-normal: 0.3s ease-in-out;
+}
+
+
+
+
+
+
+.CardCreateProject {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+.CardCreateTitle {
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.CardCreateTitleIcon {
+    font-size: 20px;
+}
+
+.CardCreateTitleText {
+    font-size: 20px;
+    padding-bottom: 3px;
+}
+
+.CardCreateSpan {
+    font-size: 14px;
+    color: var(--color-text-secondary);
+}
+
+
+.CreateInputDescri textarea {
+    padding: 10px 20px 80px 10px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid var(--color-border);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    outline: none;
+
+}
+
+.CardCreateInput input {
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid var(--color-border);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    outline: none;
+}
+
+.CardCreateSecond select {
+    margin-top: 5px;
+    background-color: var(--color-border);
+}
+
+.CardCreateSecond {
+    background-color: var(--color-background);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid var(--color-border-strong);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+}
+
+.CardCreateSecond h3 {
+    padding-bottom: 30px;
+}
+
+.CardCreateSecond h4 {
+    padding-bottom: 20px;
+}
+
+.CardCreateTitleSecondInput {
+
+    display: flex;
+    gap: 20px;
+}
+
+.CreateLabel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+
+.CardCreateBotao {
+
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+    padding: 30px 0px 50px 0px;
+}
+
+.CardCreateBotao button {
+    background-color: var(--color-background);
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid var(--color-border);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.CardCreateBotao .CardCreateBotaoTwo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: var(--color-primary-light);
+    color: var(--color-background);
+}
+
+.CardCreateBotao .CardCreateBotaoIcon {
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.CardCreateInput input:Hover{
+    border: 1px solid var(--color-primary-light);
+    transition: 1s;
+}

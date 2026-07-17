@@ -4,11 +4,11 @@ import styles from "./Navbar.module.css"
 
 import logo2 from "../../img/logo2.png"
 
-const Navbar = () => {
+const Navbar = () =>  {
 
     return (
 
-        <div className={styles.divnav}>
+        <div className={styles.divnav} >
 
             <nav className={styles.navbar}>
 
@@ -16,10 +16,9 @@ const Navbar = () => {
                     ☰
                 </button>
 
-                <Link to="/"> <img src={logo2} alt="alfre-project" /></Link>
+                <Link to="/"><img src={logo2} alt="alfre-project" /> </Link>
 
                 <ul className={styles.lista}>
-                    <li className={styles.item}><Link to="/">Home</Link></li>
                     <li className={styles.item}><Link to="/login-usuario">Login Usuário</Link></li>
                     <li className={styles.item}><Link to="/login-admin">Login Admin</Link></li>
                 </ul>

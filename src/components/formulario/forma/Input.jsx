@@ -8,7 +8,7 @@ const Input = ({ type, text, name, placeholder }) => {
 
     return (
 
-        <div>
+        <div >
             <div>
 
                 <div className={styles.divLabel}>

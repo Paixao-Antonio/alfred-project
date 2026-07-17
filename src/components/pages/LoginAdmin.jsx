@@ -8,6 +8,7 @@ import styles from './LoginAdmin.module.css'
 
 import { RiAdminFill } from "react-icons/ri";
 import { FaArrowLeftLong } from "react-icons/fa6";
+import Footer from './Footer';
 
 
 
@@ -15,44 +16,50 @@ const LoginAdmin = () => {
 
   return (
 
-    <div className={styles.admin}>
+    <div>
 
-      <h5> <FaArrowLeftLong /> <Link to="/">Voltar para home</Link> </h5>
+      <div className={styles.admin}>
 
-      <div className={styles.CardAdmin}>
+        <h5> <FaArrowLeftLong /> <Link to="/">Voltar para home</Link> </h5>
 
-        <RiAdminFill className={styles.icone} />
+        <div className={styles.CardAdmin}>
 
-        <h3>Acesso Administrativo</h3>
-        <p>Entre com suas credenciais de administrador</p>
+          <RiAdminFill className={styles.icone} />
 
-        <Input
-          type="text"
-          text="Email Administrativo"
-          name="name" placeholder="exemplo@gmail.com" />
+          <h3>Acesso Administrativo</h3>
+          <p>Entre com suas credenciais de administrador</p>
 
-        <Input
-          type="text"
-          text="Senha"
-          name="name" placeholder="********" />
+          <Input
+            type="text"
+            text="Email Administrativo"
+            name="name" placeholder="exemplo@gmail.com" />
 
-        <div className={styles.forget}>
-          <span className={styles.forgetText}> <input type="checkbox" /> Lembrar-me</span>
-          <span>Esqueceu a senha?</span>
+          <Input
+            type="text"
+            text="Senha"
+            name="name" placeholder="********" />
+
+          <div className={styles.forget}>
+            <span className={styles.forgetText}> <input type="checkbox" /> Lembrar-me</span>
+            <span>Esqueceu a senha?</span>
+          </div>
+
+          <div className={styles.OpenAdmin}>
+            <Login name="Entrar como Admin" />
+          </div>
+
+          <div className={styles.Usario}>
+            <div className={styles.Or}>___________ ou ___________</div>
+            É um usuário comum? <Link to="/login-usuario">entre aqui.</Link>
+          </div>
+
         </div>
 
-        <div className={styles.OpenAdmin}>
-          <Login name="Entrar como Admin" />
-        </div>
-
-        <div className={styles.Usario}>
-          <div className={styles.Or}>___________ ou ___________</div>
-          É um usuário comum? <Link to="/login-usuario">entre aqui.</Link>
-        </div>
+        <span className={styles.ResAcesso}>Acesso restrito a administradores autorizados</span>
 
       </div>
 
-      <span className={styles.ResAcesso}>Acesso restrito a administradores autorizados</span>
+      <Footer />
 
     </div>
   )

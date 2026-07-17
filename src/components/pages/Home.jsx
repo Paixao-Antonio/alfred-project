@@ -24,7 +24,7 @@ const Home = () => {
 
     <div>
 
-      <div className={styles.divhome}>
+      <div  className={styles.divhome}>
 
         <div className={styles.divIcone}>
 
@@ -125,10 +125,10 @@ const Home = () => {
 
           <div className={styles.cardporque}>
             <MdOutlineSecurity className={styles.icon} />
-            <p>Seguro e Confiavél</p>
+            <p>Seguro e Confiavélk</p>
           </div>
 
-          <div className={styles.cardporque}>
+          <div className={styles.cardporque} >
             <FaGlobe className={styles.icon} />
             <p>Acesso de Qualquer Lugar</p>
           </div>
@@ -150,7 +150,7 @@ const Home = () => {
       <div>
 
         <Titulo name="Pronto para começar?" />
-        <p>Junte-se a centenas de empresas angolanas que já confiam no Alfred-Project para gerenciar seus projetos.</p>
+        <p className={styles.comecar}>Junte-se a centenas de empresas angolanas que já confiam no Alfred-Project para gerenciar seus projetos.</p>
 
         <div className={styles.divStart}>
 

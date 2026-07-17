@@ -43,81 +43,64 @@
 
 
 
-.divnav {
-    background-color: var(--color-background);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 15px;
 
+.cardTitle{
+    padding: 20px 0px 20px 0px;
 }
 
-.navbar {
-
+.cardTitleOne{
+    background-color: var(--color-primary-dark);
+    max-width: 1050px;
+    margin:  0 auto;
     display: flex;
     justify-content: space-between;
-    max-width: 1100px;
-    margin: 0 auto;
-
+    padding: 30px 15px;
+    align-items: center;
+    border-radius: 10px;
 }
 
-.hamburger {
+.cardTitleTwo h3, h5{
+    color: var(--color-background);
+}
 
-    font-size: 30px;
-    background: none;
-    border: none;
+.span{
+    color: var(--color-background);
+}
+.cardTitleTwo h3{
+    font-size: 32px;
+    padding: 7px 0px 5px 0px;
+}
+
+.cardTitleTwo span{
+    font-size: 13px;
+}
+
+.cardTitleThree{
+    display: flex;
+    gap: 20px;
+}
+
+.cardTitleThree button{
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid var(--color-gray-light);
+    font-weight: bold;
     cursor: pointer;
-    display: none;
 }
 
-.navbar img {
-    max-width: 50px;
-    border-radius: 50%;
+.cardTitleThree button:hover{
+    background-color: var(--color-border);
+    color: var(--color-text-primary);
+    transition: 1.5s;
 }
 
-.lista {
 
+
+.cardTitleThree .CardBotao{
     display: flex;
     align-items: center;
-    list-style: none;
+    gap: 5px;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
-.item {
-    border-radius: 5px;
-}
-
-.item a {
-    color: var(--color-background);
-    text-decoration: none;
-    padding: 0.5em;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    margin: 10px;
-    background-color: var(--color-primary-light);
-}
-
-.item a:hover {
-    color: var(--color-text-primary);
-    background-color: var(--color-background);
-    transition: 2s;
-    cursor: pointer;
-}
-
-
-
-@media (max-width:768px) {
-
-    .lista {
-        display: none;
-    }
-
-    .navbar {
-        justify-content: flex-end;
-        padding-right: 20px;
-    }
-
-    .hamburger{
-        display: inline;
-        position: absolute;
-        left: 0;
-        padding-left: 20px;
-    }
-}

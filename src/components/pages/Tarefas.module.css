@@ -1,0 +1,224 @@
+:root {
+
+    /* 🔵 Cores Primárias */
+    --color-primary: #2563EB;
+    --color-primary-dark: #1D4ED8;
+    --color-primary-light: #3B82F6;
+
+    /* ⚫ Texto */
+    --color-text-primary: #111827;
+    --color-text-secondary: #1F2937;
+    --color-text-muted: #181a50;
+
+    /* ⚪ Fundos */
+    --color-background: #F9FAFB;
+    --color-surface: #FFFFFF;
+
+    /* Bordas e Cinzas */
+    --color-border: #E5E7EB;
+    --color-border-strong: #D1D5DB;
+    --color-gray-light: #9CA3AF;
+
+    /* 🟢 Badge Sucesso / Mercado Angolano */
+    --color-success-bg: #E6F4EA;
+    --color-success: #16A34A;
+
+    /* 🔴 Indicador / Alerta */
+    --color-danger: #DC2626;
+
+    /* Sombras */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.12);
+
+    /* Border Radius */
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 16px;
+
+    /* Transições */
+    --transition-fast: 0.2s ease-in-out;
+    --transition-normal: 0.3s ease-in-out;
+}
+
+
+
+
+.CardTarefas {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.CardTarefasOne {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px 20px 0px;
+
+}
+
+.CardTarefasTwo h3 {
+
+    padding-bottom: 5px;
+    font-size: 30px;
+}
+
+.CardTarefasTwo span {
+    font-size: 13px;
+}
+
+.CardTarefasOne .button {
+    color: var(--color-background);
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid var(--color-border-strong);
+    cursor: pointer;
+    background: var(--color-primary-light);
+    text-decoration: none;
+}
+
+.CardTarefasOne .button:hover {
+    color: var(--color-text-primary);
+    background-color: var(--color-background);
+    transition: 2s;
+    cursor: pointer;
+}
+
+
+
+.CardMother {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.CardTask {
+    border-radius: 10px;
+    width: 30%;
+    border: 1px solid var(--color-text-muted);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+.CardTaskOne {
+    background-color: var(--color-background);
+    display: flex;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px 25px 20px;
+}
+
+.CardTaskTwo h4 {
+    padding-bottom: 10px;
+    font-weight: 20;
+    font-size: 14px;
+}
+
+.CardTaskTwo span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.CardTaskThree h3 {
+    font-weight: 20;
+    font-size: 14px;
+}
+
+
+
+.CardStatusZero {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.CardStatus {
+
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    padding: 30px 5px 10px 5px;
+    border-bottom: 1px solid var(--color-border-strong);
+}
+
+.CardStatus h4 {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.CardStatus span {
+    display: flex;
+    align-items: center;
+    padding: 2px 5px 2px 5px;
+    font-size: 12px;
+    border-radius: 50%;
+    border: 1px solid var(--color-border-strong);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+
+}
+
+.TarefasZero {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+
+.Tarefas {
+
+    width: 30%;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 20px 20px 20px 20px;
+    border: 2px solid var(--color-border-strong);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+
+.TarefasCard {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.TarefasCardDesc p {
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 0;
+    font-size: 12px;
+}
+
+.TarefasCardResp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    font-size: 12px;
+}
+
+.TarefasCardSeparador {
+    border-bottom: 1px solid var(--color-border);
+    padding-top: 15px;
+}
+
+.TarefasCardPriodidade {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    font-size: 12px;
+}
+
+.TarefasPriodidade {
+    color: var(--color-background);
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--color-border);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    background: var(--color-danger);
+}

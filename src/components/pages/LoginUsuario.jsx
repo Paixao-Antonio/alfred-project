@@ -7,6 +7,7 @@ import styles from './LoginUsuario.module.css'
 
 import { FaUserCircle } from "react-icons/fa";
 import { FaArrowLeftLong } from "react-icons/fa6";
+import Footer from './Footer';
 
 
 
@@ -14,45 +15,52 @@ const LoginUsuario = () => {
 
   return (
 
-    <div className={styles.admin}>
+    <div>
 
-      <h5> <FaArrowLeftLong /> <Link to="/">Voltar para home</Link> </h5>
+      <div className={styles.admin}>
 
-      <div className={styles.CardAdmin}>
+        <h5> <FaArrowLeftLong /> <Link to="/">Voltar para home</Link> </h5>
 
-        <FaUserCircle className={styles.icone} />
+        <div className={styles.CardAdmin}>
 
-        <h3>Acesso de Usuário</h3>
-        <p>Entre para gerenciar suas tarefas e projectos</p>
+          <FaUserCircle className={styles.icone} />
 
-        <Input
-          type="text"
-          text="Email"
-          name="name" placeholder="exemplo@gmail.com" />
+          <h3>Acesso de Usuário</h3>
+          <p>Entre para gerenciar suas tarefas e projectos</p>
 
+          <Input
+            type="text"
+            text="Email"
+            name="name"
+            placeholder="exemplo@gmail.com" />
 
-        <Input
-          type="text"
-          text="Senha"
-          name="name" placeholder="********" />
+          <Input
+            type="text"
+            text="Senha"
+            name="name"
+            placeholder="********" />
 
-        <div className={styles.forget}>
-          <span className={styles.forgetText}> <input type="checkbox" /> Lembrar-me</span>
-          <span>Esqueceu a senha?</span>
+          <div className={styles.forget}>
+            <span className={styles.forgetText}> <input type="checkbox" /> Lembrar-me</span>
+            <span>Esqueceu a senha?</span>
+          </div>
+
+          <div className={styles.OpenAdmin}>
+            <Login name="Entrar" />
+          </div>
+
+          <div className={styles.Usario}>
+            <div className={styles.Or}>___________ ou ___________</div>
+            Já tem uma conta? <Link to="/Pesquisar">Registra-se!</Link>
+          </div>
+
         </div>
 
-        <div className={styles.OpenAdmin}>
-          <Login name="Entrar" />
-        </div>
-
-        <div className={styles.Usario}>
-          <div className={styles.Or}>___________ ou ___________</div>
-          Já tem uma conta? <Link to="/Pesquisar">Registra-se!</Link>
-        </div>
+        <span className={styles.ResAcesso}>Acesso restrito a usuários autorizados</span>
 
       </div>
 
-      <span className={styles.ResAcesso}>Acesso restrito a usuários autorizados</span>
+      <Footer />
 
     </div>
   )

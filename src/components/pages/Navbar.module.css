@@ -42,63 +42,85 @@
 }
 
 
-.geral {
-    width: 100%;
-    display: block;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 0px;
-    border-bottom: 2px solid var(--color-border);
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    background-color: #F9FAFB;
-    
+
+.divnav {
+    background-color: var(--color-background);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
+
 }
 
-.settings {
+.navbar {
+
     display: flex;
     justify-content: space-between;
+    max-width: 1100px;
     margin: 0 auto;
-    align-items: center;
-    
 }
 
-.Search {
+.hamburger {
+
     font-size: 30px;
-    margin-left: -55px;
-}
-
-.Search:hover {
+    background: none;
+    border: none;
     cursor: pointer;
-    font-weight: bold;
-    font-variant: var(--color-border-strong);
+    display: none;
 }
 
+.navbar img {
+    max-width: 50px;
+    border-radius: 50%;
+}
 
-.oneOption {
+.lista {
+
     display: flex;
-    width: 400px;
-    gap: 20px;
+    gap: 10px;
     align-items: center;
-}
+    list-style: none;
+    padding: 0;
+    margin: 0;
 
-.oneOption input {
-    width: 500px;
-    padding: 10px;
-    border-radius: 10px;
-    border: 1px solid var(--color-border-strong);
-    background-color: var(--color-background);
-    padding-left: 20px;
 }
 
 
-.twoOption {
-    display: flex;
-    gap: 20px;
-    font-size: 20px;
+.item a {
+
+    color: var(--color-background);
+    font-size: 14px;
+    text-decoration: none;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 8px 8px;
+    background-color: var(--color-primary-light);
+    font-weight: bold;
+
 }
 
-.twoOption h5 {
+.item a:hover {
     color: var(--color-text-primary);
+    background-color: var(--color-background);
+    transition: 2s;
+    cursor: pointer;
+}
+
+
+
+@media (max-width:768px) {
+
+    .lista {
+        display: none;
+    }
+
+    .navbar {
+        justify-content: flex-end;
+        padding-right: 20px;
+    }
+
+    .hamburger {
+        display: inline;
+        position: absolute;
+        left: 0;
+        padding-left: 20px;
+    }
 }

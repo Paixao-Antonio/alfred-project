@@ -15,14 +15,9 @@ const Pesquisar = () => {
 
                 <div className={styles.oneOption}>
 
-                    <button className={styles.hamburger}>
-                        ☰
-                    </button>
-
                     <input type="text" placeholder='pesquisar projectos, tarefas...
                     '/> 
                     <CiSearch className={styles.Search}/>
-
                 </div>
 
                 <div className={styles.twoOption}>

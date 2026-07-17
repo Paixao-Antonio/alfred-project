@@ -1,0 +1,508 @@
+.relatorio {
+    width: 1050px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.relatorioOne {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.relatorioOne h2 {
+    font-size: 20px;
+    line-height: 2;
+}
+
+.relatorioOne button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(141, 141, 141);
+}
+
+.relatorioTwo {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 1px solid rgb(226, 226, 226);
+}
+
+.relatorioTwo select {
+    padding: 5px 20px;
+    display: flex;
+    padding-left: 5px;
+    border: none;
+}
+
+
+
+.relatorioThree {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 10px;
+}
+
+
+.CardRelatorio {
+    border-radius: 10px;
+    width: 30%;
+    border: 1px solid rgb(194, 194, 194);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+.CardRelatorioOne {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px 25px 20px;
+}
+
+.CardRelatorioTwo h4 {
+    padding-bottom: 10px;
+    font-weight: 20;
+    font-size: 14px;
+}
+
+.CardRelatorioTwo span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.CardRelatorioThree h3 {
+    font-weight: 20;
+    font-size: 14px;
+}
+
+
+
+
+.relatorioFour {
+    padding: 10px 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 1px solid rgb(226, 226, 226);
+}
+
+.relatorioFour h2 {
+    font-size: 16px;
+}
+
+.relatorioFourOne {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.relatorioFourIcone {
+    padding: 5px;
+    background-color: rgb(186, 210, 255);
+    color: blue;
+    border-radius: 5px;
+    border: 1px solid rgb(214, 214, 214);
+}
+
+.relatorioFourTwo {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    align-items: center;
+    line-height: 2;
+    width: 485%;
+}
+
+.relatorioFourTwo h4 {
+    font-size: 14px;
+    font-weight: 400px;
+}
+
+.relatorioFourTwo .relatorioFourSpan {
+    background-color: rgb(255, 0, 0);
+    color: white;
+    font-size: 10px;
+    padding: 0 3px;
+    border-radius: 3px;
+}
+
+.relatorioFourTwo .relatorioFourSpanTwo {
+    font-size: 10px;
+}
+
+.relatorioFourBarra {
+    width: 95%;
+    height: 8px;
+    background: #e5e7eb;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.relatorioFourBarraOne {
+    width: 96%;
+    height: 100%;
+    background: #0339ad;
+}
+
+
+
+:root {
+
+    /* 🔵 Cores Primárias */
+    --color-primary: #2563EB;
+    --color-primary-dark: #1D4ED8;
+    --color-primary-light: #3B82F6;
+
+    /* ⚫ Texto */
+    --color-text-primary: #111827;
+    --color-text-secondary: #1F2937;
+    --color-text-muted: #181a50;
+
+    /* ⚪ Fundos */
+    --color-background: #F9FAFB;
+    --color-surface: #FFFFFF;
+
+    /* Bordas e Cinzas */
+    --color-border: #E5E7EB;
+    --color-border-strong: #D1D5DB;
+    --color-gray-light: #9CA3AF;
+
+    /* 🟢 Badge Sucesso / Mercado Angolano */
+    --color-success-bg: #E6F4EA;
+    --color-success: #16A34A;
+
+    /* 🔴 Indicador / Alerta */
+    --color-danger: #DC2626;
+
+    /* Sombras */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.12);
+
+    /* Border Radius */
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 16px;
+
+    /* Transições */
+    --transition-fast: 0.2s ease-in-out;
+    --transition-normal: 0.3s ease-in-out;
+}
+
+
+
+
+
+
+
+.container {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 25px;
+
+    margin-top: 20px;
+
+    padding-bottom: 20px;
+
+}
+
+.card {
+    background: var(--color-background);
+
+    border: 1px solid var(--color-border);
+
+    border-radius: 12px;
+
+    padding: 20px;
+}
+
+.card h3 {
+    margin-bottom: 30px;
+
+}
+
+/* ===================== */
+/* PIE CHART */
+/* ===================== */
+
+.pieWrapper {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+
+}
+
+.pieChart {
+    width: 180px;
+    height: 180px;
+
+    border-radius: 50%;
+
+    background:
+        conic-gradient(#22c55e 0deg 180deg,
+            #3b82f6 180deg 240deg,
+            #f59e0b 240deg 300deg,
+            #9ca3af 300deg 360deg);
+}
+
+.ativo {
+    color: #22c55e;
+    margin-bottom: 15px;
+
+}
+
+.labels {
+    margin-top: 20px;
+
+    display: flex;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+}
+
+.concluido {
+    color: #3b82f6;
+}
+
+.pausado {
+    color: #f59e0b;
+}
+
+.planejamento {
+    color: #9ca3af;
+}
+
+/* ===================== */
+/* BARRAS */
+/* ===================== */
+
+.barChart {
+    height: 250px;
+
+    display: flex;
+
+    justify-content: space-around;
+
+    align-items: flex-end;
+
+    padding-top: 20px;
+
+}
+
+.barItem {
+    text-align: center;
+}
+
+.bar {
+    width: 70px;
+
+    background: var(--color-primary-light);
+
+    border-radius: 8px 8px 0 0;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: center;
+
+    color: var(--color-background);
+
+    font-weight: bold;
+
+    padding-top: 8px;
+
+}
+
+.barItem p {
+    margin-top: 10px;
+    text-align: center;
+    padding-bottom: 0;
+}
+
+
+
+
+
+
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.card h3 {
+    margin-bottom: 25px;
+}
+
+/* ================= */
+/* EVOLUÇÃO */
+/* ================= */
+
+.chartArea {
+    display: flex;
+    gap: 10px;
+}
+
+.yAxis {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 220px;
+
+    color: #6b7280;
+    font-size: 12px;
+}
+
+.graph {
+    flex: 1;
+    position: relative;
+
+    height: 220px;
+}
+
+.grid {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    background-image:
+        linear-gradient(#e5e7eb 1px, transparent 1px),
+        linear-gradient(90deg, #e5e7eb 1px, transparent 1px);
+
+    background-size: 50px 50px;
+
+    opacity: 0.7;
+}
+
+.lineSvg {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+}
+
+.months {
+    position: absolute;
+
+    bottom: -25px;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 12px;
+    color: #6b7280;
+}
+
+/* ================= */
+/* BARRAS */
+/* ================= */
+
+.barContainer {
+    display: flex;
+    gap: 10px;
+}
+
+.yAxisBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 220px;
+
+    color: #6b7280;
+    font-size: 12px;
+}
+
+.barGraph {
+    flex: 1;
+
+    display: flex;
+
+    justify-content: space-around;
+    align-items: flex-end;
+
+    height: 220px;
+
+    position: relative;
+}
+
+.barColumn {
+    z-index: 2;
+}
+
+.barOrange {
+    width: 22px;
+
+    background: #f97316;
+
+    border-radius: 8px 8px 0 0;
+}
+
+/* ================= */
+/* LEGENDA */
+/* ================= */
+
+.legend {
+    display: flex;
+
+    justify-content: center;
+    gap: 20px;
+
+    margin-top: 35px;
+}
+
+.legend div {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.blue,
+.green,
+.orange {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+}
+
+.blue {
+    background: #3b82f6;
+}
+
+.green {
+    background: #22c55e;
+}
+
+.orange {
+    background: #f97316;
+}

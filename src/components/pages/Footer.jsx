@@ -27,7 +27,7 @@ const Footer = () => {
           <Link to="/"> <img src={logo2} alt="alfre-project" /></Link>
           <p>Plataforma moderna de gestão de projetos desenvolvida para o mercado angolano. Organize, colabore e entregue projetos com excelência.</p>
 
-          <div className={styles.ListIcone}>
+          <div className={styles.ListIcone} >
 
             <h5><MdEmail className={styles.IconeRodape} />contato@alfred-project.ao</h5>
             <h5><FaPhoneAlt className={styles.IconeRodape} />+244 926 834 602</h5>

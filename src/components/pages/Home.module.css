@@ -145,8 +145,10 @@ h2 {
 
 }
 
-.dados {
 
+
+.dados {
+    color: white;
     margin: 0 auto;
     padding: 20px;
 
@@ -155,12 +157,11 @@ h2 {
 .dados h4 {
     font-size: 2.5em;
     font-weight: bold;
-    color: var(--color-background);
     text-align: center;
 }
 
 .dados p {
-    color: var(--color-background);
+    
     text-align: center;
     padding-top: 5px;
 }
@@ -204,7 +205,11 @@ p {
     font-weight: bold;
 }
 
-
+.comecar{
+  
+    text-align: center;
+    font-size: 16px;
+}
 
 
 .divStart {
@@ -228,7 +233,15 @@ p {
 
 
 
+
+
 @media (max-width:768px) {
+
+    .divhome h2,
+    h1 {
+
+        text-align: center;
+    }
 
     .divcard {
 
@@ -259,6 +272,12 @@ p {
 
 @media (max-width: 600px) {
 
+    .divhome h2,
+    h1 {
+
+        text-align: center;
+    }
+
     .divcard {
         display: flex;
         flex-direction: column;
@@ -275,7 +294,7 @@ p {
         border: 1px solid var(--color-text-secondary);
         padding: 25px;
         border-radius: 10px;
-        box-shadow: 0px 4px 10px rgba(2, 2, 1, 0.5);
+        box-shadow: 0px 4px 10px rgba(2, 2, 1, 0.5) ;
     }
 
     .card h3 {
