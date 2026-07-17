@@ -147,7 +147,7 @@ const Home = () => {
 
       </div>
 
-      <div>
+      <div className={styles.divPronto}>
 
         <Titulo name="Pronto para começar?" />
         <p className={styles.comecar}>Junte-se a centenas de empresas angolanas que já confiam no Alfred-Project para gerenciar seus projetos.</p>
