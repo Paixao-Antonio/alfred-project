@@ -246,6 +246,7 @@ p {
 
     .divhome p{
         padding: 0 20px;
+        text-align: center;
     }
 
     .divcard {
@@ -274,11 +275,11 @@ p {
     }
 
     .pqtext .icon{
-
+        font-size: 16px;
     }
 
     .pqtext p{
-        font-size: 2em;
+        font-size: 12px;
     }
 
     .divPronto p{
