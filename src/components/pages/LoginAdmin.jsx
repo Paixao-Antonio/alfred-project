@@ -45,7 +45,7 @@ const LoginAdmin = () => {
           </div>
 
           <div className={styles.OpenAdmin}>
-            <Login name="Entrar como Admin" />
+            <Login name="Entrar como Admin" to="/dashboard-page" />
           </div>
 
           <div className={styles.Usario}>

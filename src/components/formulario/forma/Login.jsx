@@ -1,14 +1,15 @@
 
-import styles from './Login.module.css'
+import { Link } from "react-router-dom";
+import styles from "./Login.module.css";
 
-const Login = ({ name }) => {
-    
+const Login = ({ name, to }) => {
     return (
-        <>
-            <button className={styles.Login}>{ name }</button>
-        </>
+        <Link to={to} className={styles.link}>
+            <button className={styles.Login}>
+                {name}
+            </button>
+        </Link>
+    );
+};
 
-    )
-}
-
-export default Login
+export default Login;

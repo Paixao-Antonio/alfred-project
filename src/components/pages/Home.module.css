@@ -83,7 +83,7 @@
     font-size: 0.8em;
 }
 
-.divtexto{
+.divtexto {
     padding: 0 20px;
 }
 
@@ -121,7 +121,7 @@ h2 {
 
 .card {
     max-width: 400px;
-    padding: 25px 20px 20px 20px;
+    padding: 25px 10px 20px 20px;
     border: 1px solid var(--color-text-secondary);
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(2, 2, 1, 0.5);
@@ -163,7 +163,7 @@ h2 {
 }
 
 .dados p {
-    
+
     text-align: center;
     padding-top: 5px;
 }
@@ -207,8 +207,8 @@ p {
     font-weight: bold;
 }
 
-.comecar{
-  
+.comecar {
+
     text-align: center;
     font-size: 16px;
 }
@@ -247,7 +247,7 @@ p {
         padding: 5px;
     }
 
-    .divhome p{
+    .divhome p {
         padding: 0 20px;
         text-align: center;
         padding-bottom: 10px;
@@ -266,8 +266,12 @@ p {
         padding-right: 40px;
     }
 
-    .card{
-        padding: 25px 20px 20px 20px;
+    .card {
+        padding: 25px 10px 20px 20px;
+    }
+
+    .card p {
+        line-height: 20px;
     }
 
     .divdados {
@@ -280,16 +284,16 @@ p {
         margin: 0 auto;
     }
 
-    .pqtext .icon{
+    .pqtext .icon {
         font-size: 16px;
     }
 
-    .pqtext p{
+    .pqtext p {
         font-size: 12px;
         text-align: center;
     }
 
-    .divPronto p{
+    .divPronto p {
         padding: 0 15px;
     }
 
@@ -319,7 +323,7 @@ p {
         border: 1px solid var(--color-text-secondary);
         padding: 25px;
         border-radius: 10px;
-        box-shadow: 0px 4px 10px rgba(2, 2, 1, 0.5) ;
+        box-shadow: 0px 4px 10px rgba(2, 2, 1, 0.5);
     }
 
     .card h3 {
