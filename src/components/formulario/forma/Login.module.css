@@ -65,6 +65,6 @@
 .Login:hover {
     cursor: pointer;
     background-color: var(--color-primary-dark);
-    font-weight: bold;
+    font-weight: bold; 
     transition: 0.5s;
 }
