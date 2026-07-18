@@ -24,7 +24,7 @@ const Team = () => {
 
     return (
 
-        <div>
+        <div className={styles.aaaaaa}>
 
             <Pesquisar />
 

@@ -1,3 +1,4 @@
+
 .cardOne {
   display: flex;
   flex-wrap: wrap;
@@ -6,7 +7,6 @@
   max-width: 1050px;
   padding: 20px 0;
   margin: 0 auto;
- 
 }
 
 

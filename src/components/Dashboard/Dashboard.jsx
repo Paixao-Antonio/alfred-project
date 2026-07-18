@@ -1,7 +1,7 @@
 
 import { NavLink } from "react-router-dom";
 
-import styles from "./Dashboard.module.css";
+import  styles from "./Dashboard.module.css";
 
 import logo2 from "../../img/logo1.png";
 
@@ -145,6 +145,7 @@ const Dashboard = () => {
                 <span>Versão 1.0.0</span>
             </div>
         </div>
+        
     );
 };
 
