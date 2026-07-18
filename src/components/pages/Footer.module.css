@@ -42,7 +42,6 @@
 }
 
 .rodapeMaior {
-
     margin: 0 auto;
     padding-left: 20px;
     padding-right: 20px;
@@ -50,7 +49,6 @@
 
 
 .Down {
-
     display: flex;
     justify-content: space-between;
     max-width: 1200px;
