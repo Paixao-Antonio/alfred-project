@@ -24,7 +24,7 @@ const Home = () => {
 
     <div>
 
-      <div  className={styles.divhome}>
+      <div className={styles.divhome}>
 
         <div className={styles.divIcone}>
 
@@ -160,8 +160,6 @@ const Home = () => {
         </div>
 
       </div>
-
-
 
     </div>
 

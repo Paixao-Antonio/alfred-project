@@ -41,9 +41,11 @@
     --transition-normal: 0.3s ease-in-out;
 }
 
-.rodapeMaior{
-   
+.rodapeMaior {
+
     margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 
@@ -54,8 +56,8 @@
     max-width: 1200px;
     padding-top: 20px;
     padding-bottom: 30px;
-    margin: 0 auto; 
-    
+    margin: 0 auto;
+
 }
 
 .Down p {
@@ -63,7 +65,7 @@
     color: var(--color-gray-light);
 }
 
-.Icones{
+.Icones {
     color: var(--color-primary-light);
     width: 25px;
     height: 25px;
@@ -77,11 +79,11 @@
 }
 
 .Icones:hover {
-    
+
     cursor: pointer;
     transition: 1s;
     color: var(--color-primary-dark);
-    
+
 }
 
 
@@ -90,17 +92,17 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     max-width: 1200px;
-    margin:  0 auto;
+    margin: 0 auto;
     gap: 60px;
     border-top: 1px solid rgba(0, 0, 0, 0.2);
     padding: 50px 0px 10px 0px;
     border-top: 1px solid var(--color-border);
     border-bottom: 1px solid var(--color-border);
     line-height: 2;
-    
+
 }
 
-.rodape h5{
+.rodape h5 {
     color: var(--color-text-muted);
 }
 
@@ -115,15 +117,15 @@
 
 }
 
-.ListIcone{
-    
+.ListIcone {
+
     display: flex;
     flex-direction: column;
 }
 
-.IconeRodape{
-   margin-right: 10px;
-   color: var(--color-primary-light);
+.IconeRodape {
+    margin-right: 10px;
+    color: var(--color-primary-light);
 }
 
 .rodape p {
@@ -144,7 +146,7 @@
     display: grid;
     font-size: 14px;
     color: var(--color-gray-light);
-    
+
 
 }
 
@@ -190,7 +192,7 @@
         margin: 0 auto;
     }
 
-    .RedesSociais{
+    .RedesSociais {
         margin: 0 auto;
     }
 

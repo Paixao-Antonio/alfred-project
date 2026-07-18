@@ -56,7 +56,6 @@
     align-items: center;
     border-radius: 20px;
     padding: 4px;
-
 }
 
 .IconeHomeRe {
@@ -84,6 +83,10 @@
     font-size: 0.8em;
 }
 
+.divtexto{
+    padding: 0 20px;
+}
+
 .divtexto p {
     text-align: center;
 }
@@ -104,7 +107,6 @@ h2 {
 }
 
 .divcard {
-
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
@@ -112,6 +114,8 @@ h2 {
     margin: 0 auto;
     padding-top: 30px;
     padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
     gap: 30px;
 }
 
@@ -131,18 +135,17 @@ h2 {
 
 .card p {
     line-height: 20px;
+    text-align: center;
 }
 
 
 .divdados {
-
     display: flex;
     background-color: var(--color-primary-light);
     justify-content: center;
     padding: 50px;
     gap: 30px;
     margin: 0 auto;
-
 }
 
 
@@ -241,7 +244,8 @@ p {
     h1 {
 
         text-align: center;
-        font-size: 1.5em;
+        font-size: 1em;
+        padding: 5px;
     }
 
     .divhome p{

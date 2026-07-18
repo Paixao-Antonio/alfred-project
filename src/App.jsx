@@ -64,7 +64,6 @@ function App() {
         <Route path="/relatorio" element={<Relatorios />} />
         <Route path="/dashboard-page" element={<DashboardPage />} />
       </Route>
-
     </Routes>
   );
 }

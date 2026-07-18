@@ -15,8 +15,7 @@ import { FaLocationDot } from "react-icons/fa6";
 
 
 const Footer = () => {
-  return (
-
+  return  (
 
     <div className={styles.rodapeMaior}>
 
