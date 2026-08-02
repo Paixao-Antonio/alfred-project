@@ -53,9 +53,9 @@ const Actividades = () => {
                     <p>Histórico cronológico de todas actividades</p>
                 </div>
 
-                <div className={styles.DivActividadesCronoOne}>
+                <div>
 
-                    <div >
+                    <div className={styles.DivActividadesCronoText}>
                         <div className={styles.DivActividadesCronoTwo}>
                             <span>P</span>
                             <h4>Paixao Antonio</h4>
@@ -65,8 +65,11 @@ const Actividades = () => {
                             <div className={styles.DivActividadesCronoThreeOne}>Dashboard Analitycs</div>
                         </div>
 
-                        <textarea className={styles.DivActividadesCronoText}  name="" id="" placeholder='Precisamos revisar o orçamento dos relatórios com urgência!'></textarea>
-                       
+                        <div className={styles.DivActividadesCronoOne}>
+                            <textarea name="" id="" placeholder='Precisamos revisar o orçamento dos relatórios com urgência!'></textarea>
+                        </div>
+
+
                     </div>
 
                 </div>
@@ -81,7 +84,7 @@ const Actividades = () => {
                 </div>
             </div>
 
-          
+
 
         </div>
     )

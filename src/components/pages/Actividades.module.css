@@ -90,6 +90,7 @@
     outline: none;
     padding: 10px 10px 50px 10px;
     border: 1px solid var(--color-border);
+    
 }
 
 .DivActividadesAdd {
@@ -173,6 +174,7 @@ p {
     gap: 20px;
     padding: 10px 20px 10px 20px;
     border-left: 3px solid var(--color-primary-light);
+  
 }
 
 
@@ -212,14 +214,15 @@ p {
 
 
 
-.DivActividadesCronoText {
-    width: 960px;
+.DivActividadesCronoText textarea {
+    width: 100%;
     padding: 10px 10px 10px 10px;
     background-color: var(--color-background);
     border-radius: 5px;
     font-size: 14px;
     outline: none;
     border: 1px solid var(--color-border-strong);
+    
 }
 
 
@@ -236,6 +239,7 @@ p {
     color: var(--color-background);
     background-color: var(--color-danger);
     border: 1px solid var(--color-border-strong);
+    
 }
 
 .DivActividadesChanger span{

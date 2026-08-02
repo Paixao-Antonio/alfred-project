@@ -1,7 +1,8 @@
 .settings {
-    max-width: 1050px;
+    max-width: 1100px;
     margin: 0 auto;
     padding: 20px;
+
 }
 
 .settingsOne {
@@ -17,25 +18,25 @@
 }
 
 .settingsTwo {
-    background-color: rgb(255, 255, 255);
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: rgb(116, 15, 15);
     margin-top: 20px;
-    padding: 5px 10px;
-    justify-content: space-between;
-    align-items: center;
+    padding: 5px 0px;
     box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
 }
 
 .settingsList {
     display: flex;
-    gap: 5px;
+    align-items: center;
+    gap: 10px;
     border-radius: 5px;
-    padding: 5px 10px;
-    color: white;
-    background-color: rgb(80, 170, 255);
+    margin: 10px;
+    padding: 10px;
+    background-color: yellow;
 }
 
-.settingsList:hover{
+.settingsList:hover {
     cursor: pointer;
     background-color: red;
     transition: 1s;
@@ -44,11 +45,11 @@
 
 
 .settingsPerfil {
-    max-width: 1050px;
     margin: 0 auto;
     margin-top: 20px;
     padding-bottom: 10px;
     border-bottom: 1px solid rgb(190, 190, 190);
+    background-color: yellow;
 }
 
 .settingsPerfil h3 {
@@ -86,8 +87,8 @@
 
 .settingsForm {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 25px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
     line-height: 2;
     padding: 10px;
     margin-top: 30px;
@@ -95,6 +96,7 @@
     background: white;
     border: 1px solid #e5e7eb;
     border-radius: 5px;
+    background-color: yellow;
 }
 
 
@@ -121,8 +123,6 @@
 
 
 .notificationsCard {
-
-    max-width: 1050px;
     margin: 0 auto;
     margin-top: 30px;
     padding: 20px;
@@ -367,10 +367,8 @@
 
 .systemSubtitle {
     display: block;
-
     margin-top: 5px;
     margin-bottom: 20px;
-
     color: #6b7280;
     font-size: 14px;
 }
@@ -396,4 +394,60 @@
 
     color: #6b7280;
     font-size: 14px;
+}
+
+
+
+
+@media (max-width: 1024px) {
+
+    .settingsTwo {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background-color: rgb(116, 15, 15);
+        margin-top: 20px;
+        padding: 5px 0px;
+        box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    }
+
+    .settingsForm {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        line-height: 2;
+        padding: 10px;
+        margin-top: 30px;
+        padding: 20px;
+        background: white;
+        border: 1px solid #e5e7eb;
+        border-radius: 5px;
+        background-color: yellow;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .settingsTwo {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        background-color: rgb(116, 15, 15);
+        margin-top: 20px;
+        padding: 5px 0px;
+        box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    }
+
+}
+
+
+@media (max-width: 480px) {
+    .settingsTwo {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        background-color: rgb(116, 15, 15);
+        margin-top: 20px;
+        padding: 5px 0px;
+        box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    }
 }

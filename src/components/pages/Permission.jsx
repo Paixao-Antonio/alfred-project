@@ -444,6 +444,32 @@ const Permission = () => {
 
                 </div>
 
+                <div className={styles.CardUsuario}>
+
+                    <div className={styles.DivUsuarioOne}>
+                        <div className={styles.DivUsuarioIcone}>M</div>
+                        <div>
+                            <h3>Paixao Antonio</h3>
+                            <span>paixao@gmail.com</span>
+                        </div>
+                    </div>
+
+                    <div className={styles.DivFuncion}>
+                        <div>Função</div>
+                        <div className={styles.DivFuncionIcone}>Administrador</div>
+                    </div>
+
+                    <div className={styles.DivFuncion}>
+                        <div>Projectos</div>
+                        <div className={styles.DivFuncionNumber}>8</div>
+                    </div>
+
+                    <div className={styles.DivFuncionSeparador}></div>
+
+                    <div className={styles.DivFuncionAcesso}>Acesso Total</div>
+
+                </div>
+
             </div>
 
             <div className={styles.DivAviso}>

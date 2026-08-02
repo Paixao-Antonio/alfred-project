@@ -51,7 +51,7 @@
     box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
     border-radius: 10px;
     padding-bottom: 40px;
-    
+
 }
 
 .DivPermissionTop {
@@ -184,21 +184,19 @@
 
 
 .DivUsuario {
-    display: flex;
-    align-items: center;
-    max-width: 1050px;
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
     border: 1px solid var(--color-border-strong);
     box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
     border-radius: 10px;
     margin-top: 20px;
     background-color: var(--color-surface);
+    background-color: yellow;
 }
 
 .CardUsuario {
     background-color: var(--color-surface);
-    width: 366px;
-    margin: 20px;
     padding: 20px;
     border-radius: 10px;
     border: 1px solid var(--color-border-strong);
@@ -296,4 +294,56 @@
     padding-left: 40px;
     font-size: 14px;
     line-height: 20px;
+}
+
+
+
+@media (max-width: 1024px) {
+
+
+    .DivUsuario {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        border: 1px solid var(--color-border-strong);
+        box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+        border-radius: 10px;
+        margin-top: 20px;
+        background-color: var(--color-surface);
+        background-color: yellow;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .DivUsuario {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        border: 1px solid var(--color-border-strong);
+        box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+        border-radius: 10px;
+        margin-top: 20px;
+        background-color: var(--color-surface);
+        background-color: yellow;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .DivUsuario {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        border: 1px solid var(--color-border-strong);
+        box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+        border-radius: 10px;
+        margin-top: 20px;
+        background-color: var(--color-surface);
+        background-color: yellow;
+    }
 }
