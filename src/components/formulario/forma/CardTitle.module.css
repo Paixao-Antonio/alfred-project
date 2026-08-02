@@ -1,3 +1,6 @@
+/* ==========================================================================
+   VARIÁVEIS GLOBAIS
+   ========================================================================== */
 :root {
 
     /* 🔵 Cores Primárias */
@@ -39,68 +42,165 @@
     /* Transições */
     --transition-fast: 0.2s ease-in-out;
     --transition-normal: 0.3s ease-in-out;
+
+    /* Espaçamentos */
+    --spacing-sm: 10px;
+    --spacing-md: 20px;
+    --spacing-lg: 40px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
 
-
-
-.cardTitle{
-    padding: 20px 0px 20px 0px;
+.cardTitle {
+    padding: var(--spacing-md) 0;
 }
 
-.cardTitleOne{
+.cardTitleOne {
     background-color: var(--color-primary-dark);
     max-width: 1050px;
-    margin:  0 auto;
+    width: 100%;
+    margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
+    /* permite quebrar em telas pequenas */
     justify-content: space-between;
-    padding: 30px 15px;
     align-items: center;
-    border-radius: 10px;
+    gap: var(--spacing-md);
+    /* espaço quando os blocos quebram linha */
+    padding: 30px 15px;
+    border-radius: var(--radius-md);
 }
 
-.cardTitleTwo h3, h5{
+
+/* ==========================================================================
+   BLOCO DE TEXTO (título + subtítulo)
+   ========================================================================== */
+.cardTitleTwo h3,
+.cardTitleTwo h5,
+.cardTitleTwo span {
     color: var(--color-background);
 }
 
-.span{
-    color: var(--color-background);
-}
-.cardTitleTwo h3{
+.cardTitleTwo h3 {
     font-size: 32px;
-    padding: 7px 0px 5px 0px;
+    padding: 7px 0 5px 0;
+    line-height: 1.2;
 }
 
-.cardTitleTwo span{
+.cardTitleTwo span {
     font-size: 13px;
 }
 
-.cardTitleThree{
+
+/* ==========================================================================
+   BLOCO DE AÇÕES (botões)
+   ========================================================================== */
+.cardTitleThree {
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
 }
 
-.cardTitleThree button{
-    padding: 8px;
-    border-radius: 5px;
+.cardTitleThree button {
+    padding: 8px 14px;
+    border-radius: var(--radius-sm);
     border: 1px solid var(--color-gray-light);
     font-weight: bold;
     cursor: pointer;
+    background-color: transparent;
+    transition: background-color var(--transition-normal), color var(--transition-normal);
 }
 
-.cardTitleThree button:hover{
+.cardTitleThree button:hover {
     background-color: var(--color-border);
     color: var(--color-text-primary);
-    transition: 1.5s;
 }
 
-
-
-.cardTitleThree .CardBotao{
+.cardTitleThree .CardBotao {
     display: flex;
     align-items: center;
     gap: 5px;
-    background: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    background: var(--color-surface);
+    color: var(--color-text-primary);
 }
 
+
+/* ==========================================================================
+   RESPONSIVIDADE — TABLET (até 1024px)
+   ========================================================================== */
+@media (max-width: 1024px) {
+
+    .cardTitleOne {
+        max-width: 100%;
+        padding: 24px 20px;
+    }
+
+    .cardTitleTwo h3 {
+        font-size: 28px;
+    }
+}
+
+
+/* ==========================================================================
+   RESPONSIVIDADE — TABLET PEQUENO / MOBILE GRANDE (até 768px)
+   ========================================================================== */
+@media (max-width: 768px) {
+
+    .cardTitleOne {
+        flex-direction: column;
+        /* texto em cima, botões embaixo */
+        align-items: flex-start;
+        text-align: left;
+        padding: 20px;
+    }
+
+    .cardTitleThree {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .cardTitleTwo h3 {
+        font-size: 24px;
+    }
+}
+
+
+/* ==========================================================================
+   RESPONSIVIDADE — MOBILE (até 480px)
+   ========================================================================== */
+@media (max-width: 480px) {
+
+    .cardTitle {
+        padding: var(--spacing-sm) 0;
+    }
+
+    .cardTitleOne {
+        padding: 16px;
+        border-radius: var(--radius-sm);
+        gap: var(--spacing-sm);
+    }
+
+    .cardTitleTwo h3 {
+        font-size: 20px;
+    }
+
+    .cardTitleTwo span {
+        font-size: 12px;
+    }
+
+    .cardTitleThree {
+        gap: 10px;
+    }
+
+    .cardTitleThree button {
+        flex: 1 1 auto;
+        /* botões ocupam largura igual, lado a lado */
+        padding: 10px;
+        font-size: 14px;
+    }
+}

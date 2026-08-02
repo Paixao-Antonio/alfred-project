@@ -42,14 +42,12 @@
 }
 
 .admin {
-
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: var(--color-primary-light);
     padding-bottom: 30px;
     width: 100vw;
-    height: 50vw;
     margin: 0 auto;
 }
 
@@ -79,7 +77,7 @@
 
 .CardAdmin {
     background-color: var(--color-background);
-    width: 30%;
+    width: 25%;
     border-radius: 20px;
     box-shadow: 0px 4px 10px rgba(2, 2, 1, 0.5);
     padding: 20px 20px 20px 20px;
@@ -142,26 +140,35 @@
 
 
 
+@media (max-width: 1024px) {
 
-@media (max-width:768px) {
-
+    
     .CardAdmin {
         background-color: var(--color-background);
-        width: 50%;
+        width: 35%;
         border-radius: 20px;
         box-shadow: 0px 4px 10px rgba(2, 2, 1, 0.5);
         padding: 20px 20px 20px 20px;
     }
-
+  
 }
 
 
-
-@media (max-width: 600px) {
-
+@media (max-width: 768px) {
     .CardAdmin {
         background-color: var(--color-background);
-        width: 60%;
+        width: 45%;
+        border-radius: 20px;
+        box-shadow: 0px 4px 10px rgba(2, 2, 1, 0.5);
+        padding: 20px 20px 20px 20px;
+    }
+}
+
+
+@media (max-width: 480px) {
+  .CardAdmin {
+        background-color: var(--color-background);
+        width: 40%;
         border-radius: 20px;
         box-shadow: 0px 4px 10px rgba(2, 2, 1, 0.5);
         padding: 20px 20px 20px 20px;

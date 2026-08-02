@@ -11,7 +11,6 @@ import { IoSendSharp } from "react-icons/io5";
 
 
 import CardTitle from '../formulario/forma/CardTitle'
-import Footer from './Footer'
 
 
 
@@ -208,7 +207,6 @@ const Chat = () => {
             </div>
 
 
-            <Footer />
         </div>
     )
 }

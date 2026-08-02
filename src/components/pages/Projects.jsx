@@ -6,7 +6,6 @@ import { HiOutlineUserGroup, HiOutlineClock, } from "react-icons/hi";
 import { RiGroupLine } from "react-icons/ri";
 
 import Pesquisar from './Pesquisar'
-import Footer from './Footer'
 
 import stylesPesquisar from './Pesquisar.module.css'
 import styles from './Projects.module.css'
@@ -19,7 +18,7 @@ const projects = ({ estado }) => {
     return (
 
         <div >
-            <Pesquisar />
+            < Pesquisar />
 
             <CardTitle
                 header="Gestão de Projectos"
@@ -31,7 +30,7 @@ const projects = ({ estado }) => {
 
             <ProjectSearch
                 placeholder='pesquise por nome ou gerente'
-                variante='despadrao'
+                variante='padraoproj'
             />
 
             <div className={styles.cardOne }>
@@ -560,8 +559,6 @@ const projects = ({ estado }) => {
 
             </div>
 
-
-            <Footer />
 
         </div>
     )

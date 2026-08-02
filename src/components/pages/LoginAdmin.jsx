@@ -8,8 +8,6 @@ import styles from './LoginAdmin.module.css'
 
 import { RiAdminFill } from "react-icons/ri";
 import { FaArrowLeftLong } from "react-icons/fa6";
-import Footer from './Footer';
-
 
 
 const LoginAdmin = () => {
@@ -59,7 +57,6 @@ const LoginAdmin = () => {
 
       </div>
 
-      <Footer />
 
     </div>
   )

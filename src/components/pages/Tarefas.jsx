@@ -3,7 +3,6 @@ import React from 'react'
 
 import { Link } from "react-router-dom";
 
-import Footer from './Footer'
 import Pesquisar from './Pesquisar'
 
 import styles from './Tarefas.module.css'
@@ -36,48 +35,39 @@ const Tarefas = () => {
 
                     <div className={styles.CardTask}>
 
-                        <div className={styles.CardTaskOne}>
-
                             <div className={styles.CardTaskTwo}>
                                 <h4>Pendentes</h4>
-                                <span>5</span>
-                            </div>
 
-                            <div className={styles.CardTaskThree}>
-                                <h3>Angola</h3>
-                            </div>
+                                <div className={styles.CardTaskThree}>
+                                    <span>5</span>
+                                    <h3>Angola</h3>
+                                </div>
                         </div>
 
                     </div>
 
                     <div className={styles.CardTask}>
 
-                        <div className={styles.CardTaskOne}>
-
                             <div className={styles.CardTaskTwo}>
                                 <h4>Pendentes</h4>
-                                <span>5</span>
-                            </div>
 
-                            <div className={styles.CardTaskThree}>
-                                <h3>Angola</h3>
-                            </div>
+                                <div className={styles.CardTaskThree}>
+                                    <span>5</span>
+                                    <h3>Angola</h3>
+                                </div>
                         </div>
 
                     </div>
 
                     <div className={styles.CardTask}>
 
-                        <div className={styles.CardTaskOne}>
-
                             <div className={styles.CardTaskTwo}>
                                 <h4>Pendentes</h4>
-                                <span>5</span>
-                            </div>
 
-                            <div className={styles.CardTaskThree}>
-                                <h3>Angola</h3>
-                            </div>
+                                <div className={styles.CardTaskThree}>
+                                    <span>5</span>
+                                    <h3>Angola</h3>
+                                </div>
                         </div>
 
                     </div>
@@ -110,7 +100,7 @@ const Tarefas = () => {
                     <div className={styles.Tarefas}>
 
                         <div className={styles.TarefasCard}>
-                            <h3>Inegração com sistemas de pagamento</h3>
+                            <h5>Inegração com sistemas de pagamento</h5>
                             <span> ⋮ </span>
                         </div>
 
@@ -132,10 +122,10 @@ const Tarefas = () => {
 
                     </div>
 
-                    <div className={styles.Tarefas}>
+                     <div className={styles.Tarefas}>
 
                         <div className={styles.TarefasCard}>
-                            <h3>Inegração com sistemas de pagamento</h3>
+                            <h5>Inegração com sistemas de pagamento</h5>
                             <span> ⋮ </span>
                         </div>
 
@@ -157,10 +147,10 @@ const Tarefas = () => {
 
                     </div>
 
-                    <div className={styles.Tarefas}>
+                     <div className={styles.Tarefas}>
 
                         <div className={styles.TarefasCard}>
-                            <h3>Inegração com sistemas de pagamento</h3>
+                            <h5>Inegração com sistemas de pagamento</h5>
                             <span> ⋮ </span>
                         </div>
 
@@ -181,12 +171,11 @@ const Tarefas = () => {
                         </div>
 
                     </div>
+
 
                 </div>
 
             </div>
-
-            <Footer />
 
         </div>
     )

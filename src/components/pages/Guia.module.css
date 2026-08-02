@@ -7,7 +7,7 @@
     margin-top: 20px;
     margin-bottom: 20px;
     background-color: rgb(255, 255, 255);
-    
+
 }
 
 .guiaOne {
@@ -34,8 +34,9 @@
 }
 
 .guiaTwo {
-    display: flex;
-    gap: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
     margin-bottom: 20px;
 }
 
@@ -44,7 +45,6 @@
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
-    background-color: rgb(248, 251, 253);
 }
 
 .guiaThreeOne {
@@ -109,4 +109,31 @@
 .guiaMetodologiaOne h2 {
     font-size: 16px;
     padding-bottom: 5px;
+}
+
+
+
+
+@media (max-width: 1024px) {
+    .guiaTwo {
+        margin-bottom: 20px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .guiaTwo {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 20px;
+    }
+}
+
+
+@media (max-width: 480px) {
+     .guiaTwo {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 20px;
+    }
 }

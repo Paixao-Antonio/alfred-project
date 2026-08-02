@@ -1,3 +1,6 @@
+/* ==========================================================================
+   VARIÁVEIS GLOBAIS
+   ========================================================================== */
 :root {
 
     /* 🔵 Cores Primárias */
@@ -39,66 +42,164 @@
     /* Transições */
     --transition-fast: 0.2s ease-in-out;
     --transition-normal: 0.3s ease-in-out;
+
+    /* Espaçamentos (novo — facilita ajustar tudo de uma vez) */
+    --spacing-sm: 10px;
+    --spacing-md: 20px;
+    --spacing-lg: 40px;
+}
+
+/* Faz com que padding/border não estourem a largura de nenhum elemento.
+   Isto é a base de qualquer layout responsivo. */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
 
+/* ==========================================================================
+   CONTAINER GERAL (cabeçalho fixo)
+   ========================================================================== */
 .geral {
     width: 100%;
     display: block;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 0px;
+    padding: var(--spacing-sm) var(--spacing-md);
     border-bottom: 2px solid var(--color-border);
     position: sticky;
     top: 0;
     z-index: 999;
-    background-color: #F9FAFB;
-    
+    background-color: var(--color-background);
 }
 
+/* ==========================================================================
+   LINHA DE CONFIGURAÇÕES (busca + opções)
+   ========================================================================== */
 .settings {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0 auto;
     align-items: center;
-    
+    gap: var(--spacing-md);
+    margin: 0 auto;
 }
 
+/* ==========================================================================
+   ÍCONE DE PESQUISA
+   ========================================================================== */
 .Search {
     font-size: 30px;
-    margin-left: -55px;
+    line-height: 1;
+    transition: color var(--transition-fast);
 }
 
 .Search:hover {
     cursor: pointer;
     font-weight: bold;
-    font-variant: var(--color-border-strong);
+    color: var(--color-border-strong);
 }
 
-
+/* ==========================================================================
+   BLOCO 1 — CAMPO DE PESQUISA
+   ========================================================================== */
 .oneOption {
     display: flex;
-    width: 400px;
-    gap: 20px;
     align-items: center;
+    gap: var(--spacing-md);
+    width: 100%;
+    max-width: 500px;
 }
 
 .oneOption input {
-    width: 500px;
-    padding: 10px;
-    border-radius: 10px;
+    width: 100%;
+    padding: var(--spacing-sm);
+    padding-left: var(--spacing-md);
+    border-radius: var(--radius-md);
     border: 1px solid var(--color-border-strong);
     background-color: var(--color-background);
-    padding-left: 20px;
+    font-size: 14px;
 }
 
-
+/* ==========================================================================
+   BLOCO 2 — OUTRAS OPÇÕES
+   ========================================================================== */
 .twoOption {
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
     font-size: 20px;
 }
 
 .twoOption h5 {
+    margin: 0;
     color: var(--color-text-primary);
+}
+
+
+
+@media (max-width: 1024px) {
+
+    .oneOption {
+        max-width: 320px;
+    }
+
+    .twoOption {
+        font-size: 18px;
+        gap: 16px;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+
+    .settings {
+        flex-direction: column;
+        /* empilha os blocos verticalmente */
+        align-items: stretch;
+        gap: var(--spacing-sm);
+
+    }
+
+    .oneOption {
+        max-width: 100%;
+        order: 2;
+    }
+
+    .twoOption {
+        font-size: 16px;
+
+    }
+
+    .Search {
+        font-size: 26px;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+
+    .geral {
+        padding: var(--spacing-sm);
+    }
+
+    .twoOption {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        font-size: 15px;
+    }
+
+    .oneOption {
+        gap: var(--spacing-sm);
+    }
+
+    .oneOption input {
+        padding: 8px 14px;
+    }
+
+    .Search {
+        font-size: 24px;
+    }
 }

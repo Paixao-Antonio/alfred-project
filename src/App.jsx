@@ -26,26 +26,18 @@ import Configuracoes from "./components/pages/Configuracoes";
 import NovaTarefa from "./components/pages/NovaTarefa";
 import Relatorios from "./components/pages/Relatorios";
 import DashboardPage from "./components/pages/DashboardPage";
+import PublicLayout from "./layouts/PublicLayout";
 
 function App() {
   return (
     <Routes>
 
-      {/* HOME */}
-      <Route
-        path="/"
-        element={
-          <>
-            <Navbar />
-            <Home />
-            <Footer />
-          </>
-        }
-      />
+      <Route element={<PublicLayout />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/login-admin" element={<LoginUsuario />} />
+        <Route path="/login-usuario" element={<LoginAdmin />} />
+      </Route>
 
-      {/* LOGIN */}
-      <Route path="/login-admin" element={<LoginAdmin />} />
-      <Route path="/login-usuario" element={<LoginUsuario />} />
 
       {/* ROTAS COM DASHBOARD */}
       <Route element={<MainLayout />}>

@@ -3,8 +3,6 @@ import React from 'react'
 
 import Pesquisar from './Pesquisar'
 
-import Footer from './Footer'
-
 import styles from "./DashboardPage.module.css";
 
 
@@ -100,8 +98,6 @@ const DashboardPage = () => {
                 </div>
 
             </div>
-
-            <Footer />
 
         </div>
     )

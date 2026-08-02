@@ -4,8 +4,6 @@ import { Link } from 'react-router-dom'
 
 import Pesquisar from './Pesquisar'
 
-import Footer from './Footer'
-
 import styles from './CreateProject.module.css'
 
 import { IoIosArrowRoundBack } from "react-icons/io";
@@ -154,8 +152,6 @@ const CreateProject = () => {
                 </div>
 
             </div>
-
-            <Footer />
 
         </div>
 

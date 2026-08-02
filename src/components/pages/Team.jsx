@@ -14,8 +14,6 @@ import {
 
 import Pesquisar from './Pesquisar'
 
-import Footer from './Footer'
-
 import CardTitle from '../formulario/forma/CardTitle'
 
 import CardSubTitle from '../formulario/forma/CardSubTitle'
@@ -47,10 +45,9 @@ const Team = () => {
             <div className={styles.team}>
 
                 <div className={styles.card}>
-                    {/* Barra Superior */}
+
                     <div className={styles.topBar}></div>
 
-                    {/* Cabeçalho */}
                     <div className={styles.header}>
                         <div className={styles.avatar}>
                             A
@@ -366,11 +363,7 @@ const Team = () => {
                     </div>
                 </div>
 
-
-
             </div>
-
-             <Footer />
 
         </div>
     )

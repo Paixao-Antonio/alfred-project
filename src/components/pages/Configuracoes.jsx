@@ -5,11 +5,9 @@ import { useState } from 'react'
 
 import Pesquisar from './Pesquisar'
 
-import Footer from './Footer'
-
 import styles from './Configuracoes.module.css'
 
-import { CgProfile } from "react-icons/cg";
+import { CgProfile } from "react-icons/cg"; 
 import { IoNotificationsOutline } from "react-icons/io5";
 import { AiOutlineSecurityScan } from "react-icons/ai";
 import { IoColorPaletteOutline } from "react-icons/io5";
@@ -483,7 +481,6 @@ const Configuracoes = () => {
 
             </div>
 
-            <Footer />
 
         </div>
     )

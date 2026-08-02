@@ -4,7 +4,6 @@ import React from 'react'
 import CardTitle from '../formulario/forma/CardTitle'
 
 import Pesquisar from './Pesquisar'
-import Footer from './Footer'
 
 import { RiAdminFill } from "react-icons/ri";
 import { FaUser } from "react-icons/fa6";
@@ -463,8 +462,6 @@ const Permission = () => {
                     </ul>
                 </div>
             </div>
-
-            <Footer />
 
         </div>
 

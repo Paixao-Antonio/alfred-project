@@ -1,4 +1,3 @@
-
 .equipa {
     max-width: 1050px;
     margin: 0 auto;
@@ -57,19 +56,15 @@
 
 
 .team {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
     max-width: 1050px;
     padding: 20px 0;
-    margin: 0 auto;
 }
 
-
 .card {
-
-    width: 300px;
+    width: 250px;
     background: rgb(255, 255, 255);
     border: 1px solid #e5e7eb;
     border-radius: 12px;
@@ -234,4 +229,42 @@
     color: #15803d;
 
     font-size: 12px;
+}
+
+
+
+
+@media (max-width: 1024px) {
+    .team {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        max-width: 1050px;
+        padding: 20px 0;
+        margin: 0 auto;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .team {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        max-width: 1050px;
+        padding: 20px 0;
+        margin: 0 auto;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .team {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        max-width: 1050px;
+        padding: 20px 0;
+        margin: 0 auto;
+    }
 }

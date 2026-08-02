@@ -1,8 +1,60 @@
+:root {
+
+    /* 🔵 Cores Primárias */
+    --color-primary: #2563EB;
+    --color-primary-dark: #1D4ED8;
+    --color-primary-light: #3B82F6;
+
+    /* ⚫ Texto */
+    --color-text-primary: #111827;
+    --color-text-secondary: #1F2937;
+    --color-text-muted: #181a50;
+
+    /* ⚪ Fundos */
+    --color-background: #F9FAFB;
+    --color-surface: #FFFFFF;
+
+    /* Bordas e Cinzas */
+    --color-border: #E5E7EB;
+    --color-border-strong: #D1D5DB;
+    --color-gray-light: #9CA3AF;
+
+    /* 🟢 Badge Sucesso / Mercado Angolano */
+    --color-success-bg: #E6F4EA;
+    --color-success: #16A34A;
+
+    /* 🔴 Indicador / Alerta */
+    --color-danger: #DC2626;
+
+    /* Sombras */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.12);
+
+    /* Border Radius */
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 16px;
+
+    /* Transições */
+    --transition-fast: 0.2s ease-in-out;
+    --transition-normal: 0.3s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
 .relatorio {
     width: 1050px;
     margin: 0 auto;
     padding: 20px;
-     min-height: 100vh;
+    min-height: 100vh;
 }
 
 .relatorioOne {
@@ -36,7 +88,7 @@
     padding: 5px 20px;
     display: flex;
     padding-left: 5px;
-    border: none;
+    border: 0.5px solid var(--color-border);
 }
 
 
@@ -45,13 +97,13 @@
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
-    padding-bottom: 20px;
-    gap: 10px;
+    padding-bottom: 10px;
+    gap: 50px;
 }
 
 
 .CardRelatorio {
-    border-radius: 10px;
+    border-radius: 5px;
     width: 30%;
     border: 1px solid rgb(194, 194, 194);
     box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
@@ -151,53 +203,6 @@
     height: 100%;
     background: #0339ad;
 }
-
-
-
-:root {
-
-    /* 🔵 Cores Primárias */
-    --color-primary: #2563EB;
-    --color-primary-dark: #1D4ED8;
-    --color-primary-light: #3B82F6;
-
-    /* ⚫ Texto */
-    --color-text-primary: #111827;
-    --color-text-secondary: #1F2937;
-    --color-text-muted: #181a50;
-
-    /* ⚪ Fundos */
-    --color-background: #F9FAFB;
-    --color-surface: #FFFFFF;
-
-    /* Bordas e Cinzas */
-    --color-border: #E5E7EB;
-    --color-border-strong: #D1D5DB;
-    --color-gray-light: #9CA3AF;
-
-    /* 🟢 Badge Sucesso / Mercado Angolano */
-    --color-success-bg: #E6F4EA;
-    --color-success: #16A34A;
-
-    /* 🔴 Indicador / Alerta */
-    --color-danger: #DC2626;
-
-    /* Sombras */
-    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
-    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.08);
-    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.12);
-
-    /* Border Radius */
-    --radius-sm: 6px;
-    --radius-md: 10px;
-    --radius-lg: 16px;
-
-    /* Transições */
-    --transition-fast: 0.2s ease-in-out;
-    --transition-normal: 0.3s ease-in-out;
-}
-
-
 
 
 
@@ -506,4 +511,24 @@
 
 .orange {
     background: #f97316;
+}
+
+
+
+
+
+
+@media (max-width: 1024px) {
+    
+}
+
+
+@media (max-width: 768px) {
+
+
+}
+
+
+@media (max-width: 480px) {
+  
 }

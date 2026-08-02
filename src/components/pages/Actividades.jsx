@@ -3,7 +3,6 @@
 import React from 'react'
 
 import Pesquisar from './Pesquisar'
-import Footer from './Footer'
 
 import styles from './Actividades.module.css'
 
@@ -38,8 +37,8 @@ const Actividades = () => {
             <div className={styles.DivPesquisarActividades}>
                 <div className={styles.DivPesquisarActividadesOne}>
                     <input type="text" placeholder='pesquise suas actividades' />
-                    <select name="" id="">
-                        <option value="" disabled>-- Escolha o periodo --</option>
+                    <select name="" id="" required>
+                        <option value="" disabled selected hidden>Filtrar</option>
                         <option value="" >Todas actividades</option>
                         <option value="">Do último mês</option>
                         <option value="">Dos últimos três meses</option>
@@ -82,7 +81,7 @@ const Actividades = () => {
                 </div>
             </div>
 
-            <Footer />
+          
 
         </div>
     )

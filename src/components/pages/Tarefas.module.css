@@ -47,16 +47,13 @@
 .CardTarefas {
     max-width: 1050px;
     margin: 0 auto;
-    
 }
 
 .CardTarefasOne {
-
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px 0px 20px 0px;
-
 }
 
 .CardTarefasTwo h3 {
@@ -66,7 +63,7 @@
 }
 
 .CardTarefasTwo span {
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .CardTarefasOne .button {
@@ -97,19 +94,17 @@
 
 
 .CardTask {
-    border-radius: 10px;
     width: 30%;
-    border: 1px solid var(--color-text-muted);
     box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
 }
 
-.CardTaskOne {
+
+.CardTaskTwo {
     background-color: var(--color-background);
-    display: flex;
-    border-radius: 10px;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px 25px 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--color-gray-light);
 }
 
 .CardTaskTwo h4 {
@@ -121,6 +116,11 @@
 .CardTaskTwo span {
     font-size: 20px;
     font-weight: bold;
+}
+
+.CardTaskThree {
+    display: flex;
+    justify-content: space-between;
 }
 
 .CardTaskThree h3 {
@@ -166,22 +166,21 @@
     display: flex;
     justify-content: space-between;
     padding-bottom: 20px;
+    
 }
 
 
 .Tarefas {
-
     width: 30%;
     border-radius: 5px;
     margin-top: 20px;
-    padding: 20px 20px 20px 20px;
+    padding: 20px 20px 15px 20px;
     border: 2px solid var(--color-border-strong);
     box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
 }
 
 
 .TarefasCard {
-
     display: flex;
     justify-content: space-between;
     align-items: center;

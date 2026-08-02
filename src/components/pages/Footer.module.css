@@ -55,7 +55,6 @@
     padding-top: 20px;
     padding-bottom: 30px;
     margin: 0 auto;
-
 }
 
 .Down p {
@@ -144,8 +143,6 @@
     display: grid;
     font-size: 14px;
     color: var(--color-gray-light);
-
-
 }
 
 .links a {
@@ -169,7 +166,6 @@
 @media (max-width:768px) {
 
     .rodape {
-
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         max-width: 1200px;
@@ -182,7 +178,6 @@
     }
 
     .Down {
-
         display: flex;
         justify-content: space-between;
         max-width: 1000px;
@@ -203,8 +198,6 @@
 
 }
 
-
-
 @media (max-width: 600px) {
 
     .rodape {
@@ -221,7 +214,6 @@
     }
 
     .Down {
-
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         max-width: 1000px;

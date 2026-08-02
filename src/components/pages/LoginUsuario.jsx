@@ -7,7 +7,6 @@ import styles from './LoginUsuario.module.css'
 
 import { FaUserCircle } from "react-icons/fa";
 import { FaArrowLeftLong } from "react-icons/fa6";
-import Footer from './Footer';
 
 
 
@@ -46,7 +45,7 @@ const LoginUsuario = () => {
           </div>
 
           <div className={styles.OpenAdmin}>
-            <Login name="Entrar" to="/dashboard-page"/>
+            <Login  name="Entrar" to="/dashboard-page"/>
           </div>
 
           <div className={styles.Usario}>
@@ -60,7 +59,6 @@ const LoginUsuario = () => {
 
       </div>
 
-      <Footer />
 
     </div>
   )

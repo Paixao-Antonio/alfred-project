@@ -3,8 +3,6 @@ import React from 'react'
 
 import Pesquisar from './Pesquisar'
 
-import Footer from './Footer'
-
 import styles from "./Relatorios.module.css";
 
 import {
@@ -48,20 +46,24 @@ const Relatorios = () => {
                 </div>
 
                 <div className={styles.relatorioTwo}>
-                    <div> <select name="" id="">
-                        <option value="">Visão Geral</option>
-                        <option value="">Projectos</option>
-                        <option value="">Tarefas</option>
-                        <option value="">Orçamento</option>
-                    </select>
+                    <div>
+                        <select name="" id="">
+                            <option value="" disabled selected hidden>Filtrar</option>
+                            <option value="">Visão Geral</option>
+                            <option value="">Projectos</option>
+                            <option value="">Tarefas</option>
+                            <option value="">Orçamento</option>
+                        </select>
                     </div>
 
-                    <div> <select name="" id="">
-                        <option value="">Última Semana</option>
-                        <option value="">Último Mês</option>
-                        <option value="">Último Trimestre</option>
-                        <option value="">Último Ano</option>
-                    </select>
+                    <div>
+                        <select name="" id="">
+                            <option value="" disabled selected hidden>Filtrar</option>
+                            <option value="">Última Semana</option>
+                            <option value="">Último Mês</option>
+                            <option value="">Último Trimestre</option>
+                            <option value="">Último Ano</option>
+                        </select>
                     </div>
 
                 </div>
@@ -408,8 +410,6 @@ const Relatorios = () => {
                 </div>
 
             </div>
-
-            <Footer />
 
         </div>
     )

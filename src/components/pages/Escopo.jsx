@@ -3,7 +3,6 @@ import React from 'react'
 import styles from './Escopo.module.css'
 import CardTitle from '../formulario/forma/CardTitle'
 import Pesquisar from './Pesquisar'
-import Footer from './Footer'
 
 const Escopo = ( ) => {
     return (
@@ -217,11 +216,6 @@ const Escopo = ( ) => {
                 <button type="submit">Salvar e Finalizar</button>
             </div>
 
-
-
-
-
-            <Footer />
 
         </div>
     )

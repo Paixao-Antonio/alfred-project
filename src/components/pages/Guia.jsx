@@ -1,7 +1,4 @@
 
-
-
-import Footer from './Footer'
 import Pesquisar from './Pesquisar'
 import CardTitle from '../formulario/forma/CardTitle'
 
@@ -9,7 +6,7 @@ import { FaRegFileAlt } from "react-icons/fa";
 import { GoProject } from "react-icons/go";
 import { IoIosArrowDown } from "react-icons/io";
 
-import styles from "./Guia.module.css"
+import  styles from "./Guia.module.css"
 
 const Guia = () => {
     return (
@@ -37,24 +34,12 @@ const Guia = () => {
                 </div>
 
                 <div className={styles.guiaTwo}>
-                    <div className={styles.guiaThree}>
-                        <div className={styles.guiaThreeOne}> <GoProject className={styles.guiaThreeIcone} /> <span>Projecto</span></div>
-                        <p>Esforço temporário empreendido para criar um produto, serviço ou resultado único. Possui início e fim definidos e objetivos específicos.</p>
-                    </div>
 
                     <div className={styles.guiaThree}>
                         <div className={styles.guiaThreeOne}> <GoProject className={styles.guiaThreeIcone} /> <span>Projecto</span></div>
                         <p>Esforço temporário empreendido para criar um produto, serviço ou resultado único. Possui início e fim definidos e objetivos específicos.</p>
                     </div>
 
-                    <div className={styles.guiaThree}>
-                        <div className={styles.guiaThreeOne}> <GoProject className={styles.guiaThreeIcone} /> <span>Projecto</span></div>
-                        <p>Esforço temporário empreendido para criar um produto, serviço ou resultado único. Possui início e fim definidos e objetivos específicos.</p>
-                    </div>
-
-                </div>
-
-                <div className={styles.guiaTwo}>
                     <div className={styles.guiaThree}>
                         <div className={styles.guiaThreeOne}> <GoProject className={styles.guiaThreeIcone} /> <span>Projecto</span></div>
                         <p>Esforço temporário empreendido para criar um produto, serviço ou resultado único. Possui início e fim definidos e objetivos específicos.</p>
@@ -71,6 +56,7 @@ const Guia = () => {
                     </div>
 
                 </div>
+
 
                 <div className={styles.guiaMetodologia}>
                     <div className={styles.guiaMetodologiaOne}>
@@ -138,9 +124,6 @@ const Guia = () => {
 
 
             </div>
-
-
-            <Footer />
 
         </div>
 

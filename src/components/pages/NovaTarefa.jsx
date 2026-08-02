@@ -5,8 +5,6 @@ import { Link } from 'react-router-dom'
 
 import { useState } from 'react'
 
-import Footer from './Footer'
-
 import styles from './NovaTarefa.module.css'
 
 import { IoIosArrowRoundBack } from "react-icons/io";
@@ -212,8 +210,6 @@ const NovaTarefa = () => {
                 </div>
 
             </div>
-
-            <Footer />
 
         </div>
     )
