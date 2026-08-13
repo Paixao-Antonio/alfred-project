@@ -47,14 +47,18 @@
 .CardSeparador {
     padding-top: 20px;
     padding-bottom: 10px;
+    width: 1100px;
+    margin: 0 auto;
+    background-color: yellow;
 }
 
 .CardEscopoTwo {
-    max-width: 1050px;
+    width: 1100px;
     margin: 0 auto;
     border-radius: 10px;
     border: 1px solid rgb(179, 179, 179);
     box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    
     
 }
 
@@ -67,7 +71,7 @@
     background-color: var(--color-text-muted);
     border: 1px solid rgb(179, 179, 179);
     border-radius: 10px 10px 0px 0px;
-    max-width: 1100px;
+    width: 1100px;
     padding: 30px 0px 25px 20px;
     color: var(--color-background);
 }
@@ -75,7 +79,7 @@
 .CardEscopoThree {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;   
 }
 
 .CardEscopoThree button {
@@ -220,10 +224,10 @@ select {
     transition: 2s;
 }
 
-
 .InputExclusao {
     border-radius: 5px;
     color: var(--color-background);
+     
 }
 
 .InputExclusao div {
@@ -263,7 +267,7 @@ select {
     display: flex;
     justify-content: right;
     gap: 15px;
-    max-width: 1100px;
+    width: 1100px;
     padding: 15px 15px 15px 14px;
     margin: 0 auto;
     border-radius: 10px;

@@ -185,6 +185,8 @@
 
 .DivUsuario {
     display: grid;
+    width: 1050px;
+    margin: 0 auto;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     border: 1px solid var(--color-border-strong);
@@ -192,7 +194,7 @@
     border-radius: 10px;
     margin-top: 20px;
     background-color: var(--color-surface);
-    background-color: yellow;
+    background-color: rgb(49, 179, 17);
 }
 
 .CardUsuario {
