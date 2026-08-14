@@ -19,130 +19,145 @@ import {
     FiFileText,
     FiBookOpen,
     FiSettings,
+    FiCalendar,
+    FiColumns,
+    FiPackage,
+    FiDollarSign,
+    FiUserCheck,
+    FiAlertTriangle,
+    FiArchive,
+    FiBell,
+    FiHelpCircle
 } from "react-icons/fi";
 
 const Dashboard = () => {
     const menuItems = [
+
         {
             icon: <FiGrid />,
             label: "Dashboard",
-            path: "/dashboard-page",
+            path: "/dashboard"
         },
 
         {
             icon: <FiFolder />,
             label: "Projetos",
-            path: "/projects",
+            path: "/projects"
         },
 
         {
             icon: <FiTarget />,
             label: "Escopo",
-            path: "/escopo",
+            path: "/escopo"
         },
 
         {
             icon: <FiCheckSquare />,
             label: "Tarefas",
-            path: "/tarefas",
-        },
-
-        {
-            icon: <FiCheckSquare />,
-            label: "Documentos",
-            path: "/documentos",
+            path: "/tarefas"
         },
 
         {
             icon: <FiClock />,
-            label: "Criar Projecto",
-            path: "/create-project",
-        },
-
-        {
-            icon: <FiClock />,
-            label: "Stakeholders",
-            path: "/stakeholders",
-        },
-
-        {
-            icon: <FiClock />,
-            label: "Mapa de Riscos",
-            path: "/riscos",
+            label: "Sprints",
+            path: "/sprints"
         },
 
         {
             icon: <FiActivity />,
             label: "Actividades",
-            path: "/actividades",
-        },
-
-        {
-            icon: <FiActivity />,
-            label: "Cronograma",
-            path: "/cronograma",
-        },
-
-        {
-            icon: <FiActivity />,
-            label: "Sprints",
-            path: "/sprints",
+            path: "/actividades"
         },
 
         {
             icon: <FiMessageSquare />,
             label: "Chat",
-            path: "/chat",
+            path: "/chat"
+        },
+
+        {
+            icon: <FiUsers />,
+            label: "Equipe",
+            path: "/equipe"
         },
 
         {
             icon: <FiShield />,
             label: "Permissões",
-            path: "/permission",
+            path: "/permission"
         },
 
         {
-            icon: <FiShield />,
-            label: "Kanban",
-            path: "/kanban",
-        },
-
-        {
-            icon: <FiShield />,
-            label: "Recursos",
-            path: "/recursos",
-        },
-
-        {
-            icon: <FiUsers />,
+            icon: <FiFileText />,
             label: "Relatórios",
-            path: "/relatorio",
+            path: "/relatorio"
         },
-
 
         {
             icon: <FiBookOpen />,
             label: "Guia PM",
-            path: "/guia",
-        },
-
-        {
-            icon: <FiBookOpen />,
-            label: "Orçamento",
-            path: "/orcamento",
-        },
-
-        {
-            icon: <FiUsers />,
-            label: "Team",
-            path: "/team",
+            path: "/guia"
         },
 
         {
             icon: <FiSettings />,
             label: "Configurações",
-            path: "/Configuracoes",
+            path: "/configuracoes"
         },
+
+        {
+            icon: <FiCalendar />,
+            label: "Cronograma",
+            path: "/cronograma"
+        },
+
+        {
+            icon: <FiColumns />,
+            label: "Quadro Kanban",
+            path: "/kanban"
+        },
+
+        {
+            icon: <FiPackage />,
+            label: "Recursos",
+            path: "/recursos"
+        },
+
+        {
+            icon: <FiDollarSign />,
+            label: "Orçamento / Custos",
+            path: "/orcamento"
+        },
+
+        {
+            icon: <FiUserCheck />,
+            label: "Stakeholders",
+            path: "/stakeholders"
+        },
+
+        {
+            icon: <FiAlertTriangle />,
+            label: "Registo de Riscos",
+            path: "/riscos"
+        },
+
+        {
+            icon: <FiArchive />,
+            label: "Documentos",
+            path: "/documentos"
+        },
+
+        {
+            icon: <FiBell />,
+            label: "Notificações",
+            path: "/notificacoes"
+        },
+
+        {
+            icon: <FiHelpCircle />,
+            label: "Ajuda / Suporte",
+            path: "/suporte"
+        }
 
     ];
 

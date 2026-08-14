@@ -1,0 +1,773 @@
+/* ================================= */
+/* CONTAINER */
+/* ================================= */
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 20px;
+
+    color: #111827;
+}
+
+
+/* ================================= */
+/* CABEÇALHO */
+/* ================================= */
+
+.header {
+    margin-bottom: 25px;
+}
+
+
+.titleArea {
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+}
+
+
+.titleIcon {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 50px;
+    height: 50px;
+
+    border-radius: 12px;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+
+    font-size: 23px;
+}
+
+
+.titleArea h2 {
+    margin: 0;
+
+    font-size: 24px;
+}
+
+
+.titleArea p {
+    margin: 5px 0 0;
+
+    color: #6b7280;
+
+    font-size: 13px;
+}
+
+
+/* ================================= */
+/* PESQUISA */
+/* ================================= */
+
+.searchArea {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    width: 100%;
+
+    padding: 7px 8px 7px 14px;
+
+    margin-bottom: 30px;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 10px;
+
+    background: white;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+
+.searchIcon {
+    display: flex;
+
+    color: #9ca3af;
+
+    font-size: 18px;
+}
+
+
+.searchArea input {
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 9px 0;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    color: #374151;
+
+    font-size: 12px;
+}
+
+
+.searchArea button {
+    padding: 10px 16px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 11px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.searchArea button:hover {
+    background: #1d4ed8;
+}
+
+
+/* ================================= */
+/* CABEÇALHOS DAS SECÇÕES */
+/* ================================= */
+
+.sectionHeader {
+    margin-bottom: 14px;
+}
+
+
+.sectionHeader h3 {
+    margin: 0;
+
+    font-size: 17px;
+}
+
+
+.sectionHeader p {
+    margin: 4px 0 0;
+
+    color: #6b7280;
+
+    font-size: 11px;
+}
+
+
+/* ================================= */
+/* CATEGORIAS */
+/* ================================= */
+
+.categories {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 14px;
+
+    margin-bottom: 30px;
+}
+
+
+.categoryCard {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 16px;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 10px;
+
+    background: white;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.categoryCard:hover {
+    border-color: #bfdbfe;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.04);
+}
+
+
+.categoryIcon {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+
+    flex-shrink: 0;
+
+    border-radius: 9px;
+
+    font-size: 18px;
+}
+
+
+.categoryCard h4 {
+    margin: 0 0 4px;
+
+    font-size: 12px;
+}
+
+
+.categoryCard p {
+    margin: 0;
+
+    color: #9ca3af;
+
+    font-size: 9px;
+
+    line-height: 1.4;
+}
+
+
+/* ================================= */
+/* CORES */
+/* ================================= */
+
+.blue {
+    background: #eff6ff;
+
+    color: #2563eb;
+}
+
+
+.green {
+    background: #ecfdf5;
+
+    color: #16a34a;
+}
+
+
+.purple {
+    background: #f5f3ff;
+
+    color: #7c3aed;
+}
+
+
+.orange {
+    background: #fff7ed;
+
+    color: #ea580c;
+}
+
+
+/* ================================= */
+/* CONTEÚDO PRINCIPAL */
+/* ================================= */
+
+.mainContent {
+    display: grid;
+
+    grid-template-columns: 1.7fr 1fr;
+
+    gap: 20px;
+
+    align-items: start;
+
+    margin-bottom: 25px;
+}
+
+
+/* ================================= */
+/* PERGUNTAS */
+/* ================================= */
+
+.faqSection {
+    padding: 20px;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+
+    background: white;
+}
+
+
+.questions {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+
+.question {
+    overflow: hidden;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 8px;
+
+    background: #fff;
+}
+
+
+.questionButton {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+
+    background: transparent;
+
+    color: #374151;
+
+    text-align: left;
+
+    font-size: 11px;
+
+    cursor: pointer;
+}
+
+
+.questionButton:hover {
+    background: #f9fafb;
+}
+
+
+.questionButton svg {
+    flex-shrink: 0;
+
+    color: #9ca3af;
+
+    font-size: 16px;
+}
+
+
+.answer {
+    padding: 0 13px 13px;
+
+    border-top: 1px solid #f3f4f6;
+}
+
+
+.answer p {
+    margin: 10px 0 0;
+
+    color: #6b7280;
+
+    font-size: 10px;
+
+    line-height: 1.6;
+}
+
+
+/* ================================= */
+/* CONTACTO */
+/* ================================= */
+
+.contactSection {
+    padding: 20px;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+
+    background: white;
+}
+
+
+.contactHeader {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 20px;
+}
+
+
+.contactIcon {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+
+    border-radius: 10px;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+
+    font-size: 18px;
+}
+
+
+.contactHeader h3 {
+    margin: 0;
+
+    font-size: 15px;
+}
+
+
+.contactHeader p {
+    margin: 4px 0 0;
+
+    color: #9ca3af;
+
+    font-size: 9px;
+}
+
+
+/* ================================= */
+/* CONTACTOS */
+/* ================================= */
+
+.contactItem {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 12px 0;
+
+    border-bottom: 1px solid #f3f4f6;
+}
+
+
+.contactItemIcon {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 35px;
+    height: 35px;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+}
+
+
+.contactItem strong {
+    display: block;
+
+    margin-bottom: 3px;
+
+    font-size: 10px;
+}
+
+
+.contactItem span {
+    display: block;
+
+    color: #6b7280;
+
+    font-size: 9px;
+}
+
+
+/* ================================= */
+/* ESTADO DO SUPORTE */
+/* ================================= */
+
+.supportStatus {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    margin-top: 15px;
+
+    padding: 9px;
+
+    border-radius: 7px;
+
+    background: #ecfdf5;
+
+    color: #15803d;
+
+    font-size: 9px;
+}
+
+
+.statusDot {
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+
+    background: #16a34a;
+}
+
+
+/* ================================= */
+/* FORMULÁRIO */
+/* ================================= */
+
+.supportForm {
+    padding: 22px;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+
+    background: white;
+}
+
+
+.formHeader {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 20px;
+
+    color: #2563eb;
+}
+
+
+.formHeader h3 {
+    margin: 0;
+
+    color: #111827;
+
+    font-size: 16px;
+}
+
+
+.formHeader p {
+    margin: 5px 0 0;
+
+    color: #6b7280;
+
+    font-size: 10px;
+}
+
+
+.formGroup {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+
+    margin-bottom: 15px;
+}
+
+
+.formGroup label {
+    color: #374151;
+
+    font-size: 11px;
+
+    font-weight: 600;
+}
+
+
+.formGroup input,
+.formGroup textarea {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 11px;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 7px;
+
+    outline: none;
+
+    background: #fafafa;
+
+    color: #374151;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 11px;
+
+    transition: 0.2s;
+}
+
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+    border-color: #93c5fd;
+
+    background: white;
+}
+
+
+.formGroup textarea {
+    resize: vertical;
+}
+
+
+.sendButton {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 10px 17px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 11px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.sendButton:hover {
+    background: #1d4ed8;
+}
+
+
+/* ================================= */
+/* TABLET */
+/* 577px - 992px */
+/* ================================= */
+
+@media (max-width: 992px) {
+
+    .categories {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .mainContent {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* ================================= */
+/* TELEMÓVEL */
+/* até 576px */
+/* ================================= */
+
+@media (max-width: 576px) {
+
+    .container {
+        padding: 15px;
+    }
+
+
+    .titleArea h2 {
+        font-size: 20px;
+    }
+
+
+    .titleArea p {
+        font-size: 10px;
+    }
+
+
+    .searchArea {
+        flex-wrap: wrap;
+
+        padding: 10px;
+    }
+
+
+    .searchArea input {
+        width: calc(100% - 35px);
+
+        flex: none;
+    }
+
+
+    .searchArea button {
+        width: 100%;
+    }
+
+
+    .categories {
+        grid-template-columns: 1fr;
+    }
+
+
+    .categoryCard {
+        padding: 14px;
+    }
+
+
+    .faqSection,
+    .contactSection,
+    .supportForm {
+        padding: 15px;
+    }
+
+
+    .mainContent {
+        gap: 15px;
+    }
+
+
+    .questionButton {
+        font-size: 10px;
+    }
+
+
+    .contactHeader h3 {
+        font-size: 14px;
+    }
+
+
+    .sendButton {
+        width: 100%;
+    }
+
+}

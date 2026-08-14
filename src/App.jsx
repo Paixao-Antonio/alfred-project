@@ -34,6 +34,15 @@ import Orcamento from "./components/pages/Orcamento";
 import Stakeholders from "./components/pages/Stakeholders";
 import Riscos from "./components/pages/Riscos";
 import Documentos from "./components/pages/Documentos";
+import Notificacoes from "./components/pages/Notificacoes";
+import AjudaSuporte from "./components/pages/AjudaSuporte";
+import CriarSprint from "./components/pages/CriarSprint";
+import AdicionarMembro from "./components/pages/AdicionarMembro";
+import NovoCronograma from "./components/pages/NovoCronograma";
+import AlocarRecursos from "./components/pages/AlocarRecursos";
+import NovoRisco from "./components/pages/NovoRisco";
+
+
 import PublicLayout from "./layouts/PublicLayout";
 
 
@@ -59,7 +68,7 @@ function App() {
         <Route path="/permission" element={<Permission />} />
         <Route path="/actividades" element={<Actividades />} />
         <Route path="/guia" element={<Guia />} />
-        <Route path="/team" element={<Team />} />
+        <Route path="/equipe" element={<Team />} />
         <Route path="/configuracoes" element={<Configuracoes />} />
         <Route path="/nova-tarefa" element={<NovaTarefa />} />
         <Route path="/relatorio" element={<Relatorios />} />
@@ -72,8 +81,16 @@ function App() {
         <Route path="/stakeholders" element={<Stakeholders />} />
         <Route path="/riscos" element={<Riscos />} />
         <Route path="/documentos" element={<Documentos />} />
+        <Route path="/notificacoes" element={<Notificacoes />} />
+        <Route path="/suporte" element={<AjudaSuporte />} />
+        <Route path="/criar-sprint" element={<CriarSprint />} />
+        <Route path="/adicionar-membro" element={<AdicionarMembro />} />
+        <Route path="/novo-cronograma" element={<NovoCronograma />} />
+        <Route path="/teste" element={<AlocarRecursos />} />
+        <Route path="/teste2" element={<NovoRisco />} />
 
       </Route>
+
     </Routes>
   );
 }
