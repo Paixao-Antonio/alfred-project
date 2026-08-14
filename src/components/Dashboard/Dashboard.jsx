@@ -1,7 +1,7 @@
 
 import { NavLink } from "react-router-dom";
 
-import  styles from "./Dashboard.module.css";
+import styles from "./Dashboard.module.css";
 
 import logo2 from "../../img/logo1.png";
 
@@ -48,15 +48,45 @@ const Dashboard = () => {
         },
 
         {
+            icon: <FiCheckSquare />,
+            label: "Documentos",
+            path: "/documentos",
+        },
+
+        {
             icon: <FiClock />,
             label: "Criar Projecto",
             path: "/create-project",
         },
 
         {
+            icon: <FiClock />,
+            label: "Stakeholders",
+            path: "/stakeholders",
+        },
+
+        {
+            icon: <FiClock />,
+            label: "Mapa de Riscos",
+            path: "/riscos",
+        },
+
+        {
             icon: <FiActivity />,
             label: "Actividades",
             path: "/actividades",
+        },
+
+        {
+            icon: <FiActivity />,
+            label: "Cronograma",
+            path: "/cronograma",
+        },
+
+        {
+            icon: <FiActivity />,
+            label: "Sprints",
+            path: "/sprints",
         },
 
         {
@@ -72,6 +102,18 @@ const Dashboard = () => {
         },
 
         {
+            icon: <FiShield />,
+            label: "Kanban",
+            path: "/kanban",
+        },
+
+        {
+            icon: <FiShield />,
+            label: "Recursos",
+            path: "/recursos",
+        },
+
+        {
             icon: <FiUsers />,
             label: "Relatórios",
             path: "/relatorio",
@@ -82,6 +124,12 @@ const Dashboard = () => {
             icon: <FiBookOpen />,
             label: "Guia PM",
             path: "/guia",
+        },
+
+        {
+            icon: <FiBookOpen />,
+            label: "Orçamento",
+            path: "/orcamento",
         },
 
         {
@@ -145,7 +193,7 @@ const Dashboard = () => {
                 <span>Versão 1.0.0</span>
             </div>
         </div>
-        
+
     );
 };
 

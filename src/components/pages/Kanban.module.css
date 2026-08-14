@@ -1,0 +1,656 @@
+/* ========================= */
+/* CONTAINER */
+/* ========================= */
+
+.container {
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding: 20px;
+
+    color: #111827;
+}
+
+
+/* ========================= */
+/* CABEÇALHO */
+/* ========================= */
+
+.header {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+
+    margin-bottom: 25px;
+}
+
+
+.titleArea {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+.titleIcon {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 48px;
+    height: 48px;
+
+    border-radius: 12px;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+
+    font-size: 22px;
+}
+
+
+.titleArea h2 {
+    margin: 0;
+
+    font-size: 24px;
+}
+
+
+.titleArea p {
+    margin: 5px 0 0;
+
+    color: #6b7280;
+
+    font-size: 14px;
+}
+
+
+.addButton {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 11px 16px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.addButton:hover {
+    background: #1d4ed8;
+}
+
+
+/* ========================= */
+/* CONTROLES */
+/* ========================= */
+
+.controls {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 20px;
+}
+
+
+.search {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    width: 300px;
+
+    padding: 9px 12px;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 8px;
+
+    background: white;
+
+    color: #9ca3af;
+}
+
+
+.search input {
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    font-size: 12px;
+}
+
+
+.filter {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 9px 12px;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 8px;
+
+    background: white;
+
+    color: #6b7280;
+}
+
+
+.filter select {
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    color: #374151;
+
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+
+/* ========================= */
+/* QUADRO */
+/* ========================= */
+
+.board {
+    display: grid;
+
+    grid-template-columns: repeat(5, minmax(230px, 1fr));
+
+    gap: 15px;
+
+    overflow-x: auto;
+
+    padding-bottom: 10px;
+}
+
+
+/* ========================= */
+/* COLUNA */
+/* ========================= */
+
+.column {
+    min-width: 230px;
+
+    min-height: 500px;
+
+    padding: 12px;
+
+    background: #f8fafc;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+}
+
+
+/* ========================= */
+/* CABEÇALHO COLUNA */
+/* ========================= */
+
+.columnHeader {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 15px;
+}
+
+
+.columnTitle {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+}
+
+
+.columnTitle h3 {
+    margin: 0;
+
+    font-size: 13px;
+}
+
+
+.columnDot {
+    width: 9px;
+    height: 9px;
+
+    border-radius: 50%;
+}
+
+
+.cinza {
+    background: #9ca3af;
+}
+
+
+.azul {
+    background: #2563eb;
+}
+
+
+.amarelo {
+    background: #f59e0b;
+}
+
+
+.roxo {
+    background: #8b5cf6;
+}
+
+
+.verde {
+    background: #16a34a;
+}
+
+
+.counter {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 20px;
+    height: 20px;
+
+    padding: 0 5px;
+
+    border-radius: 50%;
+
+    background: #e5e7eb;
+
+    color: #6b7280;
+
+    font-size: 10px;
+}
+
+
+.columnMenu {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+
+    background: transparent;
+
+    color: #9ca3af;
+
+    cursor: pointer;
+}
+
+
+/* ========================= */
+/* TAREFAS */
+/* ========================= */
+
+.tasks {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+.taskCard {
+    padding: 14px;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 10px;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.taskCard:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
+}
+
+
+/* ========================= */
+/* TOPO DO CARD */
+/* ========================= */
+
+.taskTop {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 10px;
+}
+
+
+.taskTop button {
+    display: flex;
+
+    border: none;
+
+    background: transparent;
+
+    color: #9ca3af;
+
+    cursor: pointer;
+}
+
+
+/* ========================= */
+/* PRIORIDADE */
+/* ========================= */
+
+.priority {
+    padding: 4px 8px;
+
+    border-radius: 20px;
+
+    font-size: 9px;
+
+    font-weight: 600;
+}
+
+
+.alta {
+    background: #fef2f2;
+
+    color: #dc2626;
+}
+
+
+.media {
+    background: #fff7ed;
+
+    color: #ea580c;
+}
+
+
+.baixa {
+    background: #ecfdf5;
+
+    color: #16a34a;
+}
+
+
+/* ========================= */
+/* CONTEÚDO */
+/* ========================= */
+
+.taskCard h4 {
+    margin: 0 0 7px;
+
+    color: #111827;
+
+    font-size: 13px;
+
+    line-height: 1.4;
+}
+
+
+.taskCard p {
+    margin: 0 0 12px;
+
+    color: #6b7280;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+}
+
+
+/* ========================= */
+/* TAG */
+/* ========================= */
+
+.tag {
+    display: inline-block;
+
+    padding: 4px 8px;
+
+    border-radius: 5px;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+
+    font-size: 9px;
+}
+
+
+/* ========================= */
+/* RODAPÉ */
+/* ========================= */
+
+.taskFooter {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: 15px;
+
+    padding-top: 10px;
+
+    border-top: 1px solid #f1f5f9;
+}
+
+
+.taskInfo {
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    color: #9ca3af;
+
+    font-size: 10px;
+}
+
+
+.avatar {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 28px;
+    height: 28px;
+
+    border-radius: 50%;
+
+    background: #dbeafe;
+
+    color: #2563eb;
+
+    font-size: 10px;
+
+    font-weight: 700;
+}
+
+
+/* ========================= */
+/* ADICIONAR TAREFA */
+/* ========================= */
+
+.addTask {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 6px;
+
+    width: 100%;
+
+    padding: 10px;
+
+    border: 1px dashed #cbd5e1;
+
+    border-radius: 8px;
+
+    background: transparent;
+
+    color: #64748b;
+
+    font-size: 11px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.addTask:hover {
+    background: white;
+
+    color: #2563eb;
+
+    border-color: #2563eb;
+}
+
+
+/* ========================= */
+/* TABLET */
+/* 577px - 992px */
+/* ========================= */
+
+@media (max-width: 992px) {
+
+    .board {
+        grid-template-columns: repeat(5, 240px);
+
+        overflow-x: auto;
+    }
+
+    .controls {
+        flex-wrap: wrap;
+    }
+
+}
+
+
+/* ========================= */
+/* TELEMÓVEL */
+/* até 576px */
+/* ========================= */
+
+@media (max-width: 576px) {
+
+    .container {
+        padding: 15px;
+    }
+
+
+    .header {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+
+    .addButton {
+        justify-content: center;
+    }
+
+
+    .titleArea h2 {
+        font-size: 20px;
+    }
+
+
+    .titleArea p {
+        font-size: 12px;
+    }
+
+
+    .controls {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+
+    .search {
+        width: auto;
+    }
+
+
+    .filter {
+        justify-content: space-between;
+    }
+
+
+    .board {
+        grid-template-columns: repeat(5, 250px);
+
+        gap: 12px;
+
+        overflow-x: auto;
+    }
+
+
+    .column {
+        min-width: 250px;
+    }
+
+}

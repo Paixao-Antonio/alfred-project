@@ -1,0 +1,825 @@
+/* ========================= */
+/* CONTAINER */
+/* ========================= */
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 20px;
+
+    color: #111827;
+}
+
+
+/* ========================= */
+/* CABEÇALHO */
+/* ========================= */
+
+.header {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+
+    margin-bottom: 25px;
+}
+
+
+.titleArea {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+.titleIcon {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 48px;
+    height: 48px;
+
+    border-radius: 12px;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+
+    font-size: 22px;
+}
+
+
+.titleArea h2 {
+    margin: 0;
+
+    font-size: 24px;
+}
+
+
+.titleArea p {
+    margin: 5px 0 0;
+
+    color: #6b7280;
+
+    font-size: 14px;
+}
+
+
+.addButton {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 11px 16px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.addButton:hover {
+    background: #1d4ed8;
+}
+
+
+/* ========================= */
+/* CARDS DE RESUMO */
+/* ========================= */
+
+.summary {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+
+    margin-bottom: 20px;
+}
+
+
+.summaryCard {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 18px;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+}
+
+
+.summaryCard span {
+    display: block;
+
+    color: #6b7280;
+
+    font-size: 11px;
+}
+
+
+.summaryCard strong {
+    display: block;
+
+    margin-top: 5px;
+
+    font-size: 18px;
+}
+
+
+/* ========================= */
+/* ÍCONES DOS CARDS */
+/* ========================= */
+
+.summaryIcon {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+
+    flex-shrink: 0;
+
+    border-radius: 10px;
+
+    font-size: 18px;
+}
+
+
+.blue {
+    background: #eff6ff;
+
+    color: #2563eb;
+}
+
+
+.green {
+    background: #ecfdf5;
+
+    color: #16a34a;
+}
+
+
+.red {
+    background: #fef2f2;
+
+    color: #dc2626;
+}
+
+
+.orange {
+    background: #fff7ed;
+
+    color: #f97316;
+}
+
+
+/* ========================= */
+/* ORÇAMENTO */
+/* ========================= */
+
+.budgetCard {
+    padding: 20px;
+
+    margin-bottom: 20px;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+}
+
+
+.budgetHeader {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 15px;
+}
+
+
+.budgetHeader h3 {
+    margin: 0;
+
+    font-size: 15px;
+}
+
+
+.budgetHeader p {
+    margin: 5px 0 0;
+
+    color: #6b7280;
+
+    font-size: 11px;
+}
+
+
+.budgetHeader strong {
+    color: #2563eb;
+
+    font-size: 20px;
+}
+
+
+.progressBar {
+    width: 100%;
+
+    height: 12px;
+
+    overflow: hidden;
+
+    background: #e5e7eb;
+
+    border-radius: 20px;
+}
+
+
+.progressFill {
+    height: 100%;
+
+    background: linear-gradient(to right,
+            #3b82f6,
+            #2563eb);
+
+    border-radius: 20px;
+
+    transition: width 0.4s ease;
+}
+
+
+.progressInfo {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-top: 8px;
+
+    color: #6b7280;
+
+    font-size: 10px;
+}
+
+
+/* ========================= */
+/* CONTROLES */
+/* ========================= */
+
+.controls {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 25px;
+}
+
+
+.search {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    width: 320px;
+
+    padding: 10px 12px;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 8px;
+
+    color: #9ca3af;
+}
+
+
+.search input {
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    font-size: 12px;
+}
+
+
+.filter {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 10px 12px;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 8px;
+
+    color: #6b7280;
+}
+
+
+.filter select {
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    color: #374151;
+
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+
+/* ========================= */
+/* CABEÇALHO DA LISTA */
+/* ========================= */
+
+.listHeader {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 12px;
+}
+
+
+.listHeader h3 {
+    margin: 0;
+
+    font-size: 17px;
+}
+
+
+.listHeader p {
+    margin: 4px 0 0;
+
+    color: #6b7280;
+
+    font-size: 12px;
+}
+
+
+.listHeader>span {
+    padding: 6px 10px;
+
+    background: #f3f4f6;
+
+    border-radius: 6px;
+
+    color: #6b7280;
+
+    font-size: 10px;
+}
+
+
+/* ========================= */
+/* LISTA DE DESPESAS */
+/* ========================= */
+
+.expenseList {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+.expenseCard {
+    display: grid;
+
+    grid-template-columns:
+        2fr 1.2fr 1fr 1fr 0.8fr 35px;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 15px;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 10px;
+
+    transition: 0.2s;
+}
+
+
+.expenseCard:hover {
+    border-color: #bfdbfe;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+
+/* ========================= */
+/* DESCRIÇÃO */
+/* ========================= */
+
+.expenseDescription {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    min-width: 0;
+}
+
+
+.expenseIcon {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 38px;
+    height: 38px;
+
+    flex-shrink: 0;
+
+    border-radius: 9px;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+}
+
+
+.expenseDescription div:last-child {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+
+    min-width: 0;
+}
+
+
+.expenseDescription strong {
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+
+    font-size: 12px;
+}
+
+
+.expenseDescription span {
+    color: #9ca3af;
+
+    font-size: 10px;
+}
+
+
+/* ========================= */
+/* DADOS */
+/* ========================= */
+
+.dataLabel {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #9ca3af;
+
+    font-size: 9px;
+}
+
+
+.dataColumn>span:last-child {
+    color: #374151;
+
+    font-size: 11px;
+}
+
+
+.valueColumn strong {
+    font-size: 12px;
+}
+
+
+/* ========================= */
+/* CATEGORIAS */
+/* ========================= */
+
+.category {
+    display: inline-block;
+
+    padding: 5px 8px;
+
+    border-radius: 20px;
+
+    font-size: 9px;
+
+    font-weight: 600;
+}
+
+
+.desenvolvimento {
+    background: #eff6ff;
+
+    color: #2563eb;
+}
+
+
+.design {
+    background: #faf5ff;
+
+    color: #9333ea;
+}
+
+
+.infraestrutura {
+    background: #fff7ed;
+
+    color: #ea580c;
+}
+
+
+.marketing {
+    background: #fdf2f8;
+
+    color: #db2777;
+}
+
+
+.software {
+    background: #ecfdf5;
+
+    color: #16a34a;
+}
+
+
+.consultoria {
+    background: #f3f4f6;
+
+    color: #4b5563;
+}
+
+
+/* ========================= */
+/* STATUS */
+/* ========================= */
+
+.status {
+    width: fit-content;
+
+    padding: 5px 9px;
+
+    border-radius: 20px;
+
+    font-size: 9px;
+
+    font-weight: 600;
+}
+
+
+.statusPago {
+    background: #ecfdf5;
+
+    color: #16a34a;
+}
+
+
+.statusPendente {
+    background: #fff7ed;
+
+    color: #ea580c;
+}
+
+
+/* ========================= */
+/* MENU */
+/* ========================= */
+
+.menuButton {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 30px;
+    height: 30px;
+
+    border: none;
+
+    background: transparent;
+
+    color: #9ca3af;
+
+    cursor: pointer;
+}
+
+
+/* ========================= */
+/* TABLET */
+/* 577px - 992px */
+/* ========================= */
+
+@media (max-width: 992px) {
+
+    .summary {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .expenseCard {
+        grid-template-columns:
+            2fr 1fr 1fr;
+
+        gap: 15px;
+    }
+
+
+    .expenseCard>div:nth-child(2) {
+        grid-column: 2;
+    }
+
+
+    .expenseCard>div:nth-child(3) {
+        grid-column: 3;
+    }
+
+
+    .expenseCard>div:nth-child(4) {
+        grid-column: 2;
+    }
+
+
+    .expenseCard>span {
+        grid-column: 3;
+    }
+
+
+    .menuButton {
+        grid-column: 1;
+    }
+
+}
+
+
+/* ========================= */
+/* TELEMÓVEL */
+/* até 576px */
+/* ========================= */
+
+@media (max-width: 576px) {
+
+    .container {
+        padding: 15px;
+    }
+
+
+    .header {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+
+    .addButton {
+        justify-content: center;
+    }
+
+
+    .titleArea h2 {
+        font-size: 20px;
+    }
+
+
+    .titleArea p {
+        font-size: 12px;
+    }
+
+
+    .summary {
+        grid-template-columns: 1fr;
+    }
+
+
+    .summaryCard strong {
+        font-size: 17px;
+    }
+
+
+    .controls {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+
+    .search {
+        width: auto;
+    }
+
+
+    .filter {
+        justify-content: space-between;
+    }
+
+
+    .listHeader {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 10px;
+    }
+
+
+    .expenseCard {
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 13px;
+
+        position: relative;
+    }
+
+
+    .expenseDescription {
+        padding-right: 25px;
+    }
+
+
+    .expenseCard>div {
+        width: 100%;
+    }
+
+
+    .status {
+        align-self: flex-start;
+    }
+
+
+    .menuButton {
+        position: absolute;
+
+        top: 15px;
+
+        right: 10px;
+    }
+
+}

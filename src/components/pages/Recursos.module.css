@@ -1,0 +1,810 @@
+/* ========================= */
+/* CONTAINER */
+/* ========================= */
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 20px;
+
+    color: #111827;
+}
+
+
+/* ========================= */
+/* CABEÇALHO */
+/* ========================= */
+
+.header {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+
+    margin-bottom: 25px;
+}
+
+
+.titleArea {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+.titleIcon {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 48px;
+    height: 48px;
+
+    border-radius: 12px;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+
+    font-size: 22px;
+}
+
+
+.titleArea h2 {
+    margin: 0;
+
+    font-size: 24px;
+}
+
+
+.titleArea p {
+    margin: 5px 0 0;
+
+    color: #6b7280;
+
+    font-size: 14px;
+}
+
+
+.addButton {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 11px 16px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.addButton:hover {
+    background: #1d4ed8;
+}
+
+
+/* ========================= */
+/* RESUMO */
+/* ========================= */
+
+.summary {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+
+    margin-bottom: 25px;
+}
+
+
+.summaryCard {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 18px;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+}
+
+
+.summaryCard span {
+    display: block;
+
+    color: #6b7280;
+
+    font-size: 12px;
+}
+
+
+.summaryCard strong {
+    display: block;
+
+    margin-top: 4px;
+
+    font-size: 22px;
+}
+
+
+/* ========================= */
+/* ÍCONES DO RESUMO */
+/* ========================= */
+
+.summaryIcon {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+
+    border-radius: 10px;
+}
+
+
+.blue {
+    background: #eff6ff;
+
+    color: #2563eb;
+}
+
+
+.green {
+    background: #ecfdf5;
+
+    color: #16a34a;
+}
+
+
+.red {
+    background: #fef2f2;
+
+    color: #dc2626;
+}
+
+
+.orange {
+    background: #fff7ed;
+
+    color: #f97316;
+}
+
+
+/* ========================= */
+/* CONTROLES */
+/* ========================= */
+
+.controls {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 25px;
+}
+
+
+.search {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    width: 320px;
+
+    padding: 10px 12px;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 8px;
+
+    color: #9ca3af;
+}
+
+
+.search input {
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    font-size: 12px;
+}
+
+
+.filter {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 10px 12px;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 8px;
+
+    color: #6b7280;
+}
+
+
+.filter select {
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    color: #374151;
+
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+
+/* ========================= */
+/* CABEÇALHO DA LISTA */
+/* ========================= */
+
+.listHeader {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 12px;
+}
+
+
+.listHeader h3 {
+    margin: 0;
+
+    font-size: 17px;
+}
+
+
+.listHeader p {
+    margin: 4px 0 0;
+
+    color: #6b7280;
+
+    font-size: 12px;
+}
+
+
+.listHeader>span {
+    padding: 6px 10px;
+
+    border-radius: 6px;
+
+    background: #f3f4f6;
+
+    color: #6b7280;
+
+    font-size: 10px;
+}
+
+
+/* ========================= */
+/* LISTA DE RECURSOS */
+/* ========================= */
+
+.resourceList {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+.resourceCard {
+    display: grid;
+
+    grid-template-columns:
+        2fr 0.8fr 1fr 1.8fr 1fr 35px;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 16px;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 10px;
+
+    transition: 0.2s;
+}
+
+
+.resourceCard:hover {
+    border-color: #bfdbfe;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+
+/* ========================= */
+/* PESSOA */
+/* ========================= */
+
+.resourcePerson {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    min-width: 0;
+}
+
+
+.avatar {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+
+    background: #dbeafe;
+
+    color: #2563eb;
+
+    font-size: 11px;
+
+    font-weight: 700;
+}
+
+
+.personInfo {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+
+    min-width: 0;
+}
+
+
+.personInfo strong {
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+
+    font-size: 13px;
+}
+
+
+.personInfo span {
+    color: #9ca3af;
+
+    font-size: 10px;
+}
+
+
+/* ========================= */
+/* DADOS */
+/* ========================= */
+
+.resourceData {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+
+.dataIcon {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: #2563eb;
+
+    font-size: 15px;
+}
+
+
+.resourceData div:last-child {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+
+.resourceData span {
+    color: #9ca3af;
+
+    font-size: 10px;
+}
+
+
+.resourceData strong {
+    color: #374151;
+
+    font-size: 12px;
+}
+
+
+/* ========================= */
+/* CARGA DE TRABALHO */
+/* ========================= */
+
+.workload {
+    width: 100%;
+}
+
+
+.workloadHeader {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 7px;
+}
+
+
+.workloadHeader span {
+    color: #6b7280;
+
+    font-size: 10px;
+}
+
+
+.workloadHeader strong {
+    font-size: 11px;
+}
+
+
+.workloadBar {
+    width: 100%;
+
+    height: 7px;
+
+    overflow: hidden;
+
+    background: #e5e7eb;
+
+    border-radius: 10px;
+}
+
+
+.workloadFill {
+    height: 100%;
+
+    border-radius: 10px;
+
+    transition: width 0.4s ease;
+}
+
+
+.cargaBaixa {
+    background: #16a34a;
+}
+
+
+.cargaMedia {
+    background: #f59e0b;
+}
+
+
+.cargaAlta {
+    background: #dc2626;
+}
+
+
+/* ========================= */
+/* STATUS */
+/* ========================= */
+
+.statusArea {
+    display: flex;
+
+    justify-content: center;
+}
+
+
+.status {
+    padding: 6px 9px;
+
+    border-radius: 20px;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+
+.statusSuccess {
+    background: #ecfdf5;
+
+    color: #16a34a;
+}
+
+
+.statusDanger {
+    background: #fef2f2;
+
+    color: #dc2626;
+}
+
+
+/* ========================= */
+/* MENU */
+/* ========================= */
+
+.menuButton {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 32px;
+    height: 32px;
+
+    border: none;
+
+    background: transparent;
+
+    color: #9ca3af;
+
+    cursor: pointer;
+}
+
+
+/* ========================= */
+/* LEGENDA */
+/* ========================= */
+
+.legend {
+    display: flex;
+
+    justify-content: flex-end;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+
+    margin-top: 15px;
+}
+
+
+.legend div {
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    color: #6b7280;
+
+    font-size: 10px;
+}
+
+
+.legendGreen,
+.legendOrange,
+.legendRed {
+    width: 9px;
+    height: 9px;
+
+    border-radius: 50%;
+}
+
+
+.legendGreen {
+    background: #16a34a;
+}
+
+
+.legendOrange {
+    background: #f59e0b;
+}
+
+
+.legendRed {
+    background: #dc2626;
+}
+
+
+/* ========================= */
+/* TABLET */
+/* 577px - 992px */
+/* ========================= */
+
+@media (max-width: 992px) {
+
+    .summary {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .resourceCard {
+        grid-template-columns:
+            2fr 1fr 1fr;
+
+        gap: 15px;
+    }
+
+
+    .workload {
+        grid-column: span 2;
+    }
+
+
+    .statusArea {
+        justify-content: flex-start;
+    }
+
+}
+
+
+/* ========================= */
+/* TELEMÓVEL */
+/* até 576px */
+/* ========================= */
+
+@media (max-width: 576px) {
+
+    .container {
+        padding: 15px;
+    }
+
+
+    .header {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+
+    .addButton {
+        justify-content: center;
+    }
+
+
+    .titleArea h2 {
+        font-size: 20px;
+    }
+
+
+    .titleArea p {
+        font-size: 12px;
+    }
+
+
+    .summary {
+        grid-template-columns: 1fr;
+    }
+
+
+    .controls {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+
+    .search {
+        width: auto;
+    }
+
+
+    .filter {
+        justify-content: space-between;
+    }
+
+
+    .listHeader {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+
+    .resourceCard {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+    }
+
+
+    .resourceData {
+        padding-top: 5px;
+    }
+
+
+    .workload {
+        grid-column: auto;
+    }
+
+
+    .statusArea {
+        justify-content: flex-start;
+    }
+
+
+    .menuButton {
+        position: absolute;
+
+        right: 10px;
+    }
+
+
+    .resourceCard {
+        position: relative;
+    }
+
+
+    .legend {
+        justify-content: flex-start;
+    }
+
+}

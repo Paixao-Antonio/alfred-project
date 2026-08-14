@@ -1,0 +1,609 @@
+
+
+/* ========================= */
+/* CONTAINER */
+/* ========================= */
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+    padding: 20px;
+
+    color: #111827;
+}
+
+
+/* ========================= */
+/* CABEÇALHO */
+/* ========================= */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+
+    margin-bottom: 25px;
+}
+
+.titleArea {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+}
+
+.titleArea h2 {
+    margin: 0;
+
+    font-size: 24px;
+}
+
+.titleArea p {
+    margin: 5px 0 0;
+
+    color: #6b7280;
+
+    font-size: 14px;
+}
+
+.titleIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 48px;
+    height: 48px;
+
+    border-radius: 12px;
+
+    background: #eff6ff;
+    color: #2563eb;
+
+    font-size: 22px;
+}
+
+.addButton {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 11px 16px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #2563eb;
+    color: white;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.addButton:hover {
+    background: #1d4ed8;
+}
+
+
+/* ========================= */
+/* RESUMO */
+/* ========================= */
+
+.summary {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+
+    margin-bottom: 25px;
+}
+
+.summaryCard {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 18px;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+}
+
+.summaryIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+
+    border-radius: 10px;
+
+    background: #eff6ff;
+    color: #2563eb;
+}
+
+.summaryIcon.green {
+    background: #ecfdf5;
+    color: #16a34a;
+}
+
+.summaryIcon.orange {
+    background: #fff7ed;
+    color: #f97316;
+}
+
+.summaryIcon.red {
+    background: #fef2f2;
+    color: #dc2626;
+}
+
+.summaryCard span {
+    display: block;
+
+    color: #6b7280;
+
+    font-size: 12px;
+}
+
+.summaryCard strong {
+    display: block;
+
+    margin-top: 4px;
+
+    font-size: 22px;
+}
+
+
+/* ========================= */
+/* CONTROLES */
+/* ========================= */
+
+.controls {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 15px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+}
+
+.navigation button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 34px;
+    height: 34px;
+
+    border: 1px solid #e5e7eb;
+
+    background: white;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+}
+
+.navigation strong {
+    font-size: 15px;
+}
+
+.periods {
+    display: flex;
+
+    padding: 4px;
+
+    background: #f3f4f6;
+
+    border-radius: 8px;
+}
+
+.periods button {
+    padding: 7px 12px;
+
+    border: none;
+
+    background: transparent;
+
+    color: #6b7280;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-size: 12px;
+}
+
+.periods .periodActive {
+    background: white;
+
+    color: #2563eb;
+
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+
+    font-weight: 600;
+}
+
+
+/* ========================= */
+/* CRONOGRAMA */
+/* ========================= */
+
+.schedule {
+    overflow-x: auto;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+}
+
+
+/* ========================= */
+/* CABEÇALHO DA TIMELINE */
+/* ========================= */
+
+.timelineHeader {
+    display: grid;
+
+    grid-template-columns: 280px 1fr;
+
+    min-width: 850px;
+
+    background: #f9fafb;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.projectColumn {
+    padding: 15px;
+
+    color: #6b7280;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+.weeks {
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.week {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 10px;
+
+    border-left: 1px solid #e5e7eb;
+}
+
+.week span {
+    color: #9ca3af;
+
+    font-size: 10px;
+}
+
+.week strong {
+    margin-top: 3px;
+
+    font-size: 11px;
+}
+
+
+/* ========================= */
+/* LINHAS DOS PROJETOS */
+/* ========================= */
+
+.projectRow {
+    display: grid;
+
+    grid-template-columns: 280px 1fr;
+
+    min-width: 850px;
+
+    min-height: 120px;
+
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.projectInfo {
+    padding: 15px;
+
+    border-right: 1px solid #e5e7eb;
+}
+
+.projectTitle {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+.projectTitle strong {
+    font-size: 13px;
+
+    line-height: 1.4;
+}
+
+.projectTitle button {
+    border: none;
+
+    background: transparent;
+
+    color: #9ca3af;
+
+    cursor: pointer;
+}
+
+.projectInfo > span {
+    display: block;
+
+    margin-top: 6px;
+
+    color: #9ca3af;
+
+    font-size: 11px;
+}
+
+
+/* ========================= */
+/* PROGRESSO */
+/* ========================= */
+
+.progressInfo {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-top: 12px;
+}
+
+.progressBar {
+    flex: 1;
+
+    height: 6px;
+
+    overflow: hidden;
+
+    background: #e5e7eb;
+
+    border-radius: 10px;
+}
+
+.progress {
+    height: 100%;
+
+    background: #2563eb;
+
+    border-radius: 10px;
+}
+
+.progressInfo > span {
+    color: #6b7280;
+
+    font-size: 10px;
+}
+
+
+/* ========================= */
+/* TIMELINE */
+/* ========================= */
+
+.timeline {
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    position: relative;
+}
+
+.timelineCell {
+    position: relative;
+
+    border-right: 1px solid #f1f5f9;
+}
+
+.taskBar {
+    position: absolute;
+
+    top: 42px;
+
+    left: 8px;
+
+    min-width: 70px;
+
+    height: 36px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 0 10px;
+
+    border-radius: 7px;
+
+    color: white;
+
+    font-size: 11px;
+
+    box-sizing: border-box;
+
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.taskBar span {
+    display: flex;
+}
+
+.andamento {
+    background: #16a34a;
+}
+
+.concluido {
+    background: #2563eb;
+}
+
+.atrasado {
+    background: #dc2626;
+}
+
+
+/* ========================= */
+/* LEGENDA */
+/* ========================= */
+
+.legend {
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 20px;
+
+    margin-top: 15px;
+}
+
+.legend div {
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    color: #6b7280;
+
+    font-size: 11px;
+}
+
+.legendGreen,
+.legendBlue,
+.legendRed {
+    width: 9px;
+    height: 9px;
+
+    border-radius: 50%;
+}
+
+.legendGreen {
+    background: #16a34a;
+}
+
+.legendBlue {
+    background: #2563eb;
+}
+
+.legendRed {
+    background: #dc2626;
+}
+
+
+/* ========================= */
+/* TABLET */
+/* 577px - 992px */
+/* ========================= */
+
+@media (max-width: 992px) {
+
+    .summary {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .header {
+        align-items: flex-start;
+    }
+
+}
+
+
+/* ========================= */
+/* TELEMÓVEL */
+/* até 576px */
+/* ========================= */
+
+@media (max-width: 576px) {
+
+    .container {
+        padding: 15px;
+    }
+
+    .header {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .titleArea h2 {
+        font-size: 20px;
+    }
+
+    .addButton {
+        justify-content: center;
+    }
+
+    .summary {
+        grid-template-columns: 1fr;
+    }
+
+    .controls {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 12px;
+    }
+
+    .navigation {
+        justify-content: space-between;
+    }
+
+    .periods {
+        justify-content: space-between;
+    }
+
+    .periods button {
+        flex: 1;
+    }
+
+    .legend {
+        justify-content: flex-start;
+
+        flex-wrap: wrap;
+    }
+
+}

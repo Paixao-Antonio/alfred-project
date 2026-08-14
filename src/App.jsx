@@ -26,7 +26,16 @@ import Configuracoes from "./components/pages/Configuracoes";
 import NovaTarefa from "./components/pages/NovaTarefa";
 import Relatorios from "./components/pages/Relatorios";
 import DashboardPage from "./components/pages/DashboardPage";
+import Cronograma from "./components/pages/Cronograma";
+import Sprints from "./components/pages/Sprints";
+import Kanban from "./components/pages/Kanban";
+import Recursos from "./components/pages/Recursos";
+import Orcamento from "./components/pages/Orcamento";
+import Stakeholders from "./components/pages/Stakeholders";
+import Riscos from "./components/pages/Riscos";
+import Documentos from "./components/pages/Documentos";
 import PublicLayout from "./layouts/PublicLayout";
+
 
 function App() {
   return (
@@ -55,6 +64,15 @@ function App() {
         <Route path="/nova-tarefa" element={<NovaTarefa />} />
         <Route path="/relatorio" element={<Relatorios />} />
         <Route path="/dashboard-page" element={<DashboardPage />} />
+        <Route path="/cronograma" element={<Cronograma />} />
+        <Route path="/sprints" element={<Sprints />} />
+        <Route path="/kanban" element={<Kanban />} />
+        <Route path="/recursos" element={<Recursos />} />
+        <Route path="/orcamento" element={<Orcamento />} />
+        <Route path="/stakeholders" element={<Stakeholders />} />
+        <Route path="/riscos" element={<Riscos />} />
+        <Route path="/documentos" element={<Documentos />} />
+
       </Route>
     </Routes>
   );
