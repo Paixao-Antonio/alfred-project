@@ -42,15 +42,16 @@
 }
 
 
-.DivActividades {
-    max-width: 1050px;
+.teste {
+    width: 1050px;
     margin: 0 auto;
+    padding: 0px 20px;
+}
+
+.DivActividades {
     box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
     border-radius: 5px;
-    margin-top: 20px;
     background-color: var(--color-background);
-    border: 1px solid rgb(179, 179, 179);
-    
 }
 
 .DivActividadesHeader {
@@ -90,11 +91,12 @@
     outline: none;
     padding: 10px 10px 50px 10px;
     border: 1px solid var(--color-border);
-    
+
 }
 
 .DivActividadesAdd {
     display: flex;
+    width: 1050px;
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px 10px 20px;
@@ -112,6 +114,7 @@
     border: 1px solid var(--color-border);
     background: var(--color-primary-light);
     cursor: pointer;
+    margin: 30px;
 }
 
 .DivPesquisarActividades {
@@ -174,7 +177,7 @@ p {
     gap: 20px;
     padding: 10px 20px 10px 20px;
     border-left: 3px solid var(--color-primary-light);
-  
+
 }
 
 
@@ -222,7 +225,6 @@ p {
     font-size: 14px;
     outline: none;
     border: 1px solid var(--color-border-strong);
-    
 }
 
 
@@ -239,10 +241,10 @@ p {
     color: var(--color-background);
     background-color: var(--color-danger);
     border: 1px solid var(--color-border-strong);
-    
+
 }
 
-.DivActividadesChanger span{
+.DivActividadesChanger span {
     color: var(--color-text-primary);
     font-size: 13px;
 }

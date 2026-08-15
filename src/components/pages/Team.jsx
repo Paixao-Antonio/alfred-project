@@ -11,9 +11,6 @@ import {
     FiMoreVertical,
 } from "react-icons/fi";
 
-
-import Pesquisar from './Pesquisar'
-
 import CardTitle from '../formulario/forma/CardTitle'
 
 import CardSubTitle from '../formulario/forma/CardSubTitle'
@@ -24,8 +21,6 @@ const Team = () => {
 
         <div className={styles.aaaaaa}>
 
-            <Pesquisar />
-
             <CardTitle
                 header="Gestão de Equipe"
                 title="Equipe"
@@ -35,11 +30,15 @@ const Team = () => {
 
             <CardSubTitle />
 
-            <div className={styles.equipa}>
-                <div className={styles.equipaOne}>
-                    <input type="text" placeholder='pesquise por nome, cargo ou departamento...' />
-                    <button>Pesquisar</button>
+            <div className={styles.testeEquipa}>
+
+                <div className={styles.equipa}>
+                    <div className={styles.equipaOne}>
+                        <input type="text" placeholder='pesquise por nome, cargo ou departamento...' />
+                        <button>Pesquisar</button>
+                    </div>
                 </div>
+
             </div>
 
             <div className={styles.team}>

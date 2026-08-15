@@ -1,9 +1,5 @@
 
-import React from 'react'
-
 import { useState } from 'react'
-
-import Pesquisar from './Pesquisar'
 
 import styles from './Configuracoes.module.css'
 
@@ -37,8 +33,6 @@ const Configuracoes = () => {
     return (
 
         <div>
-
-            <Pesquisar />
 
             <div className={styles.settings}>
 

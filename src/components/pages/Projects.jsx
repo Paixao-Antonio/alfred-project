@@ -28,12 +28,16 @@ const projects = ({ estado }) => {
 
             <CardSubTitle />
 
-            <ProjectSearch
-                placeholder='pesquise por nome ou gerente'
-                variante='padraoproj'
-            />
+            <div className={styles.Procurar}>
 
-            <div className={styles.cardOne }>
+                <ProjectSearch
+                    placeholder='pesquise por nome ou gerente'
+                    variante='padraoproj'
+                />
+
+            </div >
+
+            <div className={styles.cardOne}>
 
                 <div className={styles.cardTwo}>
 
@@ -51,7 +55,7 @@ const projects = ({ estado }) => {
 
                                     <p className={styles.id}>
                                         ID: 4
-                                    </p>     
+                                    </p>
                                 </div>
 
                                 <span className={styles.status}>

@@ -83,6 +83,7 @@
     overflow-y: auto;
 
     box-sizing: border-box;
+
 }
 
 
@@ -145,6 +146,7 @@
     cursor: pointer;
 
     transition: 0.2s ease;
+
 }
 
 
@@ -161,6 +163,7 @@
     min-width: 20px;
 
     font-size: 18px;
+    
 }
 
 

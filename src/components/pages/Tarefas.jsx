@@ -3,8 +3,6 @@ import React from 'react'
 
 import { Link } from "react-router-dom";
 
-import Pesquisar from './Pesquisar'
-
 import styles from './Tarefas.module.css'
 import CardTitle from '../formulario/forma/CardTitle'
 import ProjectSearch from '../formulario/forma/ProjectSearch'
@@ -13,8 +11,6 @@ const Tarefas = () => {
     return (
 
         <div>
-
-            <Pesquisar />
 
             <div className={styles.CardTarefas}>
 

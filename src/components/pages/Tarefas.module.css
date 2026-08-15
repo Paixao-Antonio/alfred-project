@@ -43,18 +43,16 @@
 
 
 
-
-.CardTarefas {
-    width: 1050px;
-    margin: 0 auto;
-    
-}
-
 .CardTarefasOne {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 0px 20px 0px;
+}
+
+.CardTarefas {
+    width: 1050px;
+    margin: 0 auto;
+    padding: 0px 20px;
 }
 
 .CardTarefasTwo h3 {
@@ -167,7 +165,7 @@
     display: flex;
     justify-content: space-between;
     padding-bottom: 20px;
-    
+
 }
 
 

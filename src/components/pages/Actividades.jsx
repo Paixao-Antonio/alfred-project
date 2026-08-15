@@ -2,16 +2,12 @@
 
 import React from 'react'
 
-import Pesquisar from './Pesquisar'
-
 import styles from './Actividades.module.css'
 
 const Actividades = () => {
     return (
 
-        <div >
-
-            <Pesquisar />
+        <div className={styles.teste}>
 
             <div className={styles.DivActividades}>
 
@@ -83,8 +79,6 @@ const Actividades = () => {
                     <span>Todas alterações feitas em projectos são registradas automaticamente no histórico. Isso garante total restraebilidade e transparência nas informações.</span>
                 </div>
             </div>
-
-
 
         </div>
     )

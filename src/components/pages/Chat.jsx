@@ -199,6 +199,7 @@ const Chat = () => {
             </div>
 
             <div className={styles.cardChatRodape}>
+                
                 <div className={styles.cardChatRodapeOne}>
                     <IoChatboxEllipsesOutline />
                     <span>Chat em tempo real</span>

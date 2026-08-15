@@ -41,7 +41,7 @@ import AdicionarMembro from "./components/pages/AdicionarMembro";
 import NovoCronograma from "./components/pages/NovoCronograma";
 import AlocarRecursos from "./components/pages/AlocarRecursos";
 import NovoRisco from "./components/pages/NovoRisco";
-
+import Auditoria from "./components/pages/Auditoria";
 
 import PublicLayout from "./layouts/PublicLayout";
 
@@ -86,8 +86,9 @@ function App() {
         <Route path="/criar-sprint" element={<CriarSprint />} />
         <Route path="/adicionar-membro" element={<AdicionarMembro />} />
         <Route path="/novo-cronograma" element={<NovoCronograma />} />
-        <Route path="/teste" element={<AlocarRecursos />} />
-        <Route path="/teste2" element={<NovoRisco />} />
+        <Route path="/add-recursos" element={<AlocarRecursos />} />
+        <Route path="/novo-risco" element={<NovoRisco />} />
+        <Route path="/logs" element={<Auditoria />} />
 
       </Route>
 

@@ -1,176 +1,455 @@
+/* =========================================================
+   VARIÁVEIS
+   ========================================================= */
+
 :root {
 
-    /* 🔵 Cores Primárias */
+    /* Cores */
     --color-primary: #2563EB;
     --color-primary-dark: #1D4ED8;
     --color-primary-light: #3B82F6;
 
-    /* ⚫ Texto */
     --color-text-primary: #111827;
     --color-text-secondary: #1F2937;
     --color-text-muted: #6B7280;
 
-    /* ⚪ Fundos */
     --color-background: #F9FAFB;
     --color-surface: #FFFFFF;
 
-    /* Bordas e Cinzas */
     --color-border: #E5E7EB;
     --color-border-strong: #D1D5DB;
-    --color-gray-light: #9CA3AF;
 
-    /* 🟢 Badge Sucesso / Mercado Angolano */
-    --color-success-bg: #E6F4EA;
     --color-success: #16A34A;
-
-    /* 🔴 Indicador / Alerta */
     --color-danger: #DC2626;
 
     /* Sombras */
     --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
-    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.08);
-    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.12);
+    --shadow-md: 0 4px 10px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.12);
 
-    /* Border Radius */
+    /* Radius */
     --radius-sm: 6px;
     --radius-md: 10px;
     --radius-lg: 16px;
 
     /* Transições */
     --transition-fast: 0.2s ease-in-out;
-    --transition-normal: 0.3s ease-in-out;
 }
+
+
+/* =========================================================
+   CONTAINER PRINCIPAL
+   ========================================================= */
 
 .admin {
+
+    /* Ocupa a tela disponível */
+    width: 100%;
+
+    min-height: 100vh;
+
+    /* Centraliza o conteúdo */
     display: flex;
+
     flex-direction: column;
+
     align-items: center;
-    background-color: var(--color-primary-light);
-    padding-bottom: 30px;
-    width: 100vw;
-    margin: 0 auto;
+
+    justify-content: center;
+
+    /* Fundo neutro */
+    background-color: var(--color-background);
+
+    padding: 40px 20px;
+
+    box-sizing: border-box;
 }
 
-.forgetText{
-    gap: 5px;
-}
+
+/* =========================================================
+   TÍTULO
+   ========================================================= */
 
 .admin h5 {
-    margin-left: -250px;
-    padding: 60px 0px 30px 0px;
-    color: var(--color-background);
+
+    margin: 0 0 30px 0;
+
+    padding: 0;
+
+    color: var(--color-text-primary);
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    text-align: center;
 }
+
+
+/* =========================================================
+   ÍCONE
+   ========================================================= */
 
 .icone {
 
-        display: flex;
-        margin: 0 auto;
-        width: 50px;
-        color: var(--color-background);
-        padding-bottom: 10px;
-        background-color: var(--color-primary-light);
-        padding-top: 10px;
-        height: 50px;
-        border-radius: 50%;
-}
-
-
-.CardAdmin {
-    background-color: var(--color-background);
-    width: 25%;
-    border-radius: 20px;
-    box-shadow: 0px 4px 10px rgba(2, 2, 1, 0.5);
-    padding: 20px 20px 20px 20px;
-}
-
-.CardAdmin h3 {
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.CardAdmin p {
-    font-size: 12px;
-    text-align: center;
-
-}
-
-
-.CardAdmin span {
     display: flex;
+
+    align-items: center;
+
     justify-content: center;
 
+    width: 50px;
+
+    height: 50px;
+
+    margin: 0 auto 10px auto;
+
+    padding: 10px;
+
+    border-radius: 50%;
+
+    color: var(--color-primary);
+
+    background-color: #E8F0FE;
+
+    box-sizing: border-box;
 }
 
+
+/* =========================================================
+   CARD ADMINISTRADOR
+   ========================================================= */
+
+.CardAdmin {
+
+    /*
+       No desktop o card terá aproximadamente 420px.
+       Nunca ultrapassa a tela.
+    */
+
+    width: 100%;
+
+    width: 320px;
+
+    background-color: var(--color-surface);
+
+    border: 1px solid var(--color-border);
+
+    border-radius: var(--radius-lg);
+
+    box-shadow: var(--shadow-lg);
+
+    padding: 30px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   TÍTULO DO CARD
+   ========================================================= */
+
+.CardAdmin h3 {
+
+    margin: 0;
+
+    padding: 10px 0;
+
+    color: var(--color-text-primary);
+
+    font-size: 22px;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   TEXTO
+   ========================================================= */
+
+.CardAdmin p {
+
+    margin: 0;
+
+    color: var(--color-text-muted);
+
+    font-size: 13px;
+
+    line-height: 1.5;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   SPAN
+   ========================================================= */
+
+.CardAdmin span {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+/* =========================================================
+   ESQUECI A SENHA
+   ========================================================= */
 
 .forget {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    font-size: 12px;
 
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 10px;
+
+    padding: 20px 0 10px 0;
+
+    font-size: 12px;
 }
+
+
+.forgetText {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+}
+
+
+/* =========================================================
+   BOTÃO / ACESSO
+   ========================================================= */
 
 .OpenAdmin {
 
     display: flex;
+
     align-items: center;
+
     justify-content: center;
-    padding: 15px 0px 0px 0px;
+
+    width: 100%;
+
+    padding-top: 15px;
 }
+
+
+/* =========================================================
+   USUÁRIO
+   ========================================================= */
 
 .Usario {
-    padding-top: 20px;
-    padding-bottom: 10px;
-    text-align: center;
+
+    padding: 20px 0 10px 0;
+
+    color: var(--color-text-muted);
+
     font-size: 14px;
+
+    text-align: center;
 }
+
+
+/* =========================================================
+   SEPARADOR
+   ========================================================= */
 
 .Or {
+
     padding-bottom: 20px;
+
+    color: var(--color-text-muted);
+
+    text-align: center;
 }
+
+
+/* =========================================================
+   RESTRIÇÕES / ACESSO
+   ========================================================= */
 
 .ResAcesso {
+
     padding-top: 15px;
+
+    color: var(--color-text-muted);
+
     font-size: 12px;
-    color: var(--color-background);
+
+    text-align: center;
 }
 
 
+/* =========================================================
+   TABLET
+   577px - 992px
+   ========================================================= */
 
+@media (max-width: 992px) {
 
-@media (max-width: 1024px) {
+    .admin {
 
-    
-    .CardAdmin {
-        background-color: var(--color-background);
-        width: 35%;
-        border-radius: 20px;
-        box-shadow: 0px 4px 10px rgba(2, 2, 1, 0.5);
-        padding: 20px 20px 20px 20px;
+        padding: 30px 20px;
+
     }
-  
+
+
+    .CardAdmin {
+
+        max-width: 420px;
+
+        padding: 28px;
+
+    }
+
 }
 
+
+/* =========================================================
+   TABLET PEQUENO
+   577px - 768px
+   ========================================================= */
 
 @media (max-width: 768px) {
-    .CardAdmin {
-        background-color: var(--color-background);
-        width: 45%;
-        border-radius: 20px;
-        box-shadow: 0px 4px 10px rgba(2, 2, 1, 0.5);
-        padding: 20px 20px 20px 20px;
+
+    .admin {
+
+        padding: 25px 20px;
+
     }
+
+
+    .CardAdmin {
+
+        max-width: 400px;
+
+        padding: 25px;
+
+    }
+
+
+    .CardAdmin h3 {
+
+        font-size: 20px;
+
+    }
+
 }
 
 
-@media (max-width: 480px) {
-  .CardAdmin {
-        background-color: var(--color-background);
-        width: 40%;
-        border-radius: 20px;
-        box-shadow: 0px 4px 10px rgba(2, 2, 1, 0.5);
-        padding: 20px 20px 20px 20px;
+/* =========================================================
+   TELEMÓVEL
+   ATÉ 576px
+   ========================================================= */
+
+@media (max-width: 576px) {
+
+    .admin {
+
+        min-height: 100vh;
+
+        padding: 20px 15px;
+
     }
+
+
+    .admin h5 {
+
+        margin-bottom: 20px;
+
+        font-size: 16px;
+
+    }
+
+
+    .CardAdmin {
+
+        width: 100%;
+
+        max-width: 100%;
+
+        padding: 22px 18px;
+
+        border-radius: var(--radius-md);
+
+    }
+
+
+    .CardAdmin h3 {
+
+        font-size: 19px;
+
+    }
+
+
+    .CardAdmin p {
+
+        font-size: 12px;
+
+    }
+
+
+    .forget {
+
+        flex-wrap: wrap;
+
+        font-size: 11px;
+
+    }
+
+
+    .ResAcesso {
+
+        font-size: 11px;
+
+    }
+
+}
+
+
+/* =========================================================
+   TELEMÓVEL MUITO PEQUENO
+   ATÉ 360px
+   ========================================================= */
+
+@media (max-width: 360px) {
+
+    .admin {
+
+        padding: 15px 10px;
+
+    }
+
+
+    .CardAdmin {
+
+        padding: 20px 15px;
+
+    }
+
+
+    .icone {
+
+        width: 45px;
+
+        height: 45px;
+
+    }
+
+
+    .CardAdmin h3 {
+
+        font-size: 18px;
+
+    }
+
 }

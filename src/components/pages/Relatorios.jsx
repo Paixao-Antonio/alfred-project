@@ -1,8 +1,6 @@
 
 import React from 'react'
 
-import Pesquisar from './Pesquisar'
-
 import styles from "./Relatorios.module.css";
 
 import {
@@ -29,8 +27,6 @@ const Relatorios = () => {
     return (
 
         <div >
-
-            <Pesquisar />
 
             <div className={styles.relatorio}>
 

@@ -4,12 +4,13 @@
 
 .container {
     width: 100%;
-    max-width: 1200px;
+    width: 1050px;
 
     margin: 0 auto;
-    padding: 20px;
+    padding: 0px 20px;
 
     color: #111827;
+
 }
 
 
@@ -62,6 +63,7 @@
     color: #2563eb;
 
     font-size: 22px;
+
 }
 
 .newButton {

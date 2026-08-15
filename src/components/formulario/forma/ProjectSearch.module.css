@@ -1,49 +1,193 @@
+/* =========================================
+   CONTAINER PRINCIPAL
+========================================= */
 
-.ProjectOne{
-    width: 1100px;
-    margin:  0 auto;
+.ProjectOne {
+
+    width: 100%;
+    max-width: 1050px;
+
+    margin: 0px auto;
+
     display: flex;
-    justify-content: space-between;
-    padding: 10px 10px;
     align-items: center;
-    border-radius: 5px;
-    border: 1px solid rgb(189, 187, 187);
-    gap: 20px;
-    background-color: aqua;
+    justify-content: center;
+
+    gap: 15px;
+
+    box-sizing: border-box;
+
+    border-radius: 8px;
+
 }
 
-.ProjectTwo{
-    width: 90%;
+
+/* =========================================
+   ÁREA DE PESQUISA
+========================================= */
+
+.ProjectTwo {
+    width: 100%;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
 }
 
-.ProjectTwo input{
-    width: 100%; 
-    padding: 5px;
-    border-radius: 5px;
-    border: 1px solid rgb(189, 188, 188);
-    color: black;
-    padding-left: 10px;
+
+.ProjectTwo input {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 9px 40px 9px 12px;
+
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+
     outline: none;
+
+    background-color: #ffffff;
+
+    color: #111827;
+
+    font-size: 12px;
 }
 
-.Search{
-    font-size: 20px;
-    margin-bottom: -5px;
-    margin-left: -35px;
+
+.ProjectTwo input:focus {
+    border-color: #2563eb;
+}
+
+
+/* =========================================
+   ÍCONE DE PESQUISA
+========================================= */
+
+.Search {
+    position: absolute;
+
+    right: 12px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    font-size: 18px;
+
+    color: #6b7280;
+
     cursor: pointer;
 }
 
 
-.ProjectThree{
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    width: 10%;
+.Search:hover {
+    color: #2563eb;
 }
 
-.ProjectThree select{
-    padding: 5px;
+
+/* =========================================
+   SELECT
+========================================= */
+
+.ProjectThree {
+    width: 10%;
+
+    display: flex;
+    align-items: center;
+}
+
+
+.ProjectThree select {
     width: 100%;
-    border: 1px solid rgb(189, 188, 188);
-    border-radius: 5px;
+
+    padding: 9px 8px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 6px;
+
+    outline: none;
+
+    background-color: #ffffff;
+
+    color: #374151;
+
+    font-size: 11px;
+
+    cursor: pointer;
+}
+
+
+.ProjectThree select:focus {
+    border-color: #2563eb;
+}
+
+
+/* =========================================
+   TABLET
+   577px - 992px
+========================================= */
+
+@media (max-width: 992px) {
+
+    .ProjectOne {
+        width: calc(100% - 40px);
+
+        margin: 20px auto;
+
+        padding: 10px 15px;
+    }
+
+
+    .ProjectTwo {
+        width: 75%;
+    }
+
+
+    .ProjectThree {
+        width: 25%;
+    }
+
+}
+
+
+/* =========================================
+   TELEMÓVEL
+   ATÉ 576px
+========================================= */
+
+@media (max-width: 576px) {
+
+    .ProjectOne {
+        width: calc(100% - 40px);
+
+        margin: 20px auto;
+
+        padding: 10px;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 10px;
+    }
+
+
+    .ProjectTwo {
+        width: 100%;
+    }
+
+
+    .ProjectThree {
+        width: 100%;
+    }
+
+
+    .ProjectThree select {
+        width: 100%;
+    }
+
 }

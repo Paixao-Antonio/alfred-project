@@ -1,13 +1,18 @@
-.guia {
-    max-width: 1050px;
+
+
+.guiaTeste {
+    width: 1050px;
     margin: 0 auto;
+    padding: 0 20px;
+}
+
+.guia {
     padding: 20px;
     box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
     border-radius: 5px;
     margin-top: 20px;
     margin-bottom: 20px;
     background-color: rgb(255, 255, 255);
-
 }
 
 .guiaOne {
@@ -131,7 +136,7 @@
 
 
 @media (max-width: 480px) {
-     .guiaTwo {
+    .guiaTwo {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         margin-bottom: 20px;

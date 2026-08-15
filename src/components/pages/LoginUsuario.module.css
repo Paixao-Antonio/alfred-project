@@ -1,29 +1,33 @@
+/* =========================================================
+   VARIÁVEIS
+   ========================================================= */
+
 :root {
 
-    /* 🔵 Cores Primárias */
+    /* Cores Primárias */
     --color-primary: #2563EB;
     --color-primary-dark: #1D4ED8;
     --color-primary-light: #3B82F6;
 
-    /* ⚫ Texto */
+    /* Texto */
     --color-text-primary: #111827;
     --color-text-secondary: #1F2937;
     --color-text-muted: #6B7280;
 
-    /* ⚪ Fundos */
+    /* Fundos */
     --color-background: #F9FAFB;
     --color-surface: #FFFFFF;
 
-    /* Bordas e Cinzas */
+    /* Bordas */
     --color-border: #E5E7EB;
     --color-border-strong: #D1D5DB;
     --color-gray-light: #9CA3AF;
 
-    /* 🟢 Badge Sucesso / Mercado Angolano */
+    /* Sucesso */
     --color-success-bg: #E6F4EA;
     --color-success: #16A34A;
 
-    /* 🔴 Indicador / Alerta */
+    /* Perigo */
     --color-danger: #DC2626;
 
     /* Sombras */
@@ -31,7 +35,7 @@
     --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.08);
     --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.12);
 
-    /* Border Radius */
+    /* Radius */
     --radius-sm: 6px;
     --radius-md: 10px;
     --radius-lg: 16px;
@@ -41,138 +45,415 @@
     --transition-normal: 0.3s ease-in-out;
 }
 
+
+/* =========================================================
+   RESET
+   ========================================================= */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   CONTAINER PRINCIPAL
+   ========================================================= */
+
 .admin {
+
+    width: 100%;
+
+    min-height: 100vh;
+
+    margin: 0;
+
+    padding: 40px 20px;
+
     display: flex;
+
     flex-direction: column;
+
     align-items: center;
-    background-color: var(--color-primary-light);
-    width: 100vw;
-    margin: 0 auto;
-    background-color: var(--color-primary-light);
-    
-}
 
-.forgetText {
-    gap: 5px;
-    
-}
-
-.admin h5 {
-    margin-left: -250px;
-    padding: 60px 0px 30px 0px;
-    color: var(--color-background);
-    
-}
-
-.icone {
-    display: flex;
-    margin: 0 auto;
-    width: 50px;
-    color: var(--color-background);
-    padding-bottom: 10px;
-    background-color: var(--color-primary-light);
-    padding-top: 10px;
-    height: 50px;
-    border-radius: 50%;
-}
-
-
-.CardAdmin {
-    background-color: var(--color-background);
-    width: 25%;
-    border-radius: 20px;
-    box-shadow: 0px 4px 10px rgba(2, 2, 1, 0.5);
-    padding: 20px 20px 20px 20px;
-}
-
-.CardAdmin h3 {
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.CardAdmin p {
-    font-size: 12px;
-    text-align: center;
-}
-
-
-.CardAdmin span {
-    display: flex;
     justify-content: center;
 
 }
 
 
-.forget {
+/* =========================================================
+   TEXTO SUPERIOR
+   ========================================================= */
+
+.admin h5 {
+
+    margin: 0 0 30px 0;
+
+    padding: 0;
+
+    color: var(--color-background);
+
+    font-size: 16px;
+
+    font-weight: 500;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   ÍCONE
+   ========================================================= */
+
+.icone {
+
     display: flex;
-    justify-content: space-between;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    font-size: 12px;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 50px;
+
+    height: 50px;
+
+    margin: 0 auto;
+
+    padding: 10px;
+
+    border-radius: 50%;
+
+    color: var(--color-background);
+
+    background-color: var(--color-primary-dark);
 
 }
+
+
+/* =========================================================
+   CARD ADMIN
+   ========================================================= */
+
+.CardAdmin {
+
+    width: 100%;
+
+    width: 320px;
+
+    padding: 25px;
+
+    background-color: var(--color-surface);
+
+    border-radius: var(--radius-lg);
+
+    box-shadow: var(--shadow-lg);
+   
+
+}
+
+
+/* =========================================================
+   TÍTULO DO CARD
+   ========================================================= */
+
+.CardAdmin h3 {
+
+    margin: 0;
+
+    padding: 10px 0;
+
+    color: var(--color-text-primary);
+
+    text-align: center;
+
+}
+
+
+/* =========================================================
+   PARÁGRAFO
+   ========================================================= */
+
+.CardAdmin p {
+
+    margin: 0;
+
+    color: var(--color-text-muted);
+
+    font-size: 12px;
+
+    line-height: 1.5;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   SPAN
+   ========================================================= */
+
+.CardAdmin span {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+/* =========================================================
+   ESQUECI A SENHA
+   ========================================================= */
+
+.forget {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 10px;
+
+    padding-top: 20px;
+
+    padding-bottom: 10px;
+
+    font-size: 12px;
+}
+
+
+.forgetText {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+}
+
+
+/* =========================================================
+   ÁREA DO BOTÃO
+   ========================================================= */
 
 .OpenAdmin {
 
     display: flex;
+
     align-items: center;
+
     justify-content: center;
-    padding: 15px 0px 0px 0px;
+
+    width: 100%;
+
+    padding-top: 15px;
 }
+
+
+/* =========================================================
+   USUÁRIO
+   ========================================================= */
 
 .Usario {
+
     padding-top: 20px;
+
     padding-bottom: 10px;
-    text-align: center;
+
+    color: var(--color-text-muted);
+
     font-size: 14px;
+
+    text-align: center;
 }
+
+
+/* =========================================================
+   OR
+   ========================================================= */
 
 .Or {
+
     padding-bottom: 20px;
+
+    text-align: center;
+
+    color: var(--color-text-muted);
 }
+
+
+/* =========================================================
+   RESTRIÇÃO DE ACESSO
+   ========================================================= */
 
 .ResAcesso {
+
     padding-top: 15px;
-    font-size: 12px;
-    color: var(--color-background);
+
     padding-bottom: 20px;
+
+    color: var(--color-background);
+
+    font-size: 12px;
+
+    text-align: center;
 }
 
 
+/* =========================================================
+   TABLET
+   577px - 992px
+   ========================================================= */
 
+@media (max-width: 992px) {
 
-@media (max-width: 1024px) {
+    .admin {
 
-    
-    .CardAdmin {
-        background-color: var(--color-background);
-        width: 35%;
-        border-radius: 20px;
-        box-shadow: 0px 4px 10px rgba(2, 2, 1, 0.5);
-        padding: 20px 20px 20px 20px;
+        padding: 35px 20px;
+
     }
-  
+
+
+    .CardAdmin {
+
+        max-width: 420px;
+
+        padding: 25px;
+
+    }
+
 }
 
+
+/* =========================================================
+   TABLET PEQUENO
+   577px - 768px
+   ========================================================= */
 
 @media (max-width: 768px) {
-    .CardAdmin {
-        background-color: var(--color-background);
-        width: 45%;
-        border-radius: 20px;
-        box-shadow: 0px 4px 10px rgba(2, 2, 1, 0.5);
-        padding: 20px 20px 20px 20px;
+
+    .admin {
+
+        padding: 30px 20px;
+
     }
+
+
+    .CardAdmin {
+
+        max-width: 400px;
+
+        padding: 22px;
+
+    }
+
 }
 
 
-@media (max-width: 480px) {
-  .CardAdmin {
-        background-color: var(--color-background);
-        width: 40%;
-        border-radius: 20px;
-        box-shadow: 0px 4px 10px rgba(2, 2, 1, 0.5);
-        padding: 20px 20px 20px 20px;
+/* =========================================================
+   TELEMÓVEL
+   ATÉ 576px
+   ========================================================= */
+
+@media (max-width: 576px) {
+
+    .admin {
+
+        min-height: 100vh;
+
+        padding: 25px 15px;
+
     }
+
+
+    .admin h5 {
+
+        margin-bottom: 20px;
+
+        font-size: 14px;
+
+    }
+
+
+    .CardAdmin {
+
+        width: 100%;
+
+        max-width: 100%;
+
+        padding: 20px;
+
+        border-radius: var(--radius-md);
+
+    }
+
+
+    .CardAdmin h3 {
+
+        font-size: 20px;
+
+    }
+
+
+    .CardAdmin p {
+
+        font-size: 12px;
+
+    }
+
+
+    .forget {
+
+        flex-wrap: wrap;
+
+    }
+
+
+    .ResAcesso {
+
+        font-size: 11px;
+
+    }
+
+}
+
+
+/* =========================================================
+   TELEMÓVEL PEQUENO
+   ATÉ 360px
+   ========================================================= */
+
+@media (max-width: 360px) {
+
+    .admin {
+
+        padding: 20px 10px;
+
+    }
+
+
+    .CardAdmin {
+
+        padding: 18px 15px;
+
+    }
+
+
+    .icone {
+
+        width: 45px;
+
+        height: 45px;
+
+    }
+
+
+    .CardAdmin h3 {
+
+        font-size: 18px;
+
+    }
+
 }
