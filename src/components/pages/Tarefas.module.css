@@ -221,3 +221,349 @@
     box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
     background: var(--color-danger);
 }
+
+
+
+
+@media (max-width: 992px) {
+
+    .CardTarefas {
+        width: calc(100% - 40px);
+        max-width: 1050px;
+    }
+
+
+    .CardTarefasOne {
+        gap: 20px;
+    }
+
+
+    .CardTarefasTwo h3 {
+        font-size: 28px;
+    }
+
+
+    /* Cards principais */
+
+    .CardMother {
+        gap: 20px;
+    }
+
+
+    .CardTask {
+        width: 33.333%;
+    }
+
+
+    /* Status */
+
+    .CardStatusZero {
+        gap: 20px;
+    }
+
+
+    .CardStatus {
+        width: 33.333%;
+    }
+
+
+    /* Tarefas */
+
+    .TarefasZero {
+        gap: 20px;
+    }
+
+
+    .Tarefas {
+        width: 33.333%;
+    }
+
+}
+
+
+/* ==========================================================================
+   TABLET PEQUENO
+   Até 768px
+   ========================================================================== */
+
+@media (max-width: 768px) {
+
+    .CardTarefas {
+        width: calc(100% - 40px);
+        padding: 0;
+    }
+
+
+    /* Cabeçalho */
+
+    .CardTarefasOne {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+
+    .CardTarefasTwo {
+        width: 100%;
+    }
+
+
+    .CardTarefasTwo h3 {
+        font-size: 25px;
+    }
+
+
+    .CardTarefasTwo span {
+        font-size: 13px;
+    }
+
+
+    .CardTarefasOne .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    /* Cards de resumo */
+
+    .CardMother {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+    }
+
+
+    .CardTask {
+        width: 100%;
+    }
+
+
+    /* Status */
+
+    .CardStatusZero {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+    }
+
+
+    .CardStatus {
+        width: 100%;
+        padding: 20px 5px 10px 5px;
+    }
+
+
+    /* Lista de tarefas */
+
+    .TarefasZero {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+    }
+
+
+    .Tarefas {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+
+    .TarefasCard {
+        gap: 10px;
+    }
+
+
+    .TarefasCardResp {
+        gap: 10px;
+    }
+
+}
+
+
+/* ==========================================================================
+   MOBILE
+   Até 576px
+   ========================================================================== */
+
+@media (max-width: 576px) {
+
+    .CardTarefas {
+        width: calc(100% - 30px);
+        max-width: none;
+        padding: 0;
+    }
+
+
+    /* Cabeçalho */
+
+    .CardTarefasOne {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 15px;
+    }
+
+
+    .CardTarefasTwo {
+        width: 100%;
+    }
+
+
+    .CardTarefasTwo h3 {
+        font-size: 22px;
+        padding-bottom: 5px;
+    }
+
+
+    .CardTarefasTwo span {
+        font-size: 12px;
+    }
+
+
+    .CardTarefasOne .button {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+
+    /* Cards de resumo */
+
+    .CardMother {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+
+    .CardTask {
+        width: 100%;
+    }
+
+
+    .CardTaskTwo {
+        padding: 15px;
+    }
+
+
+    .CardTaskTwo h4 {
+        font-size: 13px;
+    }
+
+
+    .CardTaskTwo span {
+        font-size: 18px;
+    }
+
+
+    /* Status */
+
+    .CardStatusZero {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
+    .CardStatus {
+        width: 100%;
+        padding: 15px 5px 10px 5px;
+    }
+
+
+    .CardStatus h4 {
+        font-size: 14px;
+    }
+
+
+    .CardStatus span {
+        font-size: 11px;
+    }
+
+
+    /* Tarefas */
+
+    .TarefasZero {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-bottom: 15px;
+    }
+
+
+    .Tarefas {
+        width: 100%;
+        margin-top: 10px;
+        padding: 15px;
+    }
+
+
+    .TarefasCard {
+        gap: 10px;
+    }
+
+
+    .TarefasCardDesc p {
+        font-size: 11px;
+    }
+
+
+    .TarefasCardResp {
+        font-size: 11px;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+
+    .TarefasCardPriodidade {
+        font-size: 11px;
+        gap: 10px;
+    }
+
+
+    .TarefasPriodidade {
+        font-size: 11px;
+    }
+
+}
+
+
+/* ==========================================================================
+   MOBILE PEQUENO
+   Até 360px
+   ========================================================================== */
+
+@media (max-width: 360px) {
+
+    .CardTarefas {
+        width: calc(100% - 20px);
+    }
+
+
+    .CardTarefasTwo h3 {
+        font-size: 20px;
+    }
+
+
+    .CardTaskTwo {
+        padding: 12px;
+    }
+
+
+    .CardStatus {
+        padding: 12px 5px 8px 5px;
+    }
+
+
+    .Tarefas {
+        padding: 12px;
+    }
+
+
+    .TarefasCardResp,
+    .TarefasCardPriodidade {
+        align-items: flex-start;
+    }
+}

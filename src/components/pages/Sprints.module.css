@@ -598,7 +598,28 @@
 /* 577px - 992px */
 /* ========================= */
 
+@media (max-width: 1050px) {
+
+    .container {
+        width: 100%;
+        max-width: 1050px;
+        padding: 0 20px;
+    }
+
+}
+
+
+/* =========================================
+   TABLET
+   Até 992px
+========================================= */
+
 @media (max-width: 992px) {
+
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
 
     .summary {
         grid-template-columns: repeat(2, 1fr);
@@ -608,62 +629,254 @@
         grid-template-columns: 1fr;
     }
 
+    .currentInfo {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
 }
 
 
-/* ========================= */
-/* TELEMÓVEL */
-/* até 576px */
-/* ========================= */
+/* =========================================
+   TABLET PEQUENO
+   Até 768px
+========================================= */
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
 
     .container {
-        padding: 15px;
+        width: 100%;
+        padding: 0 16px;
     }
 
     .header {
-        flex-direction: column;
-
-        align-items: stretch;
+        gap: 15px;
     }
 
-    .newButton {
-        justify-content: center;
+    .titleArea h2 {
+        font-size: 22px;
+    }
+
+    .titleArea p {
+        font-size: 13px;
     }
 
     .summary {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .summaryCard {
+        padding: 15px;
+    }
+
+    .currentSprint {
+        padding: 18px;
     }
 
     .currentInfo {
-        grid-template-columns: 1fr;
-
+        grid-template-columns: repeat(2, 1fr);
         gap: 15px;
     }
 
     .filterArea {
-        flex-direction: column;
-
-        align-items: stretch;
-    }
-
-    .filters {
-        overflow-x: auto;
-    }
-
-    .filters button {
-        white-space: nowrap;
+        flex-wrap: wrap;
     }
 
     .sprintList {
         grid-template-columns: 1fr;
     }
 
-    .sprintDetails {
-        flex-direction: column;
+}
 
+
+/* =========================================
+   TELEMÓVEL
+   Até 576px
+========================================= */
+
+@media (max-width: 576px) {
+
+    .container {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    /* Cabeçalho */
+
+    .header {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+
+    .titleArea {
+        align-items: flex-start;
+    }
+
+    .titleArea h2 {
+        font-size: 20px;
+    }
+
+    .titleArea p {
+        font-size: 12px;
+    }
+
+    .titleIcon {
+        width: 42px;
+        height: 42px;
+        font-size: 19px;
+        flex-shrink: 0;
+    }
+
+    .newButton {
+        width: 100%;
+        justify-content: center;
+    }
+
+
+    /* Resumo */
+
+    .summary {
+        grid-template-columns: 1fr;
         gap: 10px;
     }
 
+    .summaryCard {
+        padding: 15px;
+    }
+
+    .summaryCard strong {
+        font-size: 20px;
+    }
+
+
+    /* Sprint atual */
+
+    .currentSprint {
+        padding: 16px;
+        margin-bottom: 20px;
+    }
+
+    .currentHeader {
+        gap: 10px;
+    }
+
+    .currentHeader h3 {
+        font-size: 18px;
+    }
+
+    .currentHeader p {
+        font-size: 12px;
+    }
+
+    .currentInfo {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        margin-top: 20px;
+        padding: 15px 0;
+    }
+
+
+    /* Filtros */
+
+    .filterArea {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .filterArea h3 {
+        font-size: 16px;
+    }
+
+    .filters {
+        width: 100%;
+        overflow-x: auto;
+        justify-content: flex-start;
+    }
+
+    .filters button {
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+
+
+    /* Lista */
+
+    .sprintList {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .sprintCard {
+        padding: 16px;
+    }
+
+    .sprintTop {
+        gap: 10px;
+    }
+
+    .sprintName {
+        gap: 6px;
+    }
+
+    .sprintName h3 {
+        font-size: 15px;
+    }
+
+    .sprintDetails {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+}
+
+
+/* =========================================
+   TELEMÓVEL PEQUENO
+   Até 400px
+========================================= */
+
+@media (max-width: 400px) {
+
+    .container {
+        padding: 0 12px;
+    }
+
+    .titleArea h2 {
+        font-size: 18px;
+    }
+
+    .titleIcon {
+        width: 38px;
+        height: 38px;
+        font-size: 17px;
+    }
+
+    .currentSprint {
+        padding: 14px;
+    }
+
+    .currentHeader h3 {
+        font-size: 16px;
+    }
+
+    .sprintCard {
+        padding: 14px;
+    }
+
+    .sprintName h3 {
+        font-size: 14px;
+    }
+
+    .activeBadge,
+    .andamento,
+    .concluida,
+    .planejada {
+        font-size: 9px;
+        padding: 4px 7px;
+    }
 }

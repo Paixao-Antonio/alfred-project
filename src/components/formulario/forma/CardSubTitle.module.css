@@ -103,22 +103,198 @@
 }
 
 
+/* =========================================================
+   RESPONSIVIDADE
+   ========================================================= */
 
 
+/* =========================================================
+   TABLET
+   577px ATÉ 992px
+   ========================================================= */
 
-@media (max-width: 1024px) {}
+@media (max-width: 992px) {
 
+    .CardSubOne {
 
-@media (max-width: 768px) {
+        width: 100%;
 
-    .Abc {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
+        max-width: 1050px;
+
+        padding: 10px 20px 30px 20px;
+
     }
 
+
+    .Abc {
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 20px;
+
+    }
+
+
+    .CardSubTwo {
+
+        width: 100%;
+
+    }
 
 }
 
 
-@media (max-width: 480px) {}
+/* =========================================================
+   TELEMÓVEL
+   ATÉ 576px
+   ========================================================= */
+
+@media (max-width: 576px) {
+
+    .CardSubOne {
+
+        width: 100%;
+
+        padding: 10px 15px 25px 15px;
+
+    }
+
+
+    .CardSubOne h5 {
+
+        padding-left: 10px;
+
+        font-size: 17px;
+
+    }
+
+
+    .CardSpanNumber {
+
+        padding-left: 10px;
+
+        font-size: 32px;
+
+    }
+
+
+    .CardSpanText {
+
+        padding-left: 10px;
+
+        font-size: 13px;
+
+    }
+
+
+    .Abc {
+
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+
+    }
+
+
+    .CardSubTwo {
+
+        width: 100%;
+
+    }
+
+
+    .CardSubThree {
+
+        padding: 10px 0;
+
+    }
+
+
+    .CardSubIcon {
+
+        margin-right: 15px;
+
+        flex-shrink: 0;
+
+    }
+
+}
+
+
+/* =========================================================
+   TELEMÓVEL PEQUENO
+   ATÉ 360px
+   ========================================================= */
+
+@media (max-width: 360px) {
+
+    .CardSubOne {
+
+        padding: 10px 10px 20px 10px;
+
+    }
+
+
+    .CardSubOne h5 {
+
+        padding-left: 5px;
+
+        font-size: 16px;
+
+    }
+
+
+    .CardSpanNumber {
+
+        padding-left: 5px;
+
+        font-size: 30px;
+
+    }
+
+
+    .CardSpanText {
+
+        padding-left: 5px;
+
+        font-size: 12px;
+
+    }
+
+
+    .Abc {
+
+        gap: 12px;
+
+    }
+
+
+    .CardSubTwo {
+
+        padding: 15px 0;
+
+    }
+
+
+    .CardSubThree {
+
+        padding: 8px 0;
+
+    }
+
+
+    .CardSubIcon {
+
+        width: 36px;
+
+        height: 36px;
+
+        padding-top: 8px;
+
+        padding-bottom: 8px;
+
+        margin-right: 10px;
+
+    }
+
+}

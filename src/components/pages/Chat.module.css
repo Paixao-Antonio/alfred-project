@@ -1,4 +1,3 @@
-
 :root {
     /* 🔵 Cores Primárias */
     --color-primary: #2563EB;
@@ -52,7 +51,7 @@
     margin: 0 auto;
     padding: 20px;
     gap: 20px;
-    
+
 }
 
 .cardChatLeft {
@@ -70,7 +69,7 @@
     padding-bottom: 20px;
 }
 
-.cardChatLeftOne h4{
+.cardChatLeftOne h4 {
     font-size: 14px;
 }
 
@@ -167,7 +166,7 @@
     font-size: 16px;
 }
 
-.cardChatRigthIconeText span{
+.cardChatRigthIconeText span {
     font-size: 11px;
     background-color: var(--color-success);
     color: var(--color-success-bg);
@@ -324,7 +323,7 @@
     outline: none;
 }
 
-.chatSendOne input:hover{
+.chatSendOne input:hover {
     border: 1px solid var(--color-primary-light);
     transition: 1.5s;
 }
@@ -378,4 +377,400 @@
     font-size: 12px;
     padding-left: 20px;
     color: var(--color-surface);
+}
+
+
+
+/* =========================================================
+   RESPONSIVIDADE
+   ========================================================= */
+
+
+/* =========================================================
+   NOTEBOOK / TABLET GRANDE
+   Até 1050px
+========================================================= */
+
+@media (max-width: 1050px) {
+
+    .cardChat {
+        width: 100%;
+        max-width: 1050px;
+        padding: 20px;
+    }
+
+    .cardChatLeft {
+        width: 30%;
+        flex-shrink: 0;
+    }
+
+    .cardChatRigth {
+        width: 70%;
+        min-width: 0;
+    }
+
+    .chatContainer {
+        width: 100%;
+        max-width: 1050px;
+        padding: 20px;
+    }
+
+    .chatSend {
+        width: 100%;
+        max-width: 1100px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .cardChatRodape {
+        width: calc(100% - 40px);
+        max-width: 1010px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+   Até 992px
+========================================================= */
+
+@media (max-width: 992px) {
+
+    .cardChat {
+        width: 100%;
+        padding: 10px 20px;
+        gap: 15px;
+    }
+
+    .cardChatLeft {
+        width: 30%;
+        padding: 15px;
+    }
+
+    .cardChatRigth {
+        width: 68%;
+        min-width: 0;
+    }
+
+    .cardChatRigthOne {
+        padding: 15px;
+    }
+
+    .cardChatRigthIconeTwo {
+        gap: 12px;
+    }
+
+    .chatContainer {
+        padding: 15px;
+    }
+
+    .bubble {
+        max-width: 450px;
+    }
+
+    .chatSend {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .cardChatRodape {
+        width: calc(100% - 30px);
+    }
+
+}
+
+
+/* =========================================================
+   TABLET PEQUENO
+   Até 768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .cardChat {
+        width: 100%;
+        padding: 10px 20px;
+        flex-direction: column;
+        gap: 15px;
+        
+    }
+
+    .cardChatLeft {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .cardChatRigth {
+        width: 100%;
+    }
+
+    .cardChatRigthOne {
+        padding: 15px;
+    }
+
+    .cardChatRigthIconeTwo {
+        gap: 10px;
+    }
+
+    .chatContainer {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .bubble {
+        max-width: 70%;
+    }
+
+    .chatSend {
+        width: 100%;
+        padding: 15px 15px 60px 15px;
+    }
+
+    .chatSendOne {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .chatSendNote {
+        padding-left: 0;
+    }
+
+    .cardChatRodape {
+        width: calc(100% - 30px);
+        padding: 15px;
+    }
+
+}
+
+
+/* =========================================================
+   TELEMÓVEL
+   Até 576px
+========================================================= */
+
+@media (max-width: 576px) {
+
+    .cardChat {
+        width: 100%;
+        padding: 10px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
+    /* -----------------------------------------
+       LISTA DE CONVERSAS
+    ----------------------------------------- */
+
+    .cardChatLeft {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .cardChatLeftOne {
+        padding-bottom: 15px;
+    }
+
+    .cardChatLeftOne h4 {
+        font-size: 13px;
+    }
+
+
+    /* -----------------------------------------
+       ÁREA DO CHAT
+    ----------------------------------------- */
+
+    .cardChatRigth {
+        width: 100%;
+    }
+
+    .cardChatRigthOne {
+        padding: 12px;
+        gap: 10px;
+    }
+
+    .cardChatRigthTwo {
+        gap: 8px;
+        min-width: 0;
+    }
+
+    .cardChatRigthIcone {
+        padding: 7px 10px;
+        flex-shrink: 0;
+    }
+
+    .cardChatRigthIconeText {
+        min-width: 0;
+    }
+
+    .cardChatRigthIconeText h3 {
+        font-size: 14px;
+    }
+
+    .cardChatRigthIconeText span {
+        font-size: 9px;
+    }
+
+    .cardChatRigthIconeTwo {
+        gap: 8px;
+        flex-shrink: 0;
+    }
+
+
+    /* -----------------------------------------
+       MENSAGENS
+    ----------------------------------------- */
+
+    .chatContainer {
+        width: 100%;
+        margin: 10px auto;
+        padding: 12px;
+    }
+
+    .message {
+        gap: 7px;
+    }
+
+    .avatar {
+        width: 26px;
+        height: 26px;
+        min-width: 26px;
+        font-size: 11px;
+    }
+
+    .name {
+        font-size: 12px;
+    }
+
+    .bubble {
+        max-width: 80%;
+        padding: 7px 12px;
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+    .time {
+        font-size: 10px;
+    }
+
+
+    /* -----------------------------------------
+       ENVIO DE MENSAGEM
+    ----------------------------------------- */
+
+    .chatSend {
+        width: 100%;
+        padding: 10px 10px 50px 10px;
+    }
+
+    .chatSeparador {
+        margin-bottom: 15px;
+    }
+
+    .chatSendOne {
+        width: 100%;
+        padding: 0;
+        gap: 7px;
+    }
+
+    .chatSendOne input {
+        padding: 9px;
+        font-size: 13px;
+    }
+
+    .chatSendIcon {
+        gap: 6px;
+        font-size: 21px;
+    }
+
+    .chatSendIconTwo {
+        padding: 8px;
+    }
+
+    .chatSendNote {
+        padding: 8px 0 0 0;
+        font-size: 10px;
+    }
+
+
+    /* -----------------------------------------
+       RODAPÉ
+    ----------------------------------------- */
+
+    .cardChatRodape {
+        width: calc(100% - 20px);
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+
+    .cardChatRodapeOne {
+        font-size: 13px;
+    }
+
+    .cardChatRodapeText {
+        padding-left: 10px;
+        font-size: 11px;
+    }
+
+}
+
+
+/* =========================================================
+   TELEMÓVEL PEQUENO
+   Até 400px
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .cardChat {
+        padding: 8px;
+    }
+
+    .cardChatLeft {
+        padding: 12px;
+    }
+
+    .cardChatRigthOne {
+        padding: 10px;
+    }
+
+    .cardChatRigthIcone {
+        padding: 6px 9px;
+    }
+
+    .cardChatRigthIconeText h3 {
+        font-size: 13px;
+    }
+
+    .chatContainer {
+        padding: 10px;
+    }
+
+    .bubble {
+        max-width: 85%;
+        font-size: 12px;
+    }
+
+    .chatSendOne {
+        gap: 5px;
+    }
+
+    .chatSendOne input {
+        font-size: 12px;
+    }
+
+    .chatSendIcon {
+        font-size: 19px;
+    }
+
+    .chatSendIconTwo {
+        padding: 7px;
+    }
+
+    .cardChatRodape {
+        width: calc(100% - 16px);
+        padding: 12px;
+    }
+
 }

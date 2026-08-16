@@ -254,3 +254,415 @@ p {
     font-size: 14px;
     line-height: 1.5;
 }
+
+
+
+/* =========================================================
+   RESPONSIVIDADE
+   ========================================================= */
+
+
+/* =========================================================
+   NOTEBOOK / TABLET GRANDE
+   Até 1050px
+   ========================================================= */
+
+@media (max-width: 1050px) {
+
+    .teste {
+        width: 100%;
+        max-width: 1050px;
+        padding: 0 20px;
+    }
+
+    .DivActividadesAdd {
+        width: 100%;
+    }
+
+    .DivPesquisarActividades,
+    .DivActividadesCrono,
+    .DivActividadesChanger {
+        width: 100%;
+        max-width: 1050px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+   Até 992px
+   ========================================================= */
+
+@media (max-width: 992px) {
+
+    .teste {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .DivActividadesAdd {
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+    .DivPesquisarActividadesOne {
+        width: 100%;
+    }
+
+    .DivPesquisarActividadesOne input {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .DivPesquisarActividadesOne select {
+        width: 200px;
+        flex-shrink: 0;
+    }
+
+    .DivActividadesCronoOne {
+        gap: 15px;
+    }
+
+    .DivActividadesCronoThree {
+        margin-left: 20px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET PEQUENO
+   Até 768px
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .teste {
+        width: 100%;
+        padding: 0 16px;
+    }
+
+
+    /* -----------------------------------------
+       CABEÇALHO
+    ----------------------------------------- */
+
+    .DivActividadesHeader {
+        padding: 25px 15px 12px 15px;
+    }
+
+    .DivActividadesHeader h2 {
+        font-size: 15px;
+    }
+
+    .DivActividadesText {
+        font-size: 11px;
+    }
+
+
+    /* -----------------------------------------
+       ÁREA DE TEXTO
+    ----------------------------------------- */
+
+    .DivActividadesInput {
+        padding: 20px 15px 0 15px;
+    }
+
+    .DivActividadesInput textarea {
+        width: 100%;
+    }
+
+
+    /* -----------------------------------------
+       BOTÃO / ADICIONAR
+    ----------------------------------------- */
+
+    .DivActividadesAdd {
+        width: 100%;
+        padding: 10px 15px;
+    }
+
+    .DivActividadesAdd button {
+        margin: 15px 0 15px 15px;
+    }
+
+
+    /* -----------------------------------------
+       PESQUISA
+    ----------------------------------------- */
+
+    .DivPesquisarActividades {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .DivPesquisarActividadesOne {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .DivPesquisarActividadesOne input {
+        width: 100%;
+        min-height: 40px;
+    }
+
+    .DivPesquisarActividadesOne select {
+        width: 100%;
+    }
+
+
+    /* -----------------------------------------
+       CRONOGRAMA
+    ----------------------------------------- */
+
+    .DivActividadesCrono {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .DivActividadesCronoOne {
+        flex-direction: column;
+        gap: 10px;
+        padding: 12px 15px;
+    }
+
+    .DivActividadesCronoTwo {
+        flex-wrap: wrap;
+    }
+
+    .DivActividadesCronoThree {
+        margin-left: 0;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+
+    /* -----------------------------------------
+       ALTERAÇÃO
+    ----------------------------------------- */
+
+    .DivActividadesChanger {
+        width: 100%;
+        padding: 18px 15px 25px 15px;
+    }
+
+}
+
+
+/* =========================================================
+   TELEMÓVEL
+   Até 576px
+   ========================================================= */
+
+@media (max-width: 576px) {
+
+    .teste {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 12px;
+    }
+
+
+    /* -----------------------------------------
+       CABEÇALHO
+    ----------------------------------------- */
+
+    .DivActividadesHeader {
+        padding: 20px 12px 12px 12px;
+        gap: 8px;
+    }
+
+    .DivActividadesIcon {
+        padding: 8px;
+        border-radius: 8px;
+        flex-shrink: 0;
+    }
+
+    .DivActividadesHeader h2 {
+        font-size: 14px;
+    }
+
+    .DivActividadesText {
+        font-size: 10px;
+    }
+
+
+    /* -----------------------------------------
+       INPUT
+    ----------------------------------------- */
+
+    .DivActividadesInput {
+        padding: 15px 12px 0 12px;
+    }
+
+    .DivActividadesInput textarea {
+        padding: 10px;
+        min-height: 120px;
+    }
+
+
+    /* -----------------------------------------
+       ÁREA ADICIONAR
+    ----------------------------------------- */
+
+    .DivActividadesAdd {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+        padding: 10px 12px 15px 12px;
+    }
+
+    .DivActividadesAdd p {
+        font-size: 12px;
+    }
+
+    .DivActividadesAdd button {
+        width: 100%;
+        margin: 5px 0 10px 0;
+    }
+
+
+    /* -----------------------------------------
+       PESQUISA
+    ----------------------------------------- */
+
+    .DivPesquisarActividades {
+        width: 100%;
+        margin-top: 10px;
+        padding: 12px;
+    }
+
+    .DivPesquisarActividadesOne {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .DivPesquisarActividadesOne input {
+        width: 100%;
+        height: 40px;
+    }
+
+    .DivPesquisarActividadesOne select {
+        width: 100%;
+        height: 40px;
+    }
+
+
+    /* -----------------------------------------
+       CRONOGRAMA
+    ----------------------------------------- */
+
+    .DivActividadesCrono {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .DivActividadesCrono h3,
+    .DivActividadesCrono p {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .DivActividadesCronoOne {
+        flex-direction: column;
+        gap: 8px;
+        padding: 12px;
+    }
+
+    .DivActividadesCronoTwo {
+        flex-wrap: wrap;
+        font-size: 12px;
+        gap: 7px;
+    }
+
+    .DivActividadesCronoTwo span {
+        padding: 4px 7px;
+    }
+
+    .DivActividadesCronoThree {
+        margin-left: 0;
+        padding-bottom: 5px;
+        flex-wrap: wrap;
+        font-size: 11px;
+    }
+
+    .DivActividadesCronoText textarea {
+        min-height: 100px;
+        font-size: 13px;
+    }
+
+
+    /* -----------------------------------------
+       ALERTA / ALTERAÇÃO
+    ----------------------------------------- */
+
+    .DivActividadesChanger {
+        width: 100%;
+        flex-direction: column;
+        gap: 8px;
+        padding: 15px 12px 20px 12px;
+        margin-bottom: 20px;
+    }
+
+    .DivActividadesChanger span {
+        font-size: 12px;
+    }
+
+    .DivActividadesChangerTwo {
+        font-size: 12px;
+    }
+
+}
+
+
+/* =========================================================
+   TELEMÓVEL PEQUENO
+   Até 400px
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+    .teste {
+        padding: 0 10px;
+    }
+
+    .DivActividadesHeader {
+        padding: 18px 10px 10px 10px;
+    }
+
+    .DivActividadesHeader h2 {
+        font-size: 13px;
+    }
+
+    .DivActividadesText {
+        font-size: 9px;
+    }
+
+    .DivActividadesInput {
+        padding: 12px 10px 0 10px;
+    }
+
+    .DivActividadesAdd {
+        padding: 8px 10px 12px 10px;
+    }
+
+    .DivPesquisarActividades {
+        padding: 10px;
+    }
+
+    .DivActividadesCrono {
+        padding: 10px;
+    }
+
+    .DivActividadesCronoOne {
+        padding: 10px;
+    }
+
+    .DivActividadesChanger {
+        padding: 12px 10px 18px 10px;
+    }
+
+}

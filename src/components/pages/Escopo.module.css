@@ -278,3 +278,335 @@ select {
     border: 1px solid rgb(179, 179, 179);
     background-color: white;
 }
+
+
+
+
+
+@media (max-width: 992px) {
+
+    .CardSeparador,
+    .CardEscopoTwo,
+    .CardSalvar {
+        width: calc(100% - 0px);
+        max-width: 1050px;
+    }
+
+
+    /* Mantém os campos em duas colunas,
+       mas reduz o espaço entre eles */
+
+    .ConteinerLabel,
+    .ConteinerGestor {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 25px;
+    }
+
+
+    .CardEscopoOne {
+        padding: 25px 20px;
+    }
+
+
+    .CardConteinerFirst {
+        padding: 20px;
+    }
+
+
+    .CardABC {
+        padding: 15px;
+    }
+
+
+    .CardSalvar {
+        padding: 15px;
+    }
+
+}
+
+
+/* ==========================================================================
+   TABLET PEQUENO
+   577px - 768px
+   ========================================================================== */
+
+@media (max-width: 768px) {
+
+    .CardSeparador,
+    .CardEscopoTwo,
+    .CardSalvar {
+        width: calc(100% - 0px);
+        max-width: none;
+    }
+
+
+    /* Uma coluna */
+
+    .ConteinerLabel,
+    .ConteinerGestor {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+
+    .CardEscopoOne {
+        padding: 20px;
+    }
+
+
+    .CardEscopoThree {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+
+    .CardEscopoThree button {
+        margin: 10px 0 10px 10px;
+    }
+
+
+    .CardABC {
+        padding: 15px;
+    }
+
+
+    .CardConteiner {
+        padding: 15px;
+    }
+
+
+    .CardConteinerFirst {
+        padding: 15px;
+    }
+
+
+    .ConteinerInput,
+    .ConteinerInputName {
+        padding-bottom: 20px;
+    }
+
+
+    .ConteinerObject {
+        padding: 15px;
+    }
+
+
+    .ConteinerObjectName input,
+    .ConteinerInputDescricao input {
+        padding-bottom: 80px;
+    }
+
+
+    .InputExclusaoTwo {
+        flex-wrap: wrap;
+    }
+
+
+    .InputOne {
+        width: 10%;
+        min-width: 50px;
+    }
+
+
+    .InputTwo {
+        width: calc(90% - 10px);
+    }
+
+
+    .CardSalvar {
+        justify-content: flex-end;
+        gap: 10px;
+        padding: 15px;
+    }
+
+}
+
+
+/* ==========================================================================
+   MOBILE
+   Até 576px
+   ========================================================================== */
+
+@media (max-width: 576px) {
+
+    .CardSeparador,
+    .CardEscopoTwo,
+    .CardSalvar {
+        width: calc(100% - 15px);
+        max-width: none;
+    }
+
+
+    .CardSeparador {
+        padding: 10px 0;
+    }
+
+
+    .CardEscopoTwo {
+        border-radius: 8px;
+    }
+
+
+    .CardEscopoOne {
+        padding: 20px 15px;
+        border-radius: 8px 8px 0 0;
+    }
+
+
+    .CardEscopoThree {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+    .CardEscopoThree button {
+        margin: 10px 0 0 0;
+        width: 100%;
+    }
+
+
+    .CardPara {
+        font-size: 13px;
+    }
+
+
+    .CardABC {
+        padding: 10px;
+    }
+
+
+    .CardConteiner {
+        padding: 12px;
+    }
+
+
+    .CardConteinerFirst {
+        padding: 10px;
+    }
+
+
+    label {
+        font-size: 13px;
+    }
+
+
+    .ConteinerInput,
+    .ConteinerInputName {
+        padding-top: 8px;
+        padding-bottom: 18px;
+    }
+
+
+    .ConteinerInput input,
+    .ConteinerInputName input,
+    .ConteinerInput select,
+    .ConteinerGestor select {
+        width: 100%;
+        padding: 10px;
+        font-size: 13px;
+    }
+
+
+    .ConteinerObject {
+        padding: 10px;
+    }
+
+
+    .ConteinerObjectName input,
+    .ConteinerInputDescricao input {
+        padding: 10px 10px 70px 10px;
+        font-size: 13px;
+    }
+
+
+    .ConteinerObjectSpan {
+        font-size: 11px;
+        padding-bottom: 18px;
+    }
+
+
+    .InputExclusao div {
+        font-size: 13px;
+        padding: 10px;
+    }
+
+
+    .InputExclusaoTwo {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+
+    .InputOne,
+    .InputTwo {
+        width: 100%;
+    }
+
+
+    .InputOne {
+        padding: 10px;
+    }
+
+
+    .InputTwo {
+        padding: 10px;
+    }
+
+
+    .CardSalvar {
+        width: calc(100% - 0px);
+        flex-direction: column;
+        align-items: stretch;
+        padding: 12px;
+        gap: 8px;
+    }
+
+
+    .CardSalvar button {
+        width: 100%;
+        padding: 10px;
+    }
+
+}
+
+
+/* ==========================================================================
+   MOBILE MUITO PEQUENO
+   Até 360px
+   ========================================================================== */
+
+@media (max-width: 360px) {
+
+    .CardSeparador,
+    .CardEscopoTwo,
+    .CardSalvar {
+        width: calc(100% - 0px);
+    }
+
+
+    .CardEscopoOne {
+        padding: 15px 12px;
+    }
+
+
+    .CardABC {
+        padding: 8px;
+    }
+
+
+    .CardConteiner {
+        padding: 10px;
+    }
+
+
+    .ConteinerObjectName input,
+    .ConteinerInputDescricao input {
+        padding-bottom: 60px;
+    }
+
+
+    .CardSalvar {
+        padding: 10px;
+    }
+
+}

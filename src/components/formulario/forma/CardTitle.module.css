@@ -1,6 +1,7 @@
 /* ==========================================================================
    VARIÁVEIS GLOBAIS
    ========================================================================== */
+
 :root {
 
     /* 🔵 Cores Primárias */
@@ -49,6 +50,11 @@
     --spacing-lg: 40px;
 }
 
+
+/* ==========================================================================
+   RESET
+   ========================================================================== */
+
 *,
 *::before,
 *::after {
@@ -59,154 +65,391 @@
 /* ==========================================================================
    TÍTULO DO CARD — WRAPPER
    ========================================================================== */
+
 .cardTitle {
+
     width: 1050px;
+
+    max-width: 100%;
+
     margin: 0 auto;
-    padding: 0px 20px;
+
+    padding: 0 20px;
+
 }
 
 
 /* ==========================================================================
-   CARD PRINCIPAL (fundo escuro)
+   CARD PRINCIPAL
    ========================================================================== */
+
 .cardTitleOne {
+
     background-color: var(--color-primary-dark);
-    max-width: 1050px;
+
     width: 100%;
+
+    max-width: 1050px;
+
     margin: 0 auto;
+
     display: flex;
+
     flex-wrap: wrap;
+
     justify-content: space-between;
+
     align-items: center;
+
     gap: var(--spacing-md);
+
     padding: 25px 20px;
+
     border-radius: var(--radius-md);
+
 }
 
 
 /* ==========================================================================
-   BLOCO DE TEXTO (título + subtítulo)
+   BLOCO DE TEXTO
    ========================================================================== */
+
+.cardTitleTwo {
+
+    flex: 1;
+
+    min-width: 0;
+
+}
+
+
 .cardTitleTwo h3,
 .cardTitleTwo h5,
 .cardTitleTwo span {
+
     color: var(--color-background);
+
 }
+
 
 .cardTitleTwo h3 {
+
     font-size: 32px;
+
     padding: 7px 0 5px 0;
+
     line-height: 1.2;
+
+    margin: 0;
+
 }
+
 
 .cardTitleTwo span {
+
     font-size: 13px;
+
 }
 
 
 /* ==========================================================================
-   BLOCO DE AÇÕES (botões)
+   BLOCO DE AÇÕES
    ========================================================================== */
+
 .cardTitleThree {
+
     display: flex;
+
     flex-wrap: wrap;
+
     gap: var(--spacing-md);
+
 }
+
 
 .cardTitleThree button {
+
     padding: 8px 14px;
+
     border-radius: var(--radius-sm);
+
     border: 1px solid var(--color-gray-light);
+
     font-weight: bold;
+
     cursor: pointer;
+
     background-color: transparent;
-    transition: background-color var(--transition-normal), color var(--transition-normal);
+
+    transition:
+        background-color var(--transition-normal),
+        color var(--transition-normal);
+
 }
+
 
 .cardTitleThree button:hover {
+
     background-color: var(--color-border);
+
     color: var(--color-text-primary);
+
 }
+
 
 .cardTitleThree .CardBotao {
+
     display: flex;
+
     align-items: center;
+
     gap: 5px;
+
     background: var(--color-surface);
+
     color: var(--color-text-primary);
+
 }
 
 
 /* ==========================================================================
-   RESPONSIVIDADE — TABLET (até 1024px)
+   TABLET
+   577px - 992px
    ========================================================================== */
-@media (max-width: 1024px) {
 
-    .cardTitleOne {
-        padding: 24px 20px;
-    }
-
-    .cardTitleTwo h3 {
-        font-size: 28px;
-    }
-}
-
-
-/* ==========================================================================
-   RESPONSIVIDADE — TABLET PEQUENO / MOBILE GRANDE (até 768px)
-   ========================================================================== */
-@media (max-width: 768px) {
-
-    .cardTitleOne {
-        flex-direction: column;
-        /* texto em cima, botões embaixo */
-        align-items: flex-start;
-        text-align: left;
-        padding: 20px;
-    }
-
-    .cardTitleThree {
-        width: 100%;
-        justify-content: flex-start;
-    }
-
-    .cardTitleTwo h3 {
-        font-size: 24px;
-    }
-}
-
-
-/* ==========================================================================
-   RESPONSIVIDADE — MOBILE (até 480px)
-   ========================================================================== */
-@media (max-width: 480px) {
+@media (max-width: 992px) {
 
     .cardTitle {
-        padding: var(--spacing-sm) 0;
+
+        width: 100%;
+
+        max-width: 1050px;
+
+        padding: 0 20px;
+
     }
+
 
     .cardTitleOne {
-        padding: 16px;
-        border-radius: var(--radius-sm);
-        gap: var(--spacing-sm);
+
+        width: 100%;
+
+        max-width: 100%;
+
+        padding: 24px 20px;
+
     }
+
 
     .cardTitleTwo h3 {
-        font-size: 20px;
+
+        font-size: 28px;
+
     }
 
-    .cardTitleTwo span {
-        font-size: 12px;
-    }
 
     .cardTitleThree {
-        gap: 10px;
+
+        gap: 15px;
+
     }
 
-    .cardTitleThree button {
-        flex: 1 1 auto;
-        /* botões ocupam largura igual, lado a lado */
-        padding: 10px;
-        font-size: 14px;
+}
+
+
+/* ==========================================================================
+   TABLET PEQUENO
+   577px - 768px
+   ========================================================================== */
+
+@media (max-width: 768px) {
+
+    .cardTitle {
+
+        width: 100%;
+
+        padding: 0 20px;
+
     }
+
+
+    .cardTitleOne {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        justify-content: flex-start;
+
+        width: 100%;
+
+        padding: 20px;
+
+    }
+
+
+    .cardTitleTwo {
+
+        width: 100%;
+
+    }
+
+
+    .cardTitleTwo h3 {
+
+        font-size: 24px;
+
+    }
+
+
+    .cardTitleThree {
+
+        width: 100%;
+
+        justify-content: flex-start;
+
+        gap: 10px;
+
+    }
+
+
+    .cardTitleThree button {
+
+        padding: 9px 12px;
+
+    }
+
+}
+
+
+/* ==========================================================================
+   TELEMÓVEL
+   Até 576px
+   ========================================================================== */
+
+@media (max-width: 576px) {
+
+    .cardTitle {
+
+        width: 100%;
+
+        padding: 0 15px;
+
+    }
+
+
+    .cardTitleOne {
+
+        width: 100%;
+
+        padding: 18px 15px;
+
+        border-radius: var(--radius-sm);
+
+        gap: 15px;
+
+    }
+
+
+    .cardTitleTwo {
+
+        width: 100%;
+
+    }
+
+
+    .cardTitleTwo h3 {
+
+        font-size: 21px;
+
+        line-height: 1.3;
+
+    }
+
+
+    .cardTitleTwo span {
+
+        font-size: 12px;
+
+        line-height: 1.5;
+
+    }
+
+
+    .cardTitleThree {
+
+        width: 100%;
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 10px;
+
+    }
+
+
+    .cardTitleThree button {
+
+        width: 100%;
+
+        padding: 10px;
+
+        font-size: 14px;
+
+    }
+
+}
+
+
+/* ==========================================================================
+   TELEMÓVEL PEQUENO
+   Até 360px
+   ========================================================================== */
+
+@media (max-width: 360px) {
+
+    .cardTitle {
+
+        padding: 0 10px;
+
+    }
+
+
+    .cardTitleOne {
+
+        padding: 15px;
+
+    }
+
+
+    .cardTitleTwo h3 {
+
+        font-size: 19px;
+
+    }
+
+
+    .cardTitleTwo span {
+
+        font-size: 11px;
+
+    }
+
+
+    .cardTitleThree {
+
+        gap: 8px;
+
+    }
+
+
+    .cardTitleThree button {
+
+        padding: 9px;
+
+        font-size: 13px;
+
+    }
+
 }
